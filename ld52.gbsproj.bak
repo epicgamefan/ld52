@@ -1043,7 +1043,7 @@
                     "name": "Torch",
                     "frame": 0,
                     "animate": false,
-                    "spriteSheetId": "773989d5-00d1-4871-9662-98189265c08b",
+                    "spriteSheetId": "b949159a-44fc-4591-ae8a-520840e0984f",
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 15,
@@ -1110,7 +1110,7 @@
                     "name": "Key2",
                     "frame": 0,
                     "animate": false,
-                    "spriteSheetId": "773989d5-00d1-4871-9662-98189265c08b",
+                    "spriteSheetId": "095d1dab-b4c7-45b4-9081-02d3025be0c3",
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 15,
@@ -4901,6 +4901,28 @@
                         }
                     ],
                     "leaveScript": []
+                },
+                {
+                    "name": "",
+                    "id": "e81fae81-0527-47ed-bd12-3db86e34c14a",
+                    "x": 1,
+                    "y": 4,
+                    "symbol": "trigger_56",
+                    "width": 3,
+                    "height": 5,
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Feed me...\nviscera."
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "0015fdd2-30f9-4d2a-a1e5-7e4e9d2d4021"
+                        }
+                    ],
+                    "leaveScript": []
                 }
             ],
             "script": [
@@ -6785,8 +6807,8 @@
             "autoFadeSpeed": 3,
             "id": "3b6cf22c-5636-4c39-adc5-9a5a1acee4e6",
             "symbol": "scene_18",
-            "x": 717,
-            "y": 1156,
+            "x": 704,
+            "y": 1160,
             "actors": [],
             "triggers": [
                 {
@@ -7002,7 +7024,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "Room4.png"
+            "filename": "Room4.png",
+            "tileColors": []
         },
         {
             "id": "49382a97-0272-40c3-b079-8eafd89ae8e4",
@@ -10113,7 +10136,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 0,
-        "worldScrollY": 417,
+        "worldScrollY": 209,
         "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,
