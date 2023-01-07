@@ -3134,7 +3134,7 @@
                 0,
                 0
             ],
-            "autoFadeSpeed": 3,
+            "autoFadeSpeed": null,
             "id": "93cb85d3-b55e-46d4-9c74-ac081657ce23",
             "symbol": "scene_12",
             "x": 101,
@@ -3247,9 +3247,46 @@
                         }
                     ],
                     "leaveScript": []
+                },
+                {
+                    "name": "",
+                    "id": "68bbad9a-3de8-4512-b6eb-92009a7c0ab9",
+                    "x": 9,
+                    "y": 15,
+                    "symbol": "trigger_40",
+                    "width": 2,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "9d8e896c-706f-4a34-afd9-b8a3d52ef326",
+                                "x": 9,
+                                "y": 10,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "48385aee-a477-4123-acca-69598777b957"
+                        }
+                    ],
+                    "leaveScript": []
                 }
             ],
             "script": [
+                {
+                    "command": "EVENT_CALL_CUSTOM_EVENT",
+                    "args": {
+                        "customEventId": "e89d7182-8f0b-4a8c-a7de-67dc3d5e100c"
+                    },
+                    "id": "f7798b39-5692-42b4-84f5-099ca19cd40b"
+                },
+                {
+                    "command": "EVENT_FADE_IN",
+                    "args": {
+                        "speed": "2"
+                    },
+                    "id": "11d41af8-b6de-41a2-bed9-b562a1b41806"
+                },
                 {
                     "command": "EVENT_CALL_CUSTOM_EVENT",
                     "args": {
@@ -3275,7 +3312,8 @@
                     "height": 0,
                     "speed": 0
                 }
-            ]
+            ],
+            "autoFadeEventCollapse": false
         },
         {
             "name": "Room2b",
@@ -3760,9 +3798,44 @@
                         }
                     ],
                     "leaveScript": []
+                },
+                {
+                    "name": "",
+                    "id": "9b0704a3-1795-4b92-88a0-75dc8267d6ce",
+                    "x": 9,
+                    "y": 15,
+                    "symbol": "trigger_41",
+                    "width": 2,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "9d8e896c-706f-4a34-afd9-b8a3d52ef326",
+                                "x": 9,
+                                "y": 10,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "ad84a365-ab9e-4e9f-b23d-f7768dcdc705"
+                        }
+                    ],
+                    "leaveScript": []
                 }
             ],
             "script": [
+                {
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "6",
+                        "value": {
+                            "type": "number",
+                            "value": 1
+                        },
+                        "__collapse": false
+                    },
+                    "id": "111b9621-2b4c-4fcd-bffb-8adca3060cc6"
+                },
                 {
                     "command": "EVENT_CALL_CUSTOM_EVENT",
                     "args": {
@@ -4222,8 +4295,8 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "711f125e-5c6a-407d-b937-8ad126d5029a",
-                                "x": 0,
-                                "y": 0,
+                                "x": 3,
+                                "y": 8,
                                 "direction": "",
                                 "fadeSpeed": "2"
                             },
@@ -4245,8 +4318,8 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "6fe80222-18e3-464c-9a14-df73cac465f8",
-                                "x": 0,
-                                "y": 0,
+                                "x": 5,
+                                "y": 8,
                                 "direction": "",
                                 "fadeSpeed": "2"
                             },
@@ -4322,9 +4395,44 @@
                         }
                     ],
                     "leaveScript": []
+                },
+                {
+                    "name": "",
+                    "id": "294b7696-81cd-4254-af51-c6e092db2880",
+                    "x": 9,
+                    "y": 15,
+                    "symbol": "trigger_42",
+                    "width": 2,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "9d8e896c-706f-4a34-afd9-b8a3d52ef326",
+                                "x": 9,
+                                "y": 10,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "e337d710-39c8-4f9c-96aa-d6e5ead40f7b"
+                        }
+                    ],
+                    "leaveScript": []
                 }
             ],
             "script": [
+                {
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "6",
+                        "value": {
+                            "type": "number",
+                            "value": 2
+                        },
+                        "__collapse": false
+                    },
+                    "id": "40e7447d-c941-473c-9886-0cd02acab831"
+                },
                 {
                     "command": "EVENT_CALL_CUSTOM_EVENT",
                     "args": {
@@ -4354,7 +4462,7 @@
         },
         {
             "name": "Room3a",
-            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "backgroundId": "75d3cfd6-22a0-4d7b-ad40-ac1e67f50aa1",
             "width": 20,
             "height": 18,
             "type": "POINTNCLICK",
@@ -5369,6 +5477,17 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Room2c.png",
+            "tileColors": []
+        },
+        {
+            "id": "75d3cfd6-22a0-4d7b-ad40-ac1e67f50aa1",
+            "name": "Room3",
+            "symbol": "bg_room3",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room3.png",
             "tileColors": []
         },
         {
@@ -7164,6 +7283,112 @@
                     "id": "8b8f8e6f-4fa5-44be-ad75-b13e24cd6a8e"
                 }
             ]
+        },
+        {
+            "id": "e89d7182-8f0b-4a8c-a7de-67dc3d5e100c",
+            "name": "Room2State",
+            "description": "",
+            "variables": {},
+            "actors": {},
+            "symbol": "script_10",
+            "script": [
+                {
+                    "command": "EVENT_SWITCH",
+                    "args": {
+                        "variable": "6",
+                        "choices": 2,
+                        "__collapseCase0": false,
+                        "value0": 1,
+                        "__collapseCase1": false,
+                        "value1": 2,
+                        "__collapseCase2": false,
+                        "value2": 3,
+                        "__collapseCase3": false,
+                        "value3": 4,
+                        "__collapseCase4": false,
+                        "value4": 5,
+                        "__collapseCase5": false,
+                        "value5": 6,
+                        "__collapseCase6": false,
+                        "value6": 7,
+                        "__collapseCase7": false,
+                        "value7": 8,
+                        "__collapseCase8": false,
+                        "value8": 9,
+                        "__collapseCase9": false,
+                        "value9": 10,
+                        "__collapseCase10": false,
+                        "value10": 11,
+                        "__collapseCase11": false,
+                        "value11": 12,
+                        "__collapseCase12": false,
+                        "value12": 13,
+                        "__collapseCase13": false,
+                        "value13": 14,
+                        "__collapseCase14": false,
+                        "value14": 15,
+                        "__collapseCase15": false,
+                        "value15": 16,
+                        "__collapseElse": false
+                    },
+                    "children": {
+                        "true0": [
+                            {
+                                "command": "EVENT_SWITCH_SCENE",
+                                "args": {
+                                    "sceneId": "04a06a46-f07e-46a7-974d-a92b0363a39b",
+                                    "x": 0,
+                                    "y": 0,
+                                    "direction": "",
+                                    "fadeSpeed": "2"
+                                },
+                                "id": "c9e27e4c-da65-4b01-8bd1-e8b9b09f0216"
+                            }
+                        ],
+                        "true1": [
+                            {
+                                "command": "EVENT_SWITCH_SCENE",
+                                "args": {
+                                    "sceneId": "ba0644ae-1c91-493c-93f6-ad34d08e1483",
+                                    "x": 0,
+                                    "y": 0,
+                                    "direction": "",
+                                    "fadeSpeed": "2"
+                                },
+                                "id": "2f197258-6c08-4ce1-8ca0-464618cfced4"
+                            }
+                        ],
+                        "true2": [],
+                        "true3": [],
+                        "true4": [],
+                        "true5": [],
+                        "true6": [],
+                        "true7": [],
+                        "true8": [],
+                        "true9": [],
+                        "true10": [],
+                        "true11": [],
+                        "true12": [],
+                        "true13": [],
+                        "true14": [],
+                        "true15": [],
+                        "false": [
+                            {
+                                "command": "EVENT_SWITCH_SCENE",
+                                "args": {
+                                    "sceneId": "93cb85d3-b55e-46d4-9c74-ac081657ce23",
+                                    "x": 0,
+                                    "y": 0,
+                                    "direction": "",
+                                    "fadeSpeed": "2"
+                                },
+                                "id": "0c56dd06-a71f-4d24-97dd-04f7c07abbef"
+                            }
+                        ]
+                    },
+                    "id": "401e139a-98d0-4ef6-9d60-1f40f576e1af"
+                }
+            ]
         }
     ],
     "music": [
@@ -7292,6 +7517,11 @@
             "id": "5",
             "name": "room1Dialog",
             "symbol": "var_room1dialog"
+        },
+        {
+            "id": "6",
+            "name": "room2State",
+            "symbol": "var_room2state"
         }
     ],
     "engineFieldValues": [
@@ -7309,8 +7539,8 @@
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1,
-        "worldScrollY": 197,
+        "worldScrollX": 0,
+        "worldScrollY": 214,
         "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,
