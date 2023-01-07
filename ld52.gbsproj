@@ -4354,7 +4354,7 @@
         },
         {
             "name": "Room3a",
-            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "backgroundId": "75d3cfd6-22a0-4d7b-ad40-ac1e67f50aa1",
             "width": 20,
             "height": 18,
             "type": "POINTNCLICK",
@@ -5370,6 +5370,16 @@
             "imageHeight": 144,
             "filename": "Room2c.png",
             "tileColors": []
+        },
+        {
+            "id": "75d3cfd6-22a0-4d7b-ad40-ac1e67f50aa1",
+            "name": "Room3",
+            "symbol": "bg_room3",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room3.png"
         },
         {
             "id": "49382a97-0272-40c3-b079-8eafd89ae8e4",
@@ -7309,7 +7319,7 @@
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1,
+        "worldScrollX": 0,
         "worldScrollY": 197,
         "zoom": 100,
         "customColorsEnabled": false,

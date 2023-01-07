@@ -6917,7 +6917,7 @@
                                         "deep in the \nmountains on a\nstormy night.",
                                         "Your family will \nbe worried.  \n",
                                         "You want to let \nthem know that \nyour not hurt.",
-                                        "With no signal,\nyou unable to\ncall them.",
+                                        "With no signal,\nyou are unable \nto call them.",
                                         "After walking \nmiles in the \nsleet and rain,",
                                         "You find yourself\nat an old desolate\nfacility.",
                                         "The storm is \ngetting worse.\n",
@@ -6926,7 +6926,7 @@
                                         "Maybe you can \nwait the storm \nout overnight."
                                     ],
                                     "avatarId": "",
-                                    "__collapse": true
+                                    "__collapse": false
                                 },
                                 "id": "98d5bcc6-bea2-4113-931a-d2dbb3ab879a"
                             },
