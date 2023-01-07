@@ -600,22 +600,42 @@
                     "name": "Pocket",
                     "id": "ef3f646c-017f-44e7-a62a-50606ab86de1",
                     "x": 14,
-                    "y": 17,
+                    "y": 1,
                     "symbol": "trigger_0",
-                    "width": 6,
-                    "height": 1,
-                    "script": [],
+                    "width": 5,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "193a7499-7aa9-4e62-a244-20bf6c8a0a11",
+                                "x": 0,
+                                "y": 0,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "283876ce-8981-4471-98ac-5e1be61f4d47"
+                        }
+                    ],
                     "leaveScript": []
                 },
                 {
                     "name": "Self",
                     "id": "9b2d97b6-0260-4716-92da-7bb7f550ff3a",
-                    "x": 0,
-                    "y": 17,
+                    "x": 9,
+                    "y": 1,
                     "symbol": "trigger_1",
-                    "width": 6,
-                    "height": 1,
-                    "script": [],
+                    "width": 4,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                            "args": {
+                                "customEventId": "b4f78f19-e155-4eaa-ac6f-d4bad3f09aa9"
+                            },
+                            "id": "21c5ea29-6d9b-448e-b034-b51006fee479"
+                        }
+                    ],
                     "leaveScript": []
                 },
                 {
@@ -1944,7 +1964,71 @@
             ]
         }
     ],
-    "customEvents": [],
+    "customEvents": [
+        {
+            "id": "b4f78f19-e155-4eaa-ac6f-d4bad3f09aa9",
+            "name": "SelfScript",
+            "description": "",
+            "variables": {
+                "V0": {
+                    "id": "V0",
+                    "name": "Variable A",
+                    "passByReference": true
+                }
+            },
+            "actors": {},
+            "symbol": "script_1",
+            "script": [
+                {
+                    "command": "EVENT_IF_FALSE",
+                    "args": {
+                        "variable": "1",
+                        "__collapseElse": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Fap Fap Fap!"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "bb7ef7b6-2be8-48ac-b30c-e54886867f0d"
+                            }
+                        ],
+                        "false": []
+                    },
+                    "id": "655a19e2-d1a2-453a-905e-cdce1e11eae8"
+                },
+                {
+                    "command": "EVENT_IF_FLAGS_COMPARE",
+                    "args": {
+                        "variable": "V0",
+                        "flag": 0,
+                        "__collapseElse": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Ouch"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "eb54cf2a-4713-4ee8-a717-6341653d5ec1"
+                            }
+                        ],
+                        "false": []
+                    },
+                    "id": "a8529c84-c75e-45b7-ba04-6aab0daea35d"
+                }
+            ]
+        }
+    ],
     "music": [
         {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
@@ -2078,8 +2162,8 @@
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 611,
-        "worldScrollY": 804,
+        "worldScrollX": 253,
+        "worldScrollY": 1495,
         "zoom": 300,
         "customColorsEnabled": false,
         "sgbEnabled": false,
