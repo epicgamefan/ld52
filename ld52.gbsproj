@@ -5919,7 +5919,7 @@
         },
         {
             "name": "Room4b",
-            "backgroundId": "fe4e0d36-a68a-413f-ae53-0ccf77cabc9d",
+            "backgroundId": "ef29a990-4706-4b08-937c-0613045a8149",
             "width": 20,
             "height": 18,
             "type": "POINTNCLICK",
@@ -7026,6 +7026,16 @@
             "imageHeight": 144,
             "filename": "Room4.png",
             "tileColors": []
+        },
+        {
+            "id": "ef29a990-4706-4b08-937c-0613045a8149",
+            "name": "Room4b",
+            "symbol": "bg_room4b",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room4b.png"
         },
         {
             "id": "49382a97-0272-40c3-b079-8eafd89ae8e4",
@@ -10136,7 +10146,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 0,
-        "worldScrollY": 126,
+        "worldScrollY": 426,
         "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,
