@@ -95,8 +95,8 @@
                                 "command": "EVENT_SWITCH_SCENE",
                                 "args": {
                                     "sceneId": "14d1a58c-6cd0-4294-b8ea-09c2134395f1",
-                                    "x": 0,
-                                    "y": 0,
+                                    "x": 9,
+                                    "y": 9,
                                     "direction": "",
                                     "fadeSpeed": 3
                                 },
@@ -555,6 +555,29 @@
                                             "avatarId": ""
                                         },
                                         "id": "27b1c1fe-a8aa-4b54-92fc-0054b69ac057"
+                                    },
+                                    {
+                                        "command": "EVENT_SET_FLAGS",
+                                        "args": {
+                                            "variable": "1",
+                                            "flag1": true,
+                                            "flag2": false,
+                                            "flag3": false,
+                                            "flag4": false,
+                                            "flag5": false,
+                                            "flag6": false,
+                                            "flag7": false,
+                                            "flag8": false,
+                                            "flag9": false,
+                                            "flag10": false,
+                                            "flag11": false,
+                                            "flag12": false,
+                                            "flag13": false,
+                                            "flag14": false,
+                                            "flag15": false,
+                                            "flag16": false
+                                        },
+                                        "id": "f6c274fd-6659-4f27-a58d-235908ff6165"
                                     }
                                 ],
                                 "false": []
@@ -605,15 +628,147 @@
                     "height": 2,
                     "script": [
                         {
-                            "command": "EVENT_TEXT",
+                            "command": "EVENT_IF_FALSE",
                             "args": {
-                                "text": [
-                                    "The stone looks\nworn here.",
-                                    "Looks like \nsomething might \nbe behind it."
-                                ],
-                                "avatarId": ""
+                                "variable": "2",
+                                "__collapseElse": true
                             },
-                            "id": "18d3a002-9ab2-4538-9917-3c57d2e0b0ba"
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_IF_FLAGS_COMPARE",
+                                        "args": {
+                                            "variable": "1",
+                                            "flag": 0,
+                                            "__collapseElse": false,
+                                            "__collapse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "BAM!",
+                                                            "A key is underneath.\nTake it?"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "1f94b798-fffd-418d-b75c-892b54cb3038"
+                                                },
+                                                {
+                                                    "command": "EVENT_MENU",
+                                                    "args": {
+                                                        "variable": "2",
+                                                        "items": 2,
+                                                        "option1": "Yes",
+                                                        "option2": "No",
+                                                        "option3": "",
+                                                        "option4": "",
+                                                        "option5": "",
+                                                        "option6": "",
+                                                        "option7": "",
+                                                        "option8": "",
+                                                        "cancelOnB": true,
+                                                        "layout": "dialogue",
+                                                        "cancelOnLastOption": true
+                                                    },
+                                                    "id": "346f84cb-4a3a-4bca-89ae-41105f4c6d0a"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Key added to\npocket."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "6b10b014-74cf-498c-bacf-d75c41fc5a20"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "The stone looks\nworn here.",
+                                                            "Looks like \nsomething might \nbe behind it."
+                                                        ],
+                                                        "avatarId": "",
+                                                        "__collapse": false
+                                                    },
+                                                    "id": "18d3a002-9ab2-4538-9917-3c57d2e0b0ba"
+                                                }
+                                            ]
+                                        },
+                                        "id": "a2b64afb-993f-4d8a-94e9-92b12c88e5b6"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "fe5d2a1b-5b5b-4f89-a4b7-831d817696d6"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Door",
+                    "id": "e054eeb9-c0d4-4ff6-a451-04a8749bc65a",
+                    "x": 10,
+                    "y": 7,
+                    "symbol": "trigger_3",
+                    "width": 6,
+                    "height": 11,
+                    "script": [
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "3",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_SWITCH_SCENE",
+                                        "args": {
+                                            "sceneId": "34cf9c4c-475b-441c-80e3-6a78afbd37b5",
+                                            "x": 9,
+                                            "y": 8,
+                                            "direction": "",
+                                            "fadeSpeed": "2"
+                                        },
+                                        "id": "48e3885e-cd72-435c-b530-3cb0d593508f"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_IF_FLAGS_COMPARE",
+                                        "args": {
+                                            "variable": "1",
+                                            "flag": 1,
+                                            "__collapseElse": false
+                                        },
+                                        "children": {
+                                            "true": [],
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "The door is\nlocked.",
+                                                            "Only if I had\na key."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "11c5d892-4979-479d-9760-9421dc666183"
+                                                }
+                                            ]
+                                        },
+                                        "id": "895bd671-6165-4f71-aa98-e185580a8c69"
+                                    }
+                                ]
+                            },
+                            "id": "2e4c60db-0d2b-4593-ad0e-42daf27b2b05"
                         }
                     ],
                     "leaveScript": []
@@ -796,7 +951,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "Room1.png"
+            "filename": "Room1.png",
+            "tileColors": []
         },
         {
             "id": "49382a97-0272-40c3-b079-8eafd89ae8e4",
@@ -1727,13 +1883,23 @@
     "variables": [
         {
             "id": "0",
-            "name": "hasMallet",
-            "symbol": "var_hasmallet"
+            "name": "itemMallet",
+            "symbol": "var_itemmallet"
         },
         {
             "id": "1",
-            "name": "hitBrick",
-            "symbol": "var_hitbrick"
+            "name": "itemInHand",
+            "symbol": "var_iteminhand"
+        },
+        {
+            "id": "2",
+            "name": "itemRoom1Key",
+            "symbol": "var_itemroom1key"
+        },
+        {
+            "id": "3",
+            "name": "room1DoorUnlocked",
+            "symbol": "var_room1doorunlocked"
         }
     ],
     "engineFieldValues": [
@@ -1744,16 +1910,16 @@
     ],
     "settings": {
         "startSceneId": "0901f318-60af-41c7-8056-811bfb874ee1",
-        "startX": 9,
-        "startY": 8,
+        "startX": 0,
+        "startY": 0,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 0,
-        "worldScrollY": 0,
-        "zoom": 100,
+        "worldScrollX": 1,
+        "worldScrollY": 600,
+        "zoom": 200,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
@@ -1781,9 +1947,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            594,
-            181,
-            181
+            400,
+            222,
+            334
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
