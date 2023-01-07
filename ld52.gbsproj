@@ -4263,7 +4263,64 @@
                     "symbol": "trigger_35",
                     "width": 1,
                     "height": 1,
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "4",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "You thoroughly\nprobe the hole. ",
+                                                "A key is found.\nDo you take it?"
+                                            ],
+                                            "avatarId": "",
+                                            "__collapse": true
+                                        },
+                                        "id": "bef99bd9-eff9-40e2-9869-d0a4bc4c63f1"
+                                    },
+                                    {
+                                        "command": "EVENT_MENU",
+                                        "args": {
+                                            "variable": "4",
+                                            "items": 2,
+                                            "option1": "Yes",
+                                            "option2": "No",
+                                            "option3": "",
+                                            "option4": "",
+                                            "option5": "",
+                                            "option6": "",
+                                            "option7": "",
+                                            "option8": "",
+                                            "cancelOnB": true,
+                                            "layout": "dialogue",
+                                            "cancelOnLastOption": true,
+                                            "__collapse": false
+                                        },
+                                        "id": "07247cc5-0f82-4b1b-8577-1fa27dae93b1"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Key added to\npocket."
+                                            ],
+                                            "avatarId": "",
+                                            "__collapse": false
+                                        },
+                                        "id": "31644e90-8048-41d6-b9b1-618a0088b75d"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "1836516f-5277-4c43-a97d-730bc9892fa3"
+                        }
+                    ],
                     "leaveScript": []
                 }
             ],
@@ -5311,7 +5368,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "Room2c.png"
+            "filename": "Room2c.png",
+            "tileColors": []
         },
         {
             "id": "49382a97-0272-40c3-b079-8eafd89ae8e4",
@@ -6859,7 +6917,7 @@
                                         "deep in the \nmountains on a\nstormy night.",
                                         "Your family will \nbe worried.  \n",
                                         "You want to let \nthem know that \nyour not hurt.",
-                                        "With no signal,\nyou unable to\ncall them.",
+                                        "With no signal,\nyou are unable \nto call them.",
                                         "After walking \nmiles in the \nsleet and rain,",
                                         "You find yourself\nat an old desolate\nfacility.",
                                         "The storm is \ngetting worse.\n",
@@ -6868,7 +6926,7 @@
                                         "Maybe you can \nwait the storm \nout overnight."
                                     ],
                                     "avatarId": "",
-                                    "__collapse": true
+                                    "__collapse": false
                                 },
                                 "id": "98d5bcc6-bea2-4113-931a-d2dbb3ab879a"
                             },
@@ -7221,11 +7279,6 @@
             "symbol": "var_itemkey1"
         },
         {
-            "id": "5",
-            "name": "room1Dialog",
-            "symbol": "var_room1dialog"
-        },
-        {
             "id": "3",
             "name": "itemTorch",
             "symbol": "var_itemtorch"
@@ -7234,6 +7287,11 @@
             "id": "4",
             "name": "itemKey2",
             "symbol": "var_itemkey2"
+        },
+        {
+            "id": "5",
+            "name": "room1Dialog",
+            "symbol": "var_room1dialog"
         }
     ],
     "engineFieldValues": [
@@ -7251,8 +7309,8 @@
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 10,
-        "worldScrollY": 214,
+        "worldScrollX": 1,
+        "worldScrollY": 197,
         "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,

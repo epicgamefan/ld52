@@ -1040,7 +1040,7 @@
                     "y": 7
                 },
                 {
-                    "name": "",
+                    "name": "Torch",
                     "frame": 0,
                     "animate": false,
                     "spriteSheetId": "773989d5-00d1-4871-9662-98189265c08b",
@@ -1052,8 +1052,52 @@
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_3",
-                    "script": [],
-                    "startScript": [],
+                    "script": [
+                        {
+                            "command": "EVENT_PLAYER_SET_SPRITE",
+                            "args": {
+                                "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+                                "persist": true
+                            },
+                            "id": "57904320-4ba3-4748-ac09-cf178ee81108"
+                        },
+                        {
+                            "command": "EVENT_SET_FLAGS",
+                            "args": {
+                                "variable": "1",
+                                "flag1": false,
+                                "flag2": false,
+                                "flag3": true,
+                                "flag4": false,
+                                "flag5": false,
+                                "flag6": false,
+                                "flag7": false,
+                                "flag8": false,
+                                "flag9": false,
+                                "flag10": false,
+                                "flag11": false,
+                                "flag12": false,
+                                "flag13": false,
+                                "flag14": false,
+                                "flag15": false,
+                                "flag16": false
+                            },
+                            "id": "67b68a0c-25cd-49e9-a80c-be234ec8c024"
+                        }
+                    ],
+                    "startScript": [
+                        {
+                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                            "args": {
+                                "customEventId": "883f00b5-4b47-4cc5-b838-eb243eaba050",
+                                "$variable[V0]$": {
+                                    "type": "variable",
+                                    "value": "3"
+                                }
+                            },
+                            "id": "ff971e49-bb81-4e5b-b408-abbb5f71d33d"
+                        }
+                    ],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
@@ -1063,7 +1107,7 @@
                     "y": 7
                 },
                 {
-                    "name": "",
+                    "name": "Key2",
                     "frame": 0,
                     "animate": false,
                     "spriteSheetId": "773989d5-00d1-4871-9662-98189265c08b",
@@ -1075,8 +1119,52 @@
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_4",
-                    "script": [],
-                    "startScript": [],
+                    "script": [
+                        {
+                            "command": "EVENT_PLAYER_SET_SPRITE",
+                            "args": {
+                                "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+                                "persist": true
+                            },
+                            "id": "cb71d676-a486-491b-90ce-c389b139dffa"
+                        },
+                        {
+                            "command": "EVENT_SET_FLAGS",
+                            "args": {
+                                "variable": "1",
+                                "flag1": false,
+                                "flag2": false,
+                                "flag3": false,
+                                "flag4": true,
+                                "flag5": false,
+                                "flag6": false,
+                                "flag7": false,
+                                "flag8": false,
+                                "flag9": false,
+                                "flag10": false,
+                                "flag11": false,
+                                "flag12": false,
+                                "flag13": false,
+                                "flag14": false,
+                                "flag15": false,
+                                "flag16": false
+                            },
+                            "id": "fa6c8857-a932-4d12-912f-f54a12f87af4"
+                        }
+                    ],
+                    "startScript": [
+                        {
+                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                            "args": {
+                                "customEventId": "883f00b5-4b47-4cc5-b838-eb243eaba050",
+                                "$variable[V0]$": {
+                                    "type": "variable",
+                                    "value": "4"
+                                }
+                            },
+                            "id": "9456a9a4-afc6-471a-b6d7-3dbff9d177bf"
+                        }
+                    ],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
@@ -4175,7 +4263,64 @@
                     "symbol": "trigger_35",
                     "width": 1,
                     "height": 1,
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "4",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "You thoroughly\nprobe the hole. ",
+                                                "A key is found.\nDo you take it?"
+                                            ],
+                                            "avatarId": "",
+                                            "__collapse": true
+                                        },
+                                        "id": "bef99bd9-eff9-40e2-9869-d0a4bc4c63f1"
+                                    },
+                                    {
+                                        "command": "EVENT_MENU",
+                                        "args": {
+                                            "variable": "4",
+                                            "items": 2,
+                                            "option1": "Yes",
+                                            "option2": "No",
+                                            "option3": "",
+                                            "option4": "",
+                                            "option5": "",
+                                            "option6": "",
+                                            "option7": "",
+                                            "option8": "",
+                                            "cancelOnB": true,
+                                            "layout": "dialogue",
+                                            "cancelOnLastOption": true,
+                                            "__collapse": false
+                                        },
+                                        "id": "07247cc5-0f82-4b1b-8577-1fa27dae93b1"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Key added to\npocket."
+                                            ],
+                                            "avatarId": "",
+                                            "__collapse": false
+                                        },
+                                        "id": "31644e90-8048-41d6-b9b1-618a0088b75d"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "1836516f-5277-4c43-a97d-730bc9892fa3"
+                        }
+                    ],
                     "leaveScript": []
                 }
             ],
@@ -5223,7 +5368,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "Room2c.png"
+            "filename": "Room2c.png",
+            "tileColors": []
         },
         {
             "id": "49382a97-0272-40c3-b079-8eafd89ae8e4",
@@ -7133,6 +7279,16 @@
             "symbol": "var_itemkey1"
         },
         {
+            "id": "3",
+            "name": "itemTorch",
+            "symbol": "var_itemtorch"
+        },
+        {
+            "id": "4",
+            "name": "itemKey2",
+            "symbol": "var_itemkey2"
+        },
+        {
             "id": "5",
             "name": "room1Dialog",
             "symbol": "var_room1dialog"
@@ -7153,8 +7309,8 @@
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 10,
-        "worldScrollY": 214,
+        "worldScrollX": 1,
+        "worldScrollY": 197,
         "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,
