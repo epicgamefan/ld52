@@ -114,7 +114,7 @@
         },
         {
             "name": "Room1",
-            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "backgroundId": "3919a7b1-a980-4830-9274-1865ba7e2dfa",
             "width": 20,
             "height": 18,
             "type": "POINTNCLICK",
@@ -207,21 +207,41 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "df7a6b02-840d-4406-a8e2-bb028ea2d0ac",
-                    "x": 13,
-                    "y": 9
+                    "x": 17,
+                    "y": 13
+                }
+            ],
+            "triggers": [
+                {
+                    "name": "Pocket",
+                    "id": "ef3f646c-017f-44e7-a62a-50606ab86de1",
+                    "x": 14,
+                    "y": 17,
+                    "symbol": "trigger_0",
+                    "width": 6,
+                    "height": 1,
+                    "script": [],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Self",
+                    "id": "9b2d97b6-0260-4716-92da-7bb7f550ff3a",
+                    "x": 0,
+                    "y": 17,
+                    "symbol": "trigger_1",
+                    "width": 6,
+                    "height": 1,
+                    "script": [],
+                    "leaveScript": []
                 },
                 {
                     "name": "Loose Stone",
-                    "frame": 0,
-                    "animate": false,
-                    "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
-                    "direction": "down",
-                    "moveSpeed": 1,
-                    "animSpeed": 15,
-                    "paletteId": "",
-                    "isPinned": false,
-                    "persistent": false,
-                    "symbol": "actor_1",
+                    "id": "fbce7764-1cbe-4067-ada5-c0d09461df10",
+                    "x": 4,
+                    "y": 9,
+                    "symbol": "trigger_2",
+                    "width": 3,
+                    "height": 2,
                     "script": [
                         {
                             "command": "EVENT_TEXT",
@@ -232,54 +252,9 @@
                                 ],
                                 "avatarId": ""
                             },
-                            "id": "c263ab25-9f02-4605-afeb-85f0a87056ac"
-                        },
-                        {
-                            "command": "EVENT_IF_VALUE",
-                            "args": {
-                                "variable": "2",
-                                "operator": "==",
-                                "comparator": null,
-                                "__collapseElse": true
-                            },
-                            "children": {
-                                "true": [],
-                                "false": []
-                            },
-                            "id": "f1c80c0d-6684-4ac3-8a5c-6b98cb1b2fe9"
+                            "id": "18d3a002-9ab2-4538-9917-3c57d2e0b0ba"
                         }
                     ],
-                    "startScript": [],
-                    "updateScript": [],
-                    "hit1Script": [],
-                    "hit2Script": [],
-                    "hit3Script": [],
-                    "id": "389e8942-f1cc-4287-87ad-090492a112f8",
-                    "x": 5,
-                    "y": 9
-                }
-            ],
-            "triggers": [
-                {
-                    "name": "Pocket",
-                    "id": "ef3f646c-017f-44e7-a62a-50606ab86de1",
-                    "x": 13,
-                    "y": 13,
-                    "symbol": "trigger_0",
-                    "width": 5,
-                    "height": 4,
-                    "script": [],
-                    "leaveScript": []
-                },
-                {
-                    "name": "Self",
-                    "id": "9b2d97b6-0260-4716-92da-7bb7f550ff3a",
-                    "x": 4,
-                    "y": 13,
-                    "symbol": "trigger_1",
-                    "width": 4,
-                    "height": 4,
-                    "script": [],
                     "leaveScript": []
                 }
             ],
@@ -1398,9 +1373,9 @@
         }
     ],
     "settings": {
-        "startSceneId": "14d1a58c-6cd0-4294-b8ea-09c2134395f1",
-        "startX": 7,
-        "startY": 3,
+        "startSceneId": "0901f318-60af-41c7-8056-811bfb874ee1",
+        "startX": 9,
+        "startY": 8,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "up",
