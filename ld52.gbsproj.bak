@@ -115,7 +115,7 @@
             "playerSpriteSheetId": "773989d5-00d1-4871-9662-98189265c08b"
         },
         {
-            "name": "Room1",
+            "name": "Room1a",
             "backgroundId": "e66261a6-3e2a-458d-95d5-5b208e5c5724",
             "width": 20,
             "height": 18,
@@ -748,7 +748,18 @@
                                             "__collapseElse": false
                                         },
                                         "children": {
-                                            "true": [],
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "The key fit. The \ndoor unlocks\nand opens."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "841b5885-52cc-4239-b4f2-1abdd83ce1ac"
+                                                }
+                                            ],
                                             "false": [
                                                 {
                                                     "command": "EVENT_TEXT",
@@ -1512,9 +1523,746 @@
             "playerHit2Script": [],
             "playerHit3Script": [],
             "playerSpriteSheetId": "773989d5-00d1-4871-9662-98189265c08b"
+        },
+        {
+            "name": "BamKey1",
+            "backgroundId": "e8b834ac-bff2-47e6-9b14-10efb83174fc",
+            "width": 20,
+            "height": 18,
+            "type": "TOPDOWN",
+            "paletteIds": [],
+            "spritePaletteIds": [],
+            "collisions": [],
+            "autoFadeSpeed": 1,
+            "id": "a4f22875-f493-4679-a7d9-3e9fd3b3d6ee",
+            "symbol": "scene_8",
+            "x": 715,
+            "y": 348,
+            "actors": [],
+            "triggers": [],
+            "script": [
+                {
+                    "command": "EVENT_ACTOR_DEACTIVATE",
+                    "args": {
+                        "actorId": "$self$"
+                    },
+                    "id": "261a97be-46ee-4478-9364-5f8c8d989208"
+                },
+                {
+                    "command": "EVENT_WAIT",
+                    "args": {
+                        "time": 2,
+                        "frames": 30
+                    },
+                    "id": "813b5225-0796-486e-bbf7-3d2471270f1c"
+                },
+                {
+                    "command": "EVENT_SWITCH_SCENE",
+                    "args": {
+                        "sceneId": "1f559bba-fc30-4a60-b03c-2f6c41d994ed",
+                        "x": 0,
+                        "y": 0,
+                        "direction": "",
+                        "fadeSpeed": "2"
+                    },
+                    "id": "56662147-2fbc-4335-9aac-602a49c13cf4"
+                }
+            ],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": []
+        },
+        {
+            "name": "Room1b",
+            "backgroundId": "e66261a6-3e2a-458d-95d5-5b208e5c5724",
+            "width": 20,
+            "height": 18,
+            "type": "POINTNCLICK",
+            "paletteIds": [],
+            "spritePaletteIds": [],
+            "collisions": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "autoFadeSpeed": 3,
+            "id": "1f559bba-fc30-4a60-b03c-2f6c41d994ed",
+            "symbol": "scene_9",
+            "x": 493,
+            "y": 564,
+            "actors": [],
+            "triggers": [
+                {
+                    "name": "Pocket",
+                    "id": "c3104733-531c-437f-8a02-aab73048d8b4",
+                    "x": 14,
+                    "y": 1,
+                    "symbol": "trigger_18",
+                    "width": 5,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "193a7499-7aa9-4e62-a244-20bf6c8a0a11",
+                                "x": 9,
+                                "y": 8,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "d048bcd7-92a6-4dbf-ab32-4d9244391786"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Self",
+                    "id": "3c4e7a78-67a1-42bd-a58b-d1c410fd4b8b",
+                    "x": 9,
+                    "y": 1,
+                    "symbol": "trigger_19",
+                    "width": 4,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                            "args": {
+                                "customEventId": "b4f78f19-e155-4eaa-ac6f-d4bad3f09aa9"
+                            },
+                            "id": "cf2bd003-0546-487c-af68-94b9843d93dc"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Loose Stone",
+                    "id": "d6df5408-9a59-4a61-b213-3b3823f31653",
+                    "x": 5,
+                    "y": 9,
+                    "symbol": "trigger_20",
+                    "width": 1,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "2",
+                                "__collapseElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_IF_FLAGS_COMPARE",
+                                        "args": {
+                                            "variable": "1",
+                                            "flag": 0,
+                                            "__collapseElse": false,
+                                            "__collapse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "BAM!",
+                                                            "A key is underneath.\nTake it?"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "fda0a164-1933-4257-aefb-b6282d4717bd"
+                                                },
+                                                {
+                                                    "command": "EVENT_MENU",
+                                                    "args": {
+                                                        "variable": "2",
+                                                        "items": 2,
+                                                        "option1": "Yes",
+                                                        "option2": "No",
+                                                        "option3": "",
+                                                        "option4": "",
+                                                        "option5": "",
+                                                        "option6": "",
+                                                        "option7": "",
+                                                        "option8": "",
+                                                        "cancelOnB": true,
+                                                        "layout": "dialogue",
+                                                        "cancelOnLastOption": true
+                                                    },
+                                                    "id": "6c0ccaa0-b1b7-4a6e-94c7-ce2b0210bc6b"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Key added to\npocket."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "af45da45-1238-4841-8aeb-87410a0f5900"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "The stone looks\nworn here.",
+                                                            "Looks like \nsomething might \nbe behind it."
+                                                        ],
+                                                        "avatarId": "",
+                                                        "__collapse": false
+                                                    },
+                                                    "id": "1b23d807-d2b4-452d-9977-28fd33df6a0c"
+                                                }
+                                            ]
+                                        },
+                                        "id": "7d50f953-7716-4c33-aca1-2d68e2b0849f"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "c0ce7e78-12e2-4fa5-ae4f-a4b87ddc3eba"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Door",
+                    "id": "7b0bd72e-36f4-4741-b41e-5f23741351da",
+                    "x": 10,
+                    "y": 7,
+                    "symbol": "trigger_21",
+                    "width": 6,
+                    "height": 11,
+                    "script": [
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "3",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_SWITCH_SCENE",
+                                        "args": {
+                                            "sceneId": "34cf9c4c-475b-441c-80e3-6a78afbd37b5",
+                                            "x": 9,
+                                            "y": 8,
+                                            "direction": "",
+                                            "fadeSpeed": "2"
+                                        },
+                                        "id": "eb13e305-0510-4fd8-84e7-4f66b1859dd5"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_IF_FLAGS_COMPARE",
+                                        "args": {
+                                            "variable": "1",
+                                            "flag": 1,
+                                            "__collapseElse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "The key fit. The \ndoor unlocks\nand opens."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "26d138f4-1473-478e-82e7-8b5906589b9d"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "The door is\nlocked.",
+                                                            "Only if I had\na key."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "f2220273-d127-46ba-a921-abcf9462f57b"
+                                                }
+                                            ]
+                                        },
+                                        "id": "9da31d8c-508a-4573-949f-0c0f9f95e250"
+                                    }
+                                ]
+                            },
+                            "id": "629a16c8-c9ad-4a0f-b04d-c279abd8e0b8"
+                        }
+                    ],
+                    "leaveScript": []
+                }
+            ],
+            "script": [
+                {
+                    "command": "EVENT_ACTOR_DEACTIVATE",
+                    "args": {
+                        "actorId": "$self$"
+                    },
+                    "id": "8209add7-a1da-446c-a73d-2dbbb56708aa"
+                },
+                {
+                    "command": "EVENT_CALL_CUSTOM_EVENT",
+                    "args": {
+                        "customEventId": "97192b4e-8a22-4619-b2e9-d455c381d53f",
+                        "$variable[V0]$": {
+                            "type": "number",
+                            "value": 0
+                        }
+                    },
+                    "id": "31c13e6e-dad4-46f8-bcf6-ddfcaeee0eee"
+                },
+                {
+                    "command": "EVENT_CALL_CUSTOM_EVENT",
+                    "args": {
+                        "customEventId": "981a8cf9-d5e0-4216-a543-0662c764a457"
+                    },
+                    "id": "4b29e0ba-90e6-41af-843e-2942aeeac96e"
+                },
+                {
+                    "command": "EVENT_ACTOR_ACTIVATE",
+                    "args": {
+                        "actorId": "$self$"
+                    },
+                    "id": "80cd0e74-367a-4401-9a3d-c5e3ecd05f53"
+                }
+            ],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": [],
+            "playerSpriteSheetId": "773989d5-00d1-4871-9662-98189265c08b",
+            "parallax": [
+                {
+                    "height": 3,
+                    "speed": 1
+                },
+                {
+                    "height": 0,
+                    "speed": 0
+                }
+            ]
+        },
+        {
+            "name": "BamFail",
+            "backgroundId": "e8b834ac-bff2-47e6-9b14-10efb83174fc",
+            "width": 20,
+            "height": 18,
+            "type": "TOPDOWN",
+            "paletteIds": [],
+            "spritePaletteIds": [],
+            "collisions": [],
+            "autoFadeSpeed": 1,
+            "id": "571f62e1-5faa-4fc1-b3db-59c3b2d42618",
+            "symbol": "scene_10",
+            "x": 938,
+            "y": 333,
+            "actors": [],
+            "triggers": [],
+            "script": [
+                {
+                    "command": "EVENT_ACTOR_DEACTIVATE",
+                    "args": {
+                        "actorId": "$self$"
+                    },
+                    "id": "286b614e-dd50-4433-9626-42554b4f68d2"
+                },
+                {
+                    "command": "EVENT_WAIT",
+                    "args": {
+                        "time": 2,
+                        "frames": 30
+                    },
+                    "id": "ed045ea1-6c84-410d-8871-411a77b4fac8"
+                },
+                {
+                    "command": "EVENT_SCENE_POP_STATE",
+                    "args": {
+                        "fadeSpeed": "2"
+                    },
+                    "id": "8ecce37c-fbc9-4477-b7f1-dd1a0431055a"
+                }
+            ],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": []
         }
     ],
     "backgrounds": [
+        {
+            "id": "e8b834ac-bff2-47e6-9b14-10efb83174fc",
+            "name": "Bam",
+            "symbol": "bg_bam",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Bam.png"
+        },
         {
             "id": "71180729-ecab-439e-b6e8-456ef1739ee0",
             "name": "Logo",
@@ -2815,19 +3563,137 @@
             "id": "b4f78f19-e155-4eaa-ac6f-d4bad3f09aa9",
             "name": "SelfScript",
             "description": "",
-            "variables": {},
+            "variables": {
+                "V0": {
+                    "id": "V0",
+                    "name": "Variable A",
+                    "passByReference": true
+                }
+            },
             "actors": {},
             "symbol": "script_1",
             "script": [
                 {
-                    "command": "EVENT_TEXT",
+                    "command": "EVENT_SWITCH",
                     "args": {
-                        "text": [
-                            "Fap Fap Fap!"
-                        ],
-                        "avatarId": ""
+                        "variable": "1",
+                        "choices": 3,
+                        "__collapseCase0": false,
+                        "value0": 0,
+                        "__collapseCase1": false,
+                        "value1": 1,
+                        "__collapseCase2": false,
+                        "value2": 2,
+                        "__collapseCase3": false,
+                        "value3": 4,
+                        "__collapseCase4": false,
+                        "value4": 5,
+                        "__collapseCase5": false,
+                        "value5": 6,
+                        "__collapseCase6": false,
+                        "value6": 7,
+                        "__collapseCase7": false,
+                        "value7": 8,
+                        "__collapseCase8": false,
+                        "value8": 9,
+                        "__collapseCase9": false,
+                        "value9": 10,
+                        "__collapseCase10": false,
+                        "value10": 11,
+                        "__collapseCase11": false,
+                        "value11": 12,
+                        "__collapseCase12": false,
+                        "value12": 13,
+                        "__collapseCase13": false,
+                        "value13": 14,
+                        "__collapseCase14": false,
+                        "value14": 15,
+                        "__collapseCase15": false,
+                        "value15": 16,
+                        "__collapseElse": false
                     },
-                    "id": "bb7ef7b6-2be8-48ac-b30c-e54886867f0d"
+                    "children": {
+                        "true0": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Fap Fap Fap!"
+                                    ],
+                                    "avatarId": "",
+                                    "__collapse": false
+                                },
+                                "id": "bb7ef7b6-2be8-48ac-b30c-e54886867f0d"
+                            }
+                        ],
+                        "true1": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Ouch!"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "95f7692f-d9ea-429e-a165-4edb18751424"
+                            }
+                        ],
+                        "true2": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Where should \nthe key \nbe inserted?"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "fed549d4-105e-4382-822a-4df40ed0e8c7"
+                            },
+                            {
+                                "command": "EVENT_MENU",
+                                "args": {
+                                    "variable": "V0",
+                                    "items": 3,
+                                    "option1": "Mouth",
+                                    "option2": "Ear",
+                                    "option3": "Butt",
+                                    "option4": "",
+                                    "option5": "",
+                                    "option6": "",
+                                    "option7": "",
+                                    "option8": "",
+                                    "cancelOnB": true,
+                                    "layout": "dialogue"
+                                },
+                                "id": "37e4618d-7477-43f1-bac3-1dfbc6061eda"
+                            },
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Nothing happens"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "32f99cfa-e420-467f-9f0f-5d6e196d199d"
+                            }
+                        ],
+                        "true3": [],
+                        "true4": [],
+                        "true5": [],
+                        "true6": [],
+                        "true7": [],
+                        "true8": [],
+                        "true9": [],
+                        "true10": [],
+                        "true11": [],
+                        "true12": [],
+                        "true13": [],
+                        "true14": [],
+                        "true15": [],
+                        "false": []
+                    },
+                    "id": "7f8a8b17-68a7-4814-b2dc-d366d9a1a322"
                 }
             ]
         },
@@ -3241,14 +4107,14 @@
             "symbol": "var_room1doorunlocked"
         },
         {
-            "id": "4",
-            "name": "Variable 5",
-            "symbol": "var_variable_5"
-        },
-        {
             "id": "5",
             "name": "room1Dialog",
             "symbol": "var_room1dialog"
+        },
+        {
+            "id": "4",
+            "name": "sceneAfterBam",
+            "symbol": "var_sceneafterbam"
         }
     ],
     "engineFieldValues": [
@@ -3266,9 +4132,9 @@
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 69,
-        "worldScrollY": 538,
-        "zoom": 200,
+        "worldScrollX": 0,
+        "worldScrollY": 0,
+        "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
