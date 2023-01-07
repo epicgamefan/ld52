@@ -849,7 +849,53 @@
             "x": 109,
             "y": 318,
             "actors": [],
-            "triggers": [],
+            "triggers": [
+                {
+                    "name": "Right",
+                    "id": "bbfc6669-6e05-469d-88d9-bcef3734e6f9",
+                    "x": 17,
+                    "y": 8,
+                    "symbol": "trigger_4",
+                    "width": 3,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "9af3803e-f5a0-427f-a3fb-2ad8da5a2a8a",
+                                "x": 0,
+                                "y": 0,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "955b970d-a87b-441f-8cd5-ff20d5508ea6"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Ok",
+                    "id": "9d12d236-a69d-4628-be24-d31f142c4cc1",
+                    "x": 10,
+                    "y": 15,
+                    "symbol": "trigger_5",
+                    "width": 3,
+                    "height": 2,
+                    "script": [],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Cancel",
+                    "id": "9dcf49d9-e4d9-4f16-bb2e-b42c05e8ca92",
+                    "x": 14,
+                    "y": 15,
+                    "symbol": "trigger_6",
+                    "width": 5,
+                    "height": 2,
+                    "script": [],
+                    "leaveScript": []
+                }
+            ],
             "script": [],
             "playerHit1Script": [],
             "playerHit2Script": [],
@@ -870,7 +916,53 @@
             "x": 471,
             "y": 321,
             "actors": [],
-            "triggers": [],
+            "triggers": [
+                {
+                    "name": "Left",
+                    "id": "f534a30f-8510-4762-9ea5-d044d07c6bb7",
+                    "x": 0,
+                    "y": 8,
+                    "symbol": "trigger_9",
+                    "width": 3,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "9af3803e-f5a0-427f-a3fb-2ad8da5a2a8a",
+                                "x": 0,
+                                "y": 0,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "630e5dc8-90f8-4e6d-a450-110049398a6e"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Ok",
+                    "id": "55d437cb-cc7e-4ac0-92a5-2716312c6edc",
+                    "x": 10,
+                    "y": 15,
+                    "symbol": "trigger_12",
+                    "width": 3,
+                    "height": 2,
+                    "script": [],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Cancel",
+                    "id": "0aa9ff0d-b705-42d8-9901-9b11bce0b678",
+                    "x": 14,
+                    "y": 15,
+                    "symbol": "trigger_13",
+                    "width": 5,
+                    "height": 2,
+                    "script": [],
+                    "leaveScript": []
+                }
+            ],
             "script": [],
             "playerHit1Script": [],
             "playerHit2Script": [],
@@ -891,7 +983,76 @@
             "x": 290,
             "y": 319,
             "actors": [],
-            "triggers": [],
+            "triggers": [
+                {
+                    "name": "Right",
+                    "id": "e635c402-abf7-4557-9156-2a527118cd31",
+                    "x": 17,
+                    "y": 8,
+                    "symbol": "trigger_7",
+                    "width": 3,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "fd2ed30d-336c-410d-a7cd-3a815bf6e4b3",
+                                "x": 0,
+                                "y": 0,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "ade282b4-72b3-4145-9039-490a91215e74"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Left",
+                    "id": "75fc987b-1c88-4bc4-8605-4ad0ad606d41",
+                    "x": 0,
+                    "y": 8,
+                    "symbol": "trigger_8",
+                    "width": 3,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "193a7499-7aa9-4e62-a244-20bf6c8a0a11",
+                                "x": 0,
+                                "y": 0,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "bdce0c73-eeac-4bb1-8724-76856c8fb82a"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Ok",
+                    "id": "01a3757d-7d7f-48b1-9f0f-a2e7bd132c72",
+                    "x": 10,
+                    "y": 15,
+                    "symbol": "trigger_10",
+                    "width": 3,
+                    "height": 2,
+                    "script": [],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Cancel",
+                    "id": "7c2bab06-b85e-46a8-85f8-2681600c8323",
+                    "x": 14,
+                    "y": 15,
+                    "symbol": "trigger_11",
+                    "width": 5,
+                    "height": 2,
+                    "script": [],
+                    "leaveScript": []
+                }
+            ],
             "script": [],
             "playerHit1Script": [],
             "playerHit2Script": [],
@@ -1917,9 +2078,9 @@
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1,
-        "worldScrollY": 600,
-        "zoom": 200,
+        "worldScrollX": 611,
+        "worldScrollY": 804,
+        "zoom": 300,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
