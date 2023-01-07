@@ -643,10 +643,10 @@
                 {
                     "name": "Loose Stone",
                     "id": "fbce7764-1cbe-4067-ada5-c0d09461df10",
-                    "x": 4,
+                    "x": 5,
                     "y": 9,
                     "symbol": "trigger_2",
-                    "width": 3,
+                    "width": 1,
                     "height": 2,
                     "script": [
                         {
@@ -1583,37 +1583,6 @@
                                             "priority": false
                                         }
                                     ]
-                                },
-                                {
-                                    "id": "01827a93-ef2f-4cb2-b064-54c2790ab2c0",
-                                    "tiles": [
-                                        {
-                                            "id": "37a9cc33-2379-401e-8080-a304737065a0",
-                                            "x": 0,
-                                            "y": 0,
-                                            "sliceX": 16,
-                                            "sliceY": 0,
-                                            "flipX": false,
-                                            "flipY": false,
-                                            "palette": 0,
-                                            "paletteIndex": 0,
-                                            "objPalette": "OBP0",
-                                            "priority": false
-                                        },
-                                        {
-                                            "id": "b225d71e-49c8-4625-8852-561d0a22fb16",
-                                            "x": 8,
-                                            "y": 0,
-                                            "sliceX": 24,
-                                            "sliceY": 0,
-                                            "flipX": false,
-                                            "flipY": false,
-                                            "palette": 0,
-                                            "paletteIndex": 0,
-                                            "objPalette": "OBP0",
-                                            "priority": false
-                                        }
-                                    ]
                                 }
                             ]
                         },
@@ -1622,7 +1591,34 @@
                             "frames": [
                                 {
                                     "id": "863c2181-3811-4bf1-bacd-5326e8302abf",
-                                    "tiles": []
+                                    "tiles": [
+                                        {
+                                            "id": "7a3b69f6-40bc-48f4-9361-24526b4baf0f",
+                                            "x": 0,
+                                            "y": 0,
+                                            "sliceX": 16,
+                                            "sliceY": 0,
+                                            "palette": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "objPalette": "OBP0",
+                                            "paletteIndex": 0,
+                                            "priority": false
+                                        },
+                                        {
+                                            "id": "6e6cea79-b98f-45fd-a9a1-bc7faeaa0fc3",
+                                            "x": 8,
+                                            "y": 0,
+                                            "sliceX": 24,
+                                            "sliceY": 0,
+                                            "palette": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "objPalette": "OBP0",
+                                            "paletteIndex": 0,
+                                            "priority": false
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -3093,12 +3089,12 @@
         "startX": 0,
         "startY": 0,
         "startMoveSpeed": 1,
-        "startAnimSpeed": 15,
+        "startAnimSpeed": 127,
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 69,
-        "worldScrollY": 2,
+        "worldScrollY": 900,
         "zoom": 200,
         "customColorsEnabled": false,
         "sgbEnabled": false,
@@ -3127,9 +3123,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            400,
             205,
-            351
+            205,
+            546
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
