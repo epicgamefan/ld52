@@ -2095,6 +2095,13 @@
                                         "id": "26d138f4-1473-478e-82e7-8b5906589b9d"
                                     },
                                     {
+                                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                                        "args": {
+                                            "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89"
+                                        },
+                                        "id": "91888479-58c2-458f-adcd-e43641502770"
+                                    },
+                                    {
                                         "command": "EVENT_SWITCH_SCENE",
                                         "args": {
                                             "sceneId": "9d8e896c-706f-4a34-afd9-b8a3d52ef326",
@@ -2671,7 +2678,7 @@
         },
         {
             "name": "Room2a",
-            "backgroundId": "e4f7bb4a-9726-4183-b55f-d93b7d436809",
+            "backgroundId": "750c7523-467b-43b5-b640-a1fa5cdc6b51",
             "width": 20,
             "height": 18,
             "type": "POINTNCLICK",
@@ -3119,7 +3126,7 @@
         },
         {
             "name": "Room2b",
-            "backgroundId": "e4f7bb4a-9726-4183-b55f-d93b7d436809",
+            "backgroundId": "36f8297a-ab9b-48fa-b4eb-6985cb30a268",
             "width": 20,
             "height": 18,
             "type": "POINTNCLICK",
@@ -3641,7 +3648,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "Room1b.png"
+            "filename": "Room1b.png",
+            "tileColors": []
         },
         {
             "id": "e4f7bb4a-9726-4183-b55f-d93b7d436809",
@@ -3651,7 +3659,28 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "Room1c.png"
+            "filename": "Room1c.png",
+            "tileColors": []
+        },
+        {
+            "id": "750c7523-467b-43b5-b640-a1fa5cdc6b51",
+            "name": "Room2",
+            "symbol": "bg_room2",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room2.png"
+        },
+        {
+            "id": "36f8297a-ab9b-48fa-b4eb-6985cb30a268",
+            "name": "Room2b",
+            "symbol": "bg_room2b",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room2b.png"
         },
         {
             "id": "49382a97-0272-40c3-b079-8eafd89ae8e4",
@@ -5478,16 +5507,6 @@
             "symbol": "var_itemkey1"
         },
         {
-            "id": "3",
-            "name": "room1DoorUnlocked",
-            "symbol": "var_room1doorunlocked"
-        },
-        {
-            "id": "4",
-            "name": "sceneAfterBam",
-            "symbol": "var_sceneafterbam"
-        },
-        {
             "id": "5",
             "name": "room1Dialog",
             "symbol": "var_room1dialog"
@@ -5509,7 +5528,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 0,
-        "worldScrollY": 26,
+        "worldScrollY": 13,
         "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,
