@@ -6,7 +6,7 @@
     "scenes": [
         {
             "name": "Logo",
-            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "backgroundId": "71180729-ecab-439e-b6e8-456ef1739ee0",
             "width": 20,
             "height": 18,
             "type": "POINTNCLICK",
@@ -54,7 +54,7 @@
         },
         {
             "name": "Title",
-            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "backgroundId": "49382a97-0272-40c3-b079-8eafd89ae8e4",
             "width": 20,
             "height": 18,
             "type": "POINTNCLICK",
@@ -64,7 +64,7 @@
             "autoFadeSpeed": 3,
             "id": "f5ff8811-308c-4f46-9c16-4008e4ff4b95",
             "symbol": "scene_2",
-            "x": 544,
+            "x": 437,
             "y": 93,
             "actors": [],
             "triggers": [],
@@ -124,18 +124,166 @@
             "autoFadeSpeed": 3,
             "id": "14d1a58c-6cd0-4294-b8ea-09c2134395f1",
             "symbol": "scene_3",
-            "x": 240,
-            "y": 390,
-            "actors": [],
-            "triggers": [],
-            "script": [
+            "x": 101,
+            "y": 567,
+            "actors": [
                 {
-                    "command": "EVENT_ACTOR_DEACTIVATE",
-                    "args": {
-                        "actorId": "$self$"
-                    },
-                    "id": "c1e7e291-d9b2-4724-b1a8-09960f9dc971"
+                    "name": "Mallet",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 255,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_0",
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "A Mallet! \nDo you take it?"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "dd2b6ca5-e92c-46e1-8dba-df9d556b5cc0"
+                        },
+                        {
+                            "command": "EVENT_MENU",
+                            "args": {
+                                "variable": "0",
+                                "items": 2,
+                                "option1": "Yes",
+                                "option2": "No",
+                                "option3": "",
+                                "option4": "",
+                                "option5": "",
+                                "option6": "",
+                                "option7": "",
+                                "option8": "",
+                                "cancelOnB": true,
+                                "layout": "dialogue",
+                                "cancelOnLastOption": true
+                            },
+                            "id": "c6c0ad5b-47ba-4968-aa70-30df90ff7b17"
+                        },
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "0",
+                                "__collapseElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_DEACTIVATE",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        },
+                                        "id": "47763856-ef55-4d7b-b920-e1e34c02ac32"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Mallet added to \npocket."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "27b1c1fe-a8aa-4b54-92fc-0054b69ac057"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "338d0842-e52f-493f-9ab8-bbeffa411389"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "df7a6b02-840d-4406-a8e2-bb028ea2d0ac",
+                    "x": 13,
+                    "y": 9
                 },
+                {
+                    "name": "Loose Stone",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "symbol": "actor_1",
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "The stone looks\nworn here.",
+                                    "Looks like \nsomething might \nbe behind it."
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "c263ab25-9f02-4605-afeb-85f0a87056ac"
+                        },
+                        {
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "2",
+                                "operator": "==",
+                                "comparator": null,
+                                "__collapseElse": true
+                            },
+                            "children": {
+                                "true": [],
+                                "false": []
+                            },
+                            "id": "f1c80c0d-6684-4ac3-8a5c-6b98cb1b2fe9"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "389e8942-f1cc-4287-87ad-090492a112f8",
+                    "x": 5,
+                    "y": 9
+                }
+            ],
+            "triggers": [
+                {
+                    "name": "Pocket",
+                    "id": "ef3f646c-017f-44e7-a62a-50606ab86de1",
+                    "x": 13,
+                    "y": 13,
+                    "symbol": "trigger_0",
+                    "width": 5,
+                    "height": 4,
+                    "script": [],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Self",
+                    "id": "9b2d97b6-0260-4716-92da-7bb7f550ff3a",
+                    "x": 4,
+                    "y": 13,
+                    "symbol": "trigger_1",
+                    "width": 4,
+                    "height": 4,
+                    "script": [],
+                    "leaveScript": []
+                }
+            ],
+            "script": [
                 {
                     "command": "EVENT_TEXT",
                     "args": {
@@ -161,7 +309,8 @@
             ],
             "playerHit1Script": [],
             "playerHit2Script": [],
-            "playerHit3Script": []
+            "playerHit3Script": [],
+            "playerSpriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd"
         },
         {
             "name": "Room2",
@@ -175,8 +324,71 @@
             "autoFadeSpeed": 1,
             "id": "34cf9c4c-475b-441c-80e3-6a78afbd37b5",
             "symbol": "scene_4",
-            "x": 509,
-            "y": 394,
+            "x": 290,
+            "y": 564,
+            "actors": [],
+            "triggers": [],
+            "script": [],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": []
+        },
+        {
+            "name": "Menu1",
+            "backgroundId": "89dfafee-e91a-4531-b6d4-4904074e62d8",
+            "width": 20,
+            "height": 18,
+            "type": "POINTNCLICK",
+            "paletteIds": [],
+            "spritePaletteIds": [],
+            "collisions": [],
+            "autoFadeSpeed": 1,
+            "id": "193a7499-7aa9-4e62-a244-20bf6c8a0a11",
+            "symbol": "scene_5",
+            "x": 109,
+            "y": 318,
+            "actors": [],
+            "triggers": [],
+            "script": [],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": []
+        },
+        {
+            "name": "Menu3",
+            "backgroundId": "c176eb70-6bf7-4a4e-9cda-f17a9423bfcc",
+            "width": 20,
+            "height": 18,
+            "type": "POINTNCLICK",
+            "paletteIds": [],
+            "spritePaletteIds": [],
+            "collisions": [],
+            "autoFadeSpeed": 1,
+            "id": "fd2ed30d-336c-410d-a7cd-3a815bf6e4b3",
+            "symbol": "scene_6",
+            "x": 471,
+            "y": 321,
+            "actors": [],
+            "triggers": [],
+            "script": [],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": []
+        },
+        {
+            "name": "Menu2",
+            "backgroundId": "434b3ae2-788e-41da-a5bf-6464ab9e92ce",
+            "width": 20,
+            "height": 18,
+            "type": "POINTNCLICK",
+            "paletteIds": [],
+            "spritePaletteIds": [],
+            "collisions": [],
+            "autoFadeSpeed": 1,
+            "id": "9af3803e-f5a0-427f-a3fb-2ad8da5a2a8a",
+            "symbol": "scene_7",
+            "x": 290,
+            "y": 319,
             "actors": [],
             "triggers": [],
             "script": [],
@@ -186,6 +398,72 @@
         }
     ],
     "backgrounds": [
+        {
+            "id": "71180729-ecab-439e-b6e8-456ef1739ee0",
+            "name": "Logo",
+            "symbol": "bg_logo",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Logo.png",
+            "tileColors": []
+        },
+        {
+            "id": "89dfafee-e91a-4531-b6d4-4904074e62d8",
+            "name": "Menu1",
+            "symbol": "bg_menu1",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Menu1.png",
+            "tileColors": []
+        },
+        {
+            "id": "434b3ae2-788e-41da-a5bf-6464ab9e92ce",
+            "name": "Menu2",
+            "symbol": "bg_menu2",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Menu2.png",
+            "tileColors": []
+        },
+        {
+            "id": "c176eb70-6bf7-4a4e-9cda-f17a9423bfcc",
+            "name": "Menu3",
+            "symbol": "bg_menu3",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Menu3.png",
+            "tileColors": []
+        },
+        {
+            "id": "3919a7b1-a980-4830-9274-1865ba7e2dfa",
+            "name": "Room0",
+            "symbol": "bg_room0",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room0.png",
+            "tileColors": []
+        },
+        {
+            "id": "49382a97-0272-40c3-b079-8eafd89ae8e4",
+            "name": "Title",
+            "symbol": "bg_title",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Title.png",
+            "tileColors": []
+        },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
             "name": "placeholder",
@@ -1101,7 +1379,18 @@
             "filename": "sweat.png"
         }
     ],
-    "variables": [],
+    "variables": [
+        {
+            "id": "0",
+            "name": "hasMallet",
+            "symbol": "var_hasmallet"
+        },
+        {
+            "id": "1",
+            "name": "hitBrick",
+            "symbol": "var_hitbrick"
+        }
+    ],
     "engineFieldValues": [
         {
             "id": "fade_style",
@@ -1109,12 +1398,12 @@
         }
     ],
     "settings": {
-        "startSceneId": "0901f318-60af-41c7-8056-811bfb874ee1",
-        "startX": 8,
-        "startY": 4,
+        "startSceneId": "14d1a58c-6cd0-4294-b8ea-09c2134395f1",
+        "startX": 7,
+        "startY": 3,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
-        "startDirection": "down",
+        "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 0,
