@@ -996,7 +996,7 @@
                         {
                             "command": "EVENT_PLAYER_SET_SPRITE",
                             "args": {
-                                "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+                                "spriteSheetId": "b949159a-44fc-4591-ae8a-520840e0984f",
                                 "persist": true
                             },
                             "id": "57904320-4ba3-4748-ac09-cf178ee81108"
@@ -8071,7 +8071,7 @@
         },
         {
             "name": "Room7a",
-            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "backgroundId": "5146c337-2b05-41f1-a244-bb24ada105af",
             "width": 20,
             "height": 18,
             "type": "POINTNCLICK",
@@ -8487,6 +8487,29 @@
                         }
                     ],
                     "leaveScript": []
+                },
+                {
+                    "name": "",
+                    "id": "b5926f7f-0e48-40c9-af52-762fc40e183c",
+                    "x": 9,
+                    "y": 15,
+                    "symbol": "trigger_57",
+                    "width": 2,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "3329f48d-1deb-40cc-84aa-a52313a576af",
+                                "x": 0,
+                                "y": 0,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "65cc5e76-d48b-4f28-9234-0c8cad815fa1"
+                        }
+                    ],
+                    "leaveScript": []
                 }
             ],
             "script": [
@@ -8681,7 +8704,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "Room5.png"
+            "filename": "Room5.png",
+            "tileColors": []
         },
         {
             "id": "8032ba72-aa24-4cb6-9e2e-022ea554fef0",
@@ -8691,7 +8715,18 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "Room5b.png"
+            "filename": "Room5b.png",
+            "tileColors": []
+        },
+        {
+            "id": "5146c337-2b05-41f1-a244-bb24ada105af",
+            "name": "Room7",
+            "symbol": "bg_room7",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room7.png"
         },
         {
             "id": "49382a97-0272-40c3-b079-8eafd89ae8e4",
@@ -12009,9 +12044,9 @@
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 48,
-        "worldScrollY": 618,
-        "zoom": 100,
+        "worldScrollX": 0,
+        "worldScrollY": 278,
+        "zoom": 200,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
