@@ -2248,7 +2248,7 @@
                 {
                     "command": "EVENT_WAIT",
                     "args": {
-                        "time": 2,
+                        "time": 1,
                         "frames": 30
                     },
                     "id": "813b5225-0796-486e-bbf7-3d2471270f1c"
@@ -2883,7 +2883,7 @@
                 {
                     "command": "EVENT_WAIT",
                     "args": {
-                        "time": 2,
+                        "time": 1,
                         "frames": 30
                     },
                     "id": "ed045ea1-6c84-410d-8871-411a77b4fac8"
@@ -15426,7 +15426,7 @@
                 {
                     "command": "EVENT_WAIT",
                     "args": {
-                        "time": 2,
+                        "time": 1,
                         "frames": 30
                     },
                     "id": "c5698081-faac-4afd-9c21-4e1ced75b5a5"
@@ -16779,7 +16779,91 @@
                     "symbol": "trigger_108",
                     "width": 8,
                     "height": 10,
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_IF_VALUE_COMPARE",
+                            "args": {
+                                "vectorX": "1",
+                                "operator": "==",
+                                "vectorY": "41",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "The monster is \nstunned!"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "f2c7ce91-3578-42b2-9ac4-fe1ab597fb41"
+                                    },
+                                    {
+                                        "command": "EVENT_SWITCH_SCENE",
+                                        "args": {
+                                            "sceneId": "a21d8cde-72eb-4e0c-b2a3-7b6c402448b6",
+                                            "x": 0,
+                                            "y": 0,
+                                            "direction": "",
+                                            "fadeSpeed": "2"
+                                        },
+                                        "id": "225fb1bf-0cae-479f-a18c-b4dc06f420bd"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "That was dumb..\nYou get knocked \non your ass...",
+                                                "Not sure how much \nof this I can \nhandle..."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "0975679d-f174-4334-b629-e658e8125a27"
+                                    },
+                                    {
+                                        "command": "EVENT_INC_VALUE",
+                                        "args": {
+                                            "variable": "48",
+                                            "__collapse": true
+                                        },
+                                        "id": "c6588de3-a26a-41aa-91aa-cfc1ef09da29"
+                                    },
+                                    {
+                                        "command": "EVENT_IF_VALUE_COMPARE",
+                                        "args": {
+                                            "vectorX": "48",
+                                            "operator": "==",
+                                            "vectorY": "49",
+                                            "__collapseElse": true,
+                                            "__collapse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_SWITCH_SCENE",
+                                                    "args": {
+                                                        "sceneId": "dd51180c-773e-4139-b48d-d34204233893",
+                                                        "x": 0,
+                                                        "y": 0,
+                                                        "direction": "",
+                                                        "fadeSpeed": "2"
+                                                    },
+                                                    "id": "ee7a725c-6e4c-4e46-9cd7-65ea6e92c9aa"
+                                                }
+                                            ],
+                                            "false": []
+                                        },
+                                        "id": "25b38e54-8fe1-4a4a-bfe2-6622e9af8dc8"
+                                    }
+                                ]
+                            },
+                            "id": "fbc88b40-36c3-4189-840d-93b1a26f1eb2"
+                        }
+                    ],
                     "leaveScript": []
                 }
             ],
@@ -18315,7 +18399,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "Room3b.png"
+            "filename": "Room3b.png",
+            "tileColors": []
         },
         {
             "id": "fe4e0d36-a68a-413f-ae53-0ccf77cabc9d",
@@ -21935,6 +22020,17 @@
                                                 "variable": "42"
                                             },
                                             "id": "497d2b1a-f2ee-4057-8563-522c220559f6"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "23",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 2
+                                                }
+                                            },
+                                            "id": "63e20f5b-01ba-4936-8ef9-6130ca067a17"
                                         }
                                     ],
                                     "false": [
@@ -23063,6 +23159,18 @@
                         "__collapse": true
                     },
                     "id": "2ca29482-47e1-45ee-ae45-55c3d5ebf61a"
+                },
+                {
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "49",
+                        "value": {
+                            "type": "number",
+                            "value": 3
+                        },
+                        "__collapse": true
+                    },
+                    "id": "9846ec93-d5b6-48c7-bd74-91b5971ba493"
                 }
             ]
         },
@@ -23651,6 +23759,51 @@
                     "id": "389cc6cd-01ee-42e1-97f1-3a08c79cfc25"
                 }
             ]
+        },
+        {
+            "id": "00dbd708-8652-4110-bc05-6d20c974be7d",
+            "name": "DoPlayerDamage",
+            "description": "",
+            "variables": {},
+            "actors": {},
+            "symbol": "script_22",
+            "script": [
+                {
+                    "command": "EVENT_INC_VALUE",
+                    "args": {
+                        "variable": "48",
+                        "__collapse": true
+                    },
+                    "id": "65bb06c2-5dfa-4139-aecb-f5d54ce4d4ea"
+                },
+                {
+                    "command": "EVENT_IF_VALUE_COMPARE",
+                    "args": {
+                        "vectorX": "48",
+                        "operator": "==",
+                        "vectorY": "49",
+                        "__collapseElse": true,
+                        "__collapse": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_SWITCH_SCENE",
+                                "args": {
+                                    "sceneId": "dd51180c-773e-4139-b48d-d34204233893",
+                                    "x": 0,
+                                    "y": 0,
+                                    "direction": "",
+                                    "fadeSpeed": "2"
+                                },
+                                "id": "994e638b-f140-490d-a17a-e29f410305d8"
+                            }
+                        ],
+                        "false": []
+                    },
+                    "id": "b91e6af1-36ad-4bed-bfcc-a47720edee1e"
+                }
+            ]
         }
     ],
     "music": [
@@ -23989,6 +24142,16 @@
             "id": "47",
             "name": "room9State",
             "symbol": "var_room9state"
+        },
+        {
+            "id": "48",
+            "name": "damage",
+            "symbol": "var_damage"
+        },
+        {
+            "id": "49",
+            "name": "deathDamage",
+            "symbol": "var_deathdamage"
         }
     ],
     "engineFieldValues": [
@@ -24007,7 +24170,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 0,
-        "worldScrollY": 0,
+        "worldScrollY": 822,
         "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,
