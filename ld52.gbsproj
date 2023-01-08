@@ -9685,6 +9685,16 @@
             "tileColors": []
         },
         {
+            "id": "31f85426-0927-459b-9eaf-5487c936a583",
+            "name": "Room8",
+            "symbol": "bg_room8",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Room8.png"
+        },
+        {
             "id": "49382a97-0272-40c3-b079-8eafd89ae8e4",
             "name": "Title",
             "symbol": "bg_title",
@@ -13222,13 +13232,7 @@
             "id": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89",
             "name": "EmptyHand",
             "description": "",
-            "variables": {
-                "V0": {
-                    "id": "V0",
-                    "name": "Variable A",
-                    "passByReference": true
-                }
-            },
+            "variables": {},
             "actors": {},
             "symbol": "script_8",
             "script": [
@@ -13238,33 +13242,10 @@
                         "variable": "1",
                         "value": {
                             "type": "variable",
-                            "value": "V0"
+                            "value": "22"
                         }
                     },
                     "id": "f0a17bf9-1d99-4cd1-aeeb-9066a313a565"
-                },
-                {
-                    "command": "EVENT_CLEAR_FLAGS",
-                    "args": {
-                        "variable": "1",
-                        "flag1": true,
-                        "flag2": true,
-                        "flag3": true,
-                        "flag4": true,
-                        "flag5": true,
-                        "flag6": true,
-                        "flag7": true,
-                        "flag8": true,
-                        "flag9": true,
-                        "flag10": true,
-                        "flag11": true,
-                        "flag12": true,
-                        "flag13": true,
-                        "flag14": true,
-                        "flag15": true,
-                        "flag16": true
-                    },
-                    "id": "7165a561-5bab-4ad3-8b80-4e08501711bf"
                 },
                 {
                     "command": "EVENT_PLAYER_SET_SPRITE",
@@ -13308,7 +13289,8 @@
                             {
                                 "command": "EVENT_CALL_CUSTOM_EVENT",
                                 "args": {
-                                    "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89"
+                                    "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89",
+                                    "__collapse": true
                                 },
                                 "id": "6688234a-ea6c-41f2-810b-3dd2a0a5cafe"
                             },
@@ -14264,8 +14246,8 @@
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 202,
-        "worldScrollY": 618,
+        "worldScrollX": 0,
+        "worldScrollY": 601,
         "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,

@@ -6954,7 +6954,84 @@
                     "symbol": "trigger_60",
                     "width": 1,
                     "height": 2,
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_IF_VALUE_COMPARE",
+                            "args": {
+                                "vectorX": "1",
+                                "operator": "==",
+                                "vectorY": "22",
+                                "__collapseElse": false,
+                                "__collapse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Door is locked..."
+                                            ],
+                                            "avatarId": "",
+                                            "__collapse": false
+                                        },
+                                        "id": "1e832f66-1648-4ef3-959e-43bb1adc11d8"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_IF_VALUE_COMPARE",
+                                        "args": {
+                                            "vectorX": "1",
+                                            "operator": "==",
+                                            "vectorY": "15",
+                                            "__collapseElse": false,
+                                            "__collapse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_CALL_CUSTOM_EVENT",
+                                                    "args": {
+                                                        "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89",
+                                                        "__collapse": true
+                                                    },
+                                                    "id": "9f0e3d2a-a0bb-49d9-97a2-02b61a0bacc4"
+                                                },
+                                                {
+                                                    "command": "EVENT_SWITCH_SCENE",
+                                                    "args": {
+                                                        "sceneId": "6b064cd0-0c1e-4bc5-a94f-3f22d35d8587",
+                                                        "x": 0,
+                                                        "y": 0,
+                                                        "direction": "",
+                                                        "fadeSpeed": 1,
+                                                        "__collapse": true
+                                                    },
+                                                    "id": "b0291436-4a8c-483a-b0b1-97c801450b5a"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Nothing happened..."
+                                                        ],
+                                                        "avatarId": "",
+                                                        "__collapse": false
+                                                    },
+                                                    "id": "8ddfebdc-d232-4580-881a-4d2c113629dd"
+                                                }
+                                            ]
+                                        },
+                                        "id": "f61b0e32-579c-44f9-925e-d119ffebc193"
+                                    }
+                                ]
+                            },
+                            "id": "c264e9b3-feff-4079-ab5f-18ec81930710"
+                        }
+                    ],
                     "leaveScript": []
                 }
             ],
@@ -14187,9 +14264,9 @@
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 669,
-        "worldScrollY": 917,
-        "zoom": 200,
+        "worldScrollX": 202,
+        "worldScrollY": 618,
+        "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
