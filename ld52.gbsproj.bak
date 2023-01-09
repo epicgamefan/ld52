@@ -777,6 +777,13 @@
             ],
             "script": [
                 {
+                    "command": "EVENT_CALL_CUSTOM_EVENT",
+                    "args": {
+                        "customEventId": "b8c8b3d8-4c61-4e53-9899-a709da0ebf7f"
+                    },
+                    "id": "9b1b42d7-b322-44c5-9350-4fd3aafa01d1"
+                },
+                {
                     "command": "EVENT_ACTOR_DEACTIVATE",
                     "args": {
                         "actorId": "$self$"
@@ -8934,6 +8941,13 @@
                                                         "__collapse": false
                                                     },
                                                     "id": "0a87e597-23fa-467d-a736-2b440cadbd32"
+                                                },
+                                                {
+                                                    "command": "EVENT_CALL_CUSTOM_EVENT",
+                                                    "args": {
+                                                        "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89"
+                                                    },
+                                                    "id": "b777bcd6-c87c-4d96-ab31-ae4e5dfb274a"
                                                 }
                                             ]
                                         },
@@ -10363,6 +10377,13 @@
                                                         "__collapse": false
                                                     },
                                                     "id": "47cb3a03-e4d0-49c1-96cd-3373375f50d4"
+                                                },
+                                                {
+                                                    "command": "EVENT_CALL_CUSTOM_EVENT",
+                                                    "args": {
+                                                        "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89"
+                                                    },
+                                                    "id": "31936fac-703c-42f0-bfc7-ed4b98812895"
                                                 }
                                             ]
                                         },
@@ -24568,9 +24589,34 @@
                     "id": "a7b920c5-4793-4518-8acd-8af8959e2021"
                 }
             ]
+        },
+        {
+            "id": "b8c8b3d8-4c61-4e53-9899-a709da0ebf7f",
+            "name": "PlayBGM",
+            "description": "",
+            "variables": {},
+            "actors": {},
+            "symbol": "script_25",
+            "script": [
+                {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "af2d16e0-7e56-4406-ab0d-ff2b95e64986"
+                    },
+                    "id": "c870237e-b8b8-44da-acda-26e2b36deafc"
+                }
+            ]
         }
     ],
     "music": [
+        {
+            "id": "af2d16e0-7e56-4406-ab0d-ff2b95e64986",
+            "name": "song_bgm1",
+            "symbol": "song_song_bgm1",
+            "filename": "song_bgm1.uge",
+            "settings": {},
+            "type": "uge"
+        },
         {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
@@ -24944,7 +24990,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 0,
-        "worldScrollY": 822,
+        "worldScrollY": 505,
         "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,
