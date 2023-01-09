@@ -7087,7 +7087,7 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Nothing happened..."
+                                                            "Nothing happened."
                                                         ],
                                                         "avatarId": "",
                                                         "__collapse": false
@@ -26022,9 +26022,9 @@
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 0,
-        "worldScrollY": 0,
-        "zoom": 100,
+        "worldScrollX": 1028,
+        "worldScrollY": 924,
+        "zoom": 200,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
