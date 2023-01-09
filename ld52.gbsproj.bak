@@ -12060,7 +12060,7 @@
                 {
                     "command": "EVENT_MUSIC_PLAY",
                     "args": {
-                        "musicId": "af2d16e0-7e56-4406-ab0d-ff2b95e64986"
+                        "musicId": "227010c0-7657-4a8e-9b49-e2d4539bce28"
                     },
                     "id": "8441f4ae-155f-4a28-b516-36de506e5645"
                 },
@@ -12911,7 +12911,7 @@
                 {
                     "command": "EVENT_MUSIC_PLAY",
                     "args": {
-                        "musicId": "af2d16e0-7e56-4406-ab0d-ff2b95e64986"
+                        "musicId": "227010c0-7657-4a8e-9b49-e2d4539bce28"
                     },
                     "id": "3e065adf-aadb-406a-b774-c745cb3a536d"
                 },
@@ -14346,7 +14346,7 @@
                 {
                     "command": "EVENT_MUSIC_PLAY",
                     "args": {
-                        "musicId": "af2d16e0-7e56-4406-ab0d-ff2b95e64986"
+                        "musicId": "227010c0-7657-4a8e-9b49-e2d4539bce28"
                     },
                     "id": "df08376c-7c99-4325-a9c2-356bf41c3db5"
                 },
@@ -17474,6 +17474,13 @@
             ],
             "script": [
                 {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "227010c0-7657-4a8e-9b49-e2d4539bce28"
+                    },
+                    "id": "0cb8d650-6582-4f16-81c2-7d999ba3ebfe"
+                },
+                {
                     "command": "EVENT_CALL_CUSTOM_EVENT",
                     "args": {
                         "customEventId": "97192b4e-8a22-4619-b2e9-d455c381d53f",
@@ -18030,6 +18037,13 @@
                 }
             ],
             "script": [
+                {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "227010c0-7657-4a8e-9b49-e2d4539bce28"
+                    },
+                    "id": "f2f91ebc-d229-4a69-8c5b-006e18f21985"
+                },
                 {
                     "command": "EVENT_CALL_CUSTOM_EVENT",
                     "args": {
@@ -18876,7 +18890,7 @@
                 {
                     "command": "EVENT_MUSIC_PLAY",
                     "args": {
-                        "musicId": "af2d16e0-7e56-4406-ab0d-ff2b95e64986"
+                        "musicId": "227010c0-7657-4a8e-9b49-e2d4539bce28"
                     },
                     "id": "7e0aa933-4666-4aff-8017-f65ca680b51f"
                 },
@@ -19297,6 +19311,13 @@
             "actors": [],
             "triggers": [],
             "script": [
+                {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "227010c0-7657-4a8e-9b49-e2d4539bce28"
+                    },
+                    "id": "e86de24f-24cf-4684-92ff-e85686b8f094"
+                },
                 {
                     "command": "EVENT_ACTOR_DEACTIVATE",
                     "args": {

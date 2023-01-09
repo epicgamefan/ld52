@@ -10482,7 +10482,7 @@
                                         "args": {
                                             "text": [
                                                 "A giant face \nwith demon \nhorns....",
-                                                "Its so ugly... \n",
+                                                "It's so ugly... \n",
                                                 "I will call it\nDemonface."
                                             ],
                                             "avatarId": "",
@@ -13965,7 +13965,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Gross... \nIts Skullhead's \nheart.",
+                                                "Gross... \nIt's Skullhead's \nheart.",
                                                 "Take it?"
                                             ],
                                             "avatarId": ""
@@ -14074,7 +14074,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Gross... \nIts Skullhead's \nlungs.",
+                                                "Gross... \nIt's Skullhead's \nlungs.",
                                                 "Take them?"
                                             ],
                                             "avatarId": ""
@@ -14372,6 +14372,16 @@
                         "__collapse": false
                     },
                     "id": "04584a7e-93e2-493f-9023-f01a235c9e77"
+                },
+                {
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "Skullhead has been\ndefeated."
+                        ],
+                        "avatarId": ""
+                    },
+                    "id": "1c116c69-0283-4db6-8bbc-4ec522821c86"
                 }
             ],
             "playerHit1Script": [],
@@ -14810,7 +14820,7 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Its too high\nfor me to reach..."
+                                                            "It's too high\nfor me to reach..."
                                                         ],
                                                         "avatarId": "",
                                                         "__collapse": false
@@ -15620,7 +15630,7 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Its too high\nfor me to reach..."
+                                                            "It's too high\nfor me to reach..."
                                                         ],
                                                         "avatarId": "",
                                                         "__collapse": false
@@ -16451,7 +16461,31 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "You won...\nADD SOME\nDIALOG..."
+                            "You won...",
+                            "The storm\ndissipates.",
+                            "You notice that\nyou have a signal\nagain.",
+                            "You look through\nyour text\nmessages.",
+                            "You have thirteen\nmissed text\nmessages.",
+                            "You begin to read\nthem aloud.",
+                            "Mom: Dear, where\nare you?",
+                            "Mom: Are you\nhaving car\ntrouble?",
+                            "Mom: We have your\nfavorite tonight:\nPot Roast",
+                            "Dad: Son, where\nare you?",
+                            "Dad: We've been\nwaiting all night.",
+                            "Dad: We are\nstarting to get\nreally worried.",
+                            "Dad: It's been\nanother hour and\nwe still haven't",
+                            "heard from you.",
+                            "Dad: We've called\nthe police and we\nasked them to get",
+                            "a search crew.",
+                            "Dad: If you ever\nget this message,",
+                            "please call us\nimmediately.",
+                            "Stephen: Hey Josh,\nare you there?",
+                            "Stephen: Your\nparents texted me.",
+                            "Stephen: They're\nworried sick about\nyou.",
+                            "Stephen: Call me\nwhen you see this.",
+                            "You put your cell\nphone down and you\nsmile.",
+                            "No one is ever\ngoing to believe\nthe story that you",
+                            "have to tell..."
                         ],
                         "avatarId": ""
                     },
@@ -16899,7 +16933,10 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "That was a bad\nidea...\nMaybe not do that."
+                            "That was a bad\nidea.",
+                            "Maybe not do that\nnext time.",
+                            "You died much too\nearly in your\nlife.",
+                            "At home your\nfamily awaits."
                         ],
                         "avatarId": ""
                     },
@@ -17450,7 +17487,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "That was dumb..\nYou get knocked \non your ass...",
+                                                "That was dumb..\nYou get knocked \nonto the ground.",
                                                 "Not sure how much \nof this I can \nhandle..."
                                             ],
                                             "avatarId": ""
@@ -17501,6 +17538,18 @@
                         }
                     },
                     "id": "ee7cfdcb-49e8-4b3a-82a3-fc9205f7365b"
+                },
+                {
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "Ahh...\nWhat have I done?",
+                            "Perhaps feeding\nthe monster random\norgans wasn't the",
+                            "best of decisions."
+                        ],
+                        "avatarId": ""
+                    },
+                    "id": "44b733c5-10a3-4dfa-b3d5-f15cd9359c4e"
                 }
             ],
             "playerHit1Script": [],
@@ -18065,6 +18114,17 @@
                         }
                     },
                     "id": "ec2611e8-f62a-4253-baec-4d20144cff32"
+                },
+                {
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "The monster is\nstunned.",
+                            "Is there anything\nelse that you want\nto try?"
+                        ],
+                        "avatarId": ""
+                    },
+                    "id": "0ab4f675-8435-4be4-afb5-ce28f74d10b1"
                 }
             ],
             "playerHit1Script": [],
@@ -23433,8 +23493,8 @@
                                                         "args": {
                                                             "text": [
                                                                 "You take a sip...",
-                                                                "You feel lighter...",
-                                                                "You are able to\nfloat in the air..."
+                                                                "You feel lighter.",
+                                                                "You are able to\nfloat in the air."
                                                             ],
                                                             "avatarId": ""
                                                         },
@@ -24038,7 +24098,7 @@
                                     "text": [
                                         "Someone glued a \nmat to the floor.",
                                         "It's made from \ncheap material.",
-                                        "The material look \nvery flammable."
+                                        "The material looks\nvery flammable."
                                     ],
                                     "avatarId": "",
                                     "__collapse": false
@@ -25280,7 +25340,7 @@
                                             "command": "EVENT_TEXT",
                                             "args": {
                                                 "text": [
-                                                    "That was dumb..\nYou get knocked \non your ass...",
+                                                    "That was dumb..\nYou get knocked \nonto the ground.",
                                                     "Not sure how much \nof this I can \nhandle..."
                                                 ],
                                                 "avatarId": ""
@@ -25781,7 +25841,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 0,
-        "worldScrollY": 822,
+        "worldScrollY": 0,
         "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,
@@ -25810,9 +25870,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            204,
-            425,
-            327
+            229,
+            478,
+            368
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
