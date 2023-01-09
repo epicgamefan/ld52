@@ -18063,19 +18063,15 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "That was dumb..\nYou get knocked \non your ass...",
-                                                "Not sure how much \nof this I can \nhandle..."
+                                                "Nothing \nhappened...",
+                                                "Good thing the \nmonster is\nstunned.",
+                                                "That could have\nbeen bad for my\nhealth.",
+                                                "Only if I had a\nway to banish this\ndark evil."
                                             ],
-                                            "avatarId": ""
+                                            "avatarId": "",
+                                            "__collapse": false
                                         },
                                         "id": "1c0e0944-8d3d-47a1-838c-8980427a5174"
-                                    },
-                                    {
-                                        "command": "EVENT_CALL_CUSTOM_EVENT",
-                                        "args": {
-                                            "customEventId": "00dbd708-8652-4110-bc05-6d20c974be7d"
-                                        },
-                                        "id": "56c241e8-b777-4ed5-8ab0-c7e7f8800833"
                                     }
                                 ]
                             },
@@ -25841,7 +25837,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 0,
-        "worldScrollY": 0,
+        "worldScrollY": 600,
         "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,
@@ -25870,9 +25866,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            229,
-            478,
-            368
+            203,
+            425,
+            327
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
