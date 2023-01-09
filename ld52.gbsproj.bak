@@ -1372,6 +1372,75 @@
                         }
                     ],
                     "leaveScript": []
+                },
+                {
+                    "name": "Tab2",
+                    "id": "d269d83d-97d4-4f00-aa9c-fe8fcdb8dbbd",
+                    "x": 4,
+                    "y": 1,
+                    "symbol": "trigger_113",
+                    "width": 3,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "9af3803e-f5a0-427f-a3fb-2ad8da5a2a8a",
+                                "x": 10,
+                                "y": 9,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "bc7c1d7e-741b-4270-88f8-20dc42b5648e"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Tab3",
+                    "id": "3cd8324c-3e6b-4b0e-b9aa-3f7be9dc6697",
+                    "x": 8,
+                    "y": 1,
+                    "symbol": "trigger_114",
+                    "width": 3,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "fd2ed30d-336c-410d-a7cd-3a815bf6e4b3",
+                                "x": 9,
+                                "y": 8,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "b99fc109-87ec-4dff-a395-95e8e8fbbfc4"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Tab4",
+                    "id": "c510c6b9-87f7-4fa0-950e-eeb1dae58414",
+                    "x": 12,
+                    "y": 1,
+                    "symbol": "trigger_115",
+                    "width": 3,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "b59dbc30-de0f-4736-b71d-6bdeffc0b1a9",
+                                "x": 6,
+                                "y": 8,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "2510a44c-e9d7-43aa-b9c4-4886c0a1a3d7"
+                        }
+                    ],
+                    "leaveScript": []
                 }
             ],
             "script": [
@@ -1827,6 +1896,75 @@
                         }
                     ],
                     "leaveScript": []
+                },
+                {
+                    "name": "Tab1",
+                    "id": "e1f31a74-78f8-4265-b6f1-64271d1ee878",
+                    "x": 1,
+                    "y": 1,
+                    "symbol": "trigger_117",
+                    "width": 3,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "193a7499-7aa9-4e62-a244-20bf6c8a0a11",
+                                "x": 9,
+                                "y": 8,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "e726bd5a-32c9-47ee-93c0-e968c1993619"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Tab2",
+                    "id": "47318cad-0aaf-47e1-953f-14a641f71947",
+                    "x": 4,
+                    "y": 1,
+                    "symbol": "trigger_120",
+                    "width": 3,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "9af3803e-f5a0-427f-a3fb-2ad8da5a2a8a",
+                                "x": 10,
+                                "y": 9,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "ef23a7ca-a388-45bf-a9f8-c6b5d2284775"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Tab4",
+                    "id": "22ffa383-7218-45d8-b8ab-1a3fb8679a90",
+                    "x": 12,
+                    "y": 1,
+                    "symbol": "trigger_127",
+                    "width": 3,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "b59dbc30-de0f-4736-b71d-6bdeffc0b1a9",
+                                "x": 6,
+                                "y": 8,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "af5c93d7-db42-42c3-8820-c63b806553f2"
+                        }
+                    ],
+                    "leaveScript": []
                 }
             ],
             "script": [
@@ -2228,6 +2366,75 @@
                                 "customEventId": "6690ed07-8f4a-44ea-89bf-d4647d352f44"
                             },
                             "id": "5f964834-3cec-4cff-b6af-237bb1912f57"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Tab1",
+                    "id": "be95d299-8220-42d1-b182-e478fb0f90b0",
+                    "x": 1,
+                    "y": 1,
+                    "symbol": "trigger_116",
+                    "width": 3,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "193a7499-7aa9-4e62-a244-20bf6c8a0a11",
+                                "x": 8,
+                                "y": 8,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "f769b048-0799-4834-962d-d1d6cbca6c1f"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Tab3",
+                    "id": "2f1f60fd-7082-4854-a252-07ef7c7c2b29",
+                    "x": 8,
+                    "y": 1,
+                    "symbol": "trigger_123",
+                    "width": 3,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "fd2ed30d-336c-410d-a7cd-3a815bf6e4b3",
+                                "x": 9,
+                                "y": 8,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "c55479e2-4b2e-4e34-883c-19637c5eb00f"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Tab4",
+                    "id": "817a90d1-0253-48a3-b169-722b7cca65d1",
+                    "x": 12,
+                    "y": 1,
+                    "symbol": "trigger_126",
+                    "width": 3,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "b59dbc30-de0f-4736-b71d-6bdeffc0b1a9",
+                                "x": 6,
+                                "y": 8,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "196e705a-1db3-4089-8eba-b11e61b95c90"
                         }
                     ],
                     "leaveScript": []
@@ -7087,7 +7294,7 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Nothing happened..."
+                                                            "Nothing happened."
                                                         ],
                                                         "avatarId": "",
                                                         "__collapse": false
@@ -11429,6 +11636,75 @@
                                 "customEventId": "269b546c-ba90-4233-8357-04601d5431aa"
                             },
                             "id": "60008c6c-749c-4f97-b6e8-5f4bcd3d589c"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Tab1",
+                    "id": "129a5961-b852-4ccb-ae47-7e3396e8acb2",
+                    "x": 1,
+                    "y": 1,
+                    "symbol": "trigger_118",
+                    "width": 3,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "193a7499-7aa9-4e62-a244-20bf6c8a0a11",
+                                "x": 8,
+                                "y": 8,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "4ba34721-82d9-4b0f-a058-ebcf04dbd5a5"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Tab2",
+                    "id": "46785f1f-c9e4-4126-b58a-51c43f89565b",
+                    "x": 4,
+                    "y": 1,
+                    "symbol": "trigger_121",
+                    "width": 3,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "9af3803e-f5a0-427f-a3fb-2ad8da5a2a8a",
+                                "x": 10,
+                                "y": 9,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "b82268a0-f431-4cbb-8f0d-70577a74c1cb"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Tab3",
+                    "id": "37f05b03-918b-4926-b441-5ccde3977db1",
+                    "x": 8,
+                    "y": 1,
+                    "symbol": "trigger_124",
+                    "width": 3,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "fd2ed30d-336c-410d-a7cd-3a815bf6e4b3",
+                                "x": 9,
+                                "y": 8,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "a16ebc24-57f9-4d05-ab40-14a367f10422"
                         }
                     ],
                     "leaveScript": []
@@ -19727,6 +20003,75 @@
                         }
                     ],
                     "leaveScript": []
+                },
+                {
+                    "name": "Tab1",
+                    "id": "aa39dc03-2e22-4f3c-b383-a3b19cc0239d",
+                    "x": 1,
+                    "y": 1,
+                    "symbol": "trigger_119",
+                    "width": 3,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "193a7499-7aa9-4e62-a244-20bf6c8a0a11",
+                                "x": 8,
+                                "y": 8,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "2a91f21a-bcc4-420f-8da2-0eabc0758895"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Tab2",
+                    "id": "5eca82ba-5ad7-4caa-9571-38a10886a880",
+                    "x": 4,
+                    "y": 1,
+                    "symbol": "trigger_122",
+                    "width": 3,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "9af3803e-f5a0-427f-a3fb-2ad8da5a2a8a",
+                                "x": 10,
+                                "y": 9,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "03ffaf67-a868-47a4-af60-34edc0a925fa"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Tab3",
+                    "id": "99abd0fb-32df-4602-adb2-f8cb61c82a23",
+                    "x": 8,
+                    "y": 1,
+                    "symbol": "trigger_125",
+                    "width": 3,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "fd2ed30d-336c-410d-a7cd-3a815bf6e4b3",
+                                "x": 9,
+                                "y": 8,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "9baf0fbc-3d73-4c28-991a-b5c9006fda78"
+                        }
+                    ],
+                    "leaveScript": []
                 }
             ],
             "script": [
@@ -26022,9 +26367,9 @@
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 0,
-        "worldScrollY": 0,
-        "zoom": 100,
+        "worldScrollX": 33,
+        "worldScrollY": 368,
+        "zoom": 150,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
@@ -26052,9 +26397,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            228,
-            479,
-            368
+            202,
+            426,
+            327
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
