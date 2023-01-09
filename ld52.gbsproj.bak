@@ -22,6 +22,11 @@
             "triggers": [],
             "script": [
                 {
+                    "command": "EVENT_MUSIC_STOP",
+                    "args": {},
+                    "id": "662a3057-509d-4f67-a9d3-16a9c4022b6a"
+                },
+                {
                     "command": "EVENT_CALL_CUSTOM_EVENT",
                     "args": {
                         "customEventId": "eba8bd2e-cae3-4b85-8c62-6766395255a9",
@@ -3814,10 +3819,10 @@
                     "name": "FloorMatt",
                     "id": "7670754e-be5a-44da-9797-a147259718ca",
                     "x": 8,
-                    "y": 10,
+                    "y": 11,
                     "symbol": "trigger_27",
                     "width": 5,
-                    "height": 4,
+                    "height": 3,
                     "script": [
                         {
                             "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -4368,10 +4373,10 @@
                     "name": "FloorMatt",
                     "id": "726ad571-6114-43f6-b6d4-5cb6c0073644",
                     "x": 8,
-                    "y": 10,
+                    "y": 11,
                     "symbol": "trigger_28",
                     "width": 5,
-                    "height": 4,
+                    "height": 3,
                     "script": [
                         {
                             "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -5918,6 +5923,13 @@
                                     }
                                 ],
                                 "false": [
+                                    {
+                                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                                        "args": {
+                                            "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89"
+                                        },
+                                        "id": "06a0fbd4-cdfd-42ba-b817-d78268ae7929"
+                                    },
                                     {
                                         "command": "EVENT_SWITCH",
                                         "args": {
@@ -8935,7 +8947,7 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Nothing seemed to happen..."
+                                                            "Nothing seemed \nto happen..."
                                                         ],
                                                         "avatarId": "",
                                                         "__collapse": false
@@ -10339,7 +10351,7 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Demonface catch on fire."
+                                                            "Demonface catches\non fire."
                                                         ],
                                                         "avatarId": ""
                                                     },
@@ -10371,7 +10383,7 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Nothing seemed to happen..."
+                                                            "Nothing seemed \nto happen..."
                                                         ],
                                                         "avatarId": "",
                                                         "__collapse": false
@@ -12979,7 +12991,7 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Nothing seemed to happen..."
+                                                            "Nothing seemed \nto happen..."
                                                         ],
                                                         "avatarId": "",
                                                         "__collapse": false
@@ -22656,6 +22668,13 @@
                                                             "avatarId": ""
                                                         },
                                                         "id": "451b9bfe-b3e6-4906-98b7-a5321b3b5380"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_SET_TRUE",
+                                                        "args": {
+                                                            "variable": "39"
+                                                        },
+                                                        "id": "13e58aa2-6377-4e5f-9a31-8e8e4f36b2f7"
                                                     }
                                                 ],
                                                 "false": [
@@ -22943,7 +22962,7 @@
                         "__collapseCase15": false,
                         "value15": 16,
                         "__collapseElse": false,
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true0": [
@@ -23060,7 +23079,7 @@
                             {
                                 "command": "EVENT_PLAYER_SET_SPRITE",
                                 "args": {
-                                    "spriteSheetId": "3a2cfc07-ed5c-4968-9c11-34953aee4085",
+                                    "spriteSheetId": "781dcb19-1bd2-4260-a891-0c43b9bb951f",
                                     "persist": true
                                 },
                                 "id": "1d91e7b0-1a8f-4c4c-bb6e-ff89363db207"
@@ -24618,6 +24637,14 @@
             "type": "uge"
         },
         {
+            "id": "825687b1-bd89-4a5e-b09b-ce2bedeed6be",
+            "name": "song_menu",
+            "symbol": "song_song_menu",
+            "filename": "song_menu.uge",
+            "settings": {},
+            "type": "uge"
+        },
+        {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "symbol": "song_template",
@@ -24990,7 +25017,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 0,
-        "worldScrollY": 505,
+        "worldScrollY": 800,
         "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,
