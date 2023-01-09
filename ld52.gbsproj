@@ -17062,9 +17062,11 @@
             "triggers": [],
             "script": [
                 {
-                    "command": "EVENT_MUSIC_STOP",
-                    "args": {},
-                    "id": "50f2ac6b-84f4-430a-b979-5aaaa2589970"
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "eec00af2-f415-4f37-a4f7-ba58a4b6f8f1"
+                    },
+                    "id": "4dbc568c-dc55-4d3b-bd24-345c76eadf18"
                 },
                 {
                     "command": "EVENT_ACTOR_DEACTIVATE",
@@ -25621,6 +25623,14 @@
             "name": "song_boss",
             "symbol": "song_song_boss",
             "filename": "song_boss.uge",
+            "settings": {},
+            "type": "uge"
+        },
+        {
+            "id": "eec00af2-f415-4f37-a4f7-ba58a4b6f8f1",
+            "name": "song_defeat",
+            "symbol": "song_song_defeat",
+            "filename": "song_defeat.uge",
             "settings": {},
             "type": "uge"
         },

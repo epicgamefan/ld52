@@ -2272,6 +2272,19 @@
                     "id": "261a97be-46ee-4478-9364-5f8c8d989208"
                 },
                 {
+                    "command": "EVENT_SOUND_PLAY_EFFECT",
+                    "args": {
+                        "type": "crash",
+                        "priority": "medium",
+                        "pitch": 4,
+                        "frequency": 200,
+                        "duration": 0.5,
+                        "wait": true,
+                        "effect": 0
+                    },
+                    "id": "13eb042c-8ba4-4d2a-8ead-0b683e994d82"
+                },
+                {
                     "command": "EVENT_WAIT",
                     "args": {
                         "time": 1,
@@ -2834,6 +2847,19 @@
                                         "id": "91888479-58c2-458f-adcd-e43641502770"
                                     },
                                     {
+                                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                                        "args": {
+                                            "type": "crash",
+                                            "priority": "medium",
+                                            "pitch": 4,
+                                            "frequency": 200,
+                                            "duration": 0.5,
+                                            "wait": true,
+                                            "effect": 0
+                                        },
+                                        "id": "e7a30124-8f89-48c1-9f64-9dc1552860de"
+                                    },
+                                    {
                                         "command": "EVENT_SWITCH_SCENE",
                                         "args": {
                                             "sceneId": "9d8e896c-706f-4a34-afd9-b8a3d52ef326",
@@ -2925,6 +2951,19 @@
                         "actorId": "$self$"
                     },
                     "id": "286b614e-dd50-4433-9626-42554b4f68d2"
+                },
+                {
+                    "command": "EVENT_SOUND_PLAY_EFFECT",
+                    "args": {
+                        "type": "crash",
+                        "priority": "medium",
+                        "pitch": 4,
+                        "frequency": 200,
+                        "duration": 0.5,
+                        "wait": true,
+                        "effect": 0
+                    },
+                    "id": "526d9412-7439-4d44-8117-e135cff6e324"
                 },
                 {
                     "command": "EVENT_WAIT",
@@ -3894,6 +3933,19 @@
                     "width": 1,
                     "height": 2,
                     "script": [
+                        {
+                            "command": "EVENT_SOUND_PLAY_EFFECT",
+                            "args": {
+                                "type": "crash",
+                                "priority": "medium",
+                                "pitch": 4,
+                                "frequency": 200,
+                                "duration": 0.5,
+                                "wait": true,
+                                "effect": 0
+                            },
+                            "id": "3e8d5af8-2458-4375-80b2-a69455d99f42"
+                        },
                         {
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
@@ -7005,6 +7057,19 @@
                                                     "id": "ea255e3b-29e0-4220-947b-424d7011a3a4"
                                                 },
                                                 {
+                                                    "command": "EVENT_SOUND_PLAY_EFFECT",
+                                                    "args": {
+                                                        "type": "crash",
+                                                        "priority": "medium",
+                                                        "pitch": 4,
+                                                        "frequency": 200,
+                                                        "duration": 0.5,
+                                                        "wait": true,
+                                                        "effect": 0
+                                                    },
+                                                    "id": "d583b612-8585-4f83-b740-1eeccb04c5ea"
+                                                },
+                                                {
                                                     "command": "EVENT_SWITCH_SCENE",
                                                     "args": {
                                                         "sceneId": "6b064cd0-0c1e-4bc5-a94f-3f22d35d8587",
@@ -7921,6 +7986,19 @@
                                                         "__collapse": true
                                                     },
                                                     "id": "9f0e3d2a-a0bb-49d9-97a2-02b61a0bacc4"
+                                                },
+                                                {
+                                                    "command": "EVENT_SOUND_PLAY_EFFECT",
+                                                    "args": {
+                                                        "type": "crash",
+                                                        "priority": "medium",
+                                                        "pitch": 4,
+                                                        "frequency": 200,
+                                                        "duration": 0.5,
+                                                        "wait": true,
+                                                        "effect": 0
+                                                    },
+                                                    "id": "d1211a01-55f7-4ebf-a266-8a8bbaf7557a"
                                                 },
                                                 {
                                                     "command": "EVENT_SWITCH_SCENE",
@@ -9062,6 +9140,19 @@
                                                         "__collapse": true
                                                     },
                                                     "id": "c4147b4c-e7da-4fed-a6d2-60833f56e032"
+                                                },
+                                                {
+                                                    "command": "EVENT_SOUND_PLAY_EFFECT",
+                                                    "args": {
+                                                        "type": "crash",
+                                                        "priority": "medium",
+                                                        "pitch": 4,
+                                                        "frequency": 200,
+                                                        "duration": 0.5,
+                                                        "wait": true,
+                                                        "effect": 0
+                                                    },
+                                                    "id": "ce5175c0-1d27-486f-aebb-9026f0a6479d"
                                                 },
                                                 {
                                                     "command": "EVENT_SWITCH_SCENE",
@@ -10520,6 +10611,19 @@
                                                         "__collapse": true
                                                     },
                                                     "id": "9952d097-157d-4479-92f2-5056130c9a44"
+                                                },
+                                                {
+                                                    "command": "EVENT_SOUND_PLAY_EFFECT",
+                                                    "args": {
+                                                        "type": "crash",
+                                                        "priority": "medium",
+                                                        "pitch": 4,
+                                                        "frequency": 200,
+                                                        "duration": 0.5,
+                                                        "wait": true,
+                                                        "effect": 0
+                                                    },
+                                                    "id": "887ba381-c056-4cc7-b383-b53054c6472b"
                                                 },
                                                 {
                                                     "command": "EVENT_SWITCH_SCENE",
@@ -12724,7 +12828,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Its a fork...",
+                                                "It's a fork...",
                                                 "Wonder where\nDemonface was\nhiding that..",
                                                 "Take it?"
                                             ],
@@ -12892,6 +12996,19 @@
                     "width": 1,
                     "height": 2,
                     "script": [
+                        {
+                            "command": "EVENT_SOUND_PLAY_EFFECT",
+                            "args": {
+                                "type": "crash",
+                                "priority": "medium",
+                                "pitch": 4,
+                                "frequency": 200,
+                                "duration": 0.5,
+                                "wait": true,
+                                "effect": 0
+                            },
+                            "id": "76edbf10-84d6-4358-aaed-ba499935808b"
+                        },
                         {
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
@@ -15143,6 +15260,19 @@
                     "height": 2,
                     "script": [
                         {
+                            "command": "EVENT_SOUND_PLAY_EFFECT",
+                            "args": {
+                                "type": "crash",
+                                "priority": "medium",
+                                "pitch": 4,
+                                "frequency": 200,
+                                "duration": 0.5,
+                                "wait": true,
+                                "effect": 0
+                            },
+                            "id": "9c0e573d-cf5b-4ba4-b70c-a2d2c7eda3af"
+                        },
+                        {
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "7826cad4-4d0a-4d28-8250-f8a4956e907a",
@@ -16038,6 +16168,19 @@
                     "id": "28ded70d-5899-4a1d-bf24-8f93820f483e"
                 },
                 {
+                    "command": "EVENT_SOUND_PLAY_EFFECT",
+                    "args": {
+                        "type": "crash",
+                        "priority": "medium",
+                        "pitch": 4,
+                        "frequency": 200,
+                        "duration": 0.5,
+                        "wait": true,
+                        "effect": 0
+                    },
+                    "id": "dcd22f9e-df3d-4353-a9dd-46e47fa21c73"
+                },
+                {
                     "command": "EVENT_WAIT",
                     "args": {
                         "time": 1,
@@ -16442,7 +16585,7 @@
                 {
                     "command": "EVENT_MUSIC_PLAY",
                     "args": {
-                        "musicId": "af2d16e0-7e56-4406-ab0d-ff2b95e64986"
+                        "musicId": "fc127025-8f7f-4a1f-9e5a-aa0ec6202a46"
                     },
                     "id": "5289628b-5b52-4991-b5bf-b34c51859210"
                 },
@@ -17522,6 +17665,19 @@
                 }
             ],
             "script": [
+                {
+                    "command": "EVENT_SOUND_PLAY_EFFECT",
+                    "args": {
+                        "type": "crash",
+                        "priority": "medium",
+                        "pitch": 4,
+                        "frequency": 200,
+                        "duration": 0.5,
+                        "wait": true,
+                        "effect": 0
+                    },
+                    "id": "c5f8e8ae-94af-4d56-a3f0-91f7f81c4eff"
+                },
                 {
                     "command": "EVENT_MUSIC_PLAY",
                     "args": {
@@ -18771,7 +18927,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Its a fork...",
+                                                "It's a fork...",
                                                 "Wonder where\nDemonface was\nhiding that..",
                                                 "Take it?"
                                             ],
@@ -25469,6 +25625,14 @@
             "type": "uge"
         },
         {
+            "id": "fc127025-8f7f-4a1f-9e5a-aa0ec6202a46",
+            "name": "song_ending",
+            "symbol": "song_song_ending",
+            "filename": "song_ending.uge",
+            "settings": {},
+            "type": "uge"
+        },
+        {
             "id": "825687b1-bd89-4a5e-b09b-ce2bedeed6be",
             "name": "song_menu",
             "symbol": "song_song_menu",
@@ -25878,9 +26042,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            203,
-            425,
-            327
+            228,
+            479,
+            368
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
