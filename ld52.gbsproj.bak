@@ -1900,7 +1900,7 @@
                 {
                     "name": "Tab1",
                     "id": "e1f31a74-78f8-4265-b6f1-64271d1ee878",
-                    "x": 1,
+                    "x": 0,
                     "y": 1,
                     "symbol": "trigger_117",
                     "width": 3,
@@ -2373,7 +2373,7 @@
                 {
                     "name": "Tab1",
                     "id": "be95d299-8220-42d1-b182-e478fb0f90b0",
-                    "x": 1,
+                    "x": 0,
                     "y": 1,
                     "symbol": "trigger_116",
                     "width": 3,
@@ -11643,7 +11643,7 @@
                 {
                     "name": "Tab1",
                     "id": "129a5961-b852-4ccb-ae47-7e3396e8acb2",
-                    "x": 1,
+                    "x": 0,
                     "y": 1,
                     "symbol": "trigger_118",
                     "width": 3,

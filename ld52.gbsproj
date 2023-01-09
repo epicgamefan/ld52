@@ -20007,7 +20007,7 @@
                 {
                     "name": "Tab1",
                     "id": "aa39dc03-2e22-4f3c-b383-a3b19cc0239d",
-                    "x": 1,
+                    "x": 0,
                     "y": 1,
                     "symbol": "trigger_119",
                     "width": 3,
@@ -26367,7 +26367,7 @@
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 33,
+        "worldScrollX": 373,
         "worldScrollY": 368,
         "zoom": 150,
         "customColorsEnabled": false,
