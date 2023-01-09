@@ -18883,7 +18883,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "Room3c.png"
+            "filename": "Room3c.png",
+            "tileColors": []
         },
         {
             "id": "b1410894-6b0c-4996-bb62-4b150a93794b",
@@ -18893,7 +18894,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "Room3d.png"
+            "filename": "Room3d.png",
+            "tileColors": []
         },
         {
             "id": "fe4e0d36-a68a-413f-ae53-0ccf77cabc9d",
@@ -24343,7 +24345,29 @@
             "variables": {},
             "actors": {},
             "symbol": "script_23",
-            "script": []
+            "script": [
+                {
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "You burst into\nflames..."
+                        ],
+                        "avatarId": ""
+                    },
+                    "id": "8a37cf47-b84a-4aec-aba7-3c1c18cce376"
+                },
+                {
+                    "command": "EVENT_SWITCH_SCENE",
+                    "args": {
+                        "sceneId": "dd51180c-773e-4139-b48d-d34204233893",
+                        "x": 0,
+                        "y": 0,
+                        "direction": "",
+                        "fadeSpeed": "2"
+                    },
+                    "id": "18a8a458-69f3-4484-a354-144876f4a354"
+                }
+            ]
         },
         {
             "id": "98417eef-64d5-4103-abdc-c876ed77c855",
@@ -24843,7 +24867,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 0,
-        "worldScrollY": 822,
+        "worldScrollY": 805,
         "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,

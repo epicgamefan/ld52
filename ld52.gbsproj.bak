@@ -24360,7 +24360,96 @@
                         "__collapseElse": false
                     },
                     "children": {
-                        "true": [],
+                        "true": [
+                            {
+                                "command": "EVENT_IF_TRUE",
+                                "args": {
+                                    "variable": "50",
+                                    "__collapseElse": false
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "You begin to read,\nbut you are \ninterrupted..."
+                                                ],
+                                                "avatarId": ""
+                                            },
+                                            "id": "a3deffb1-3a82-4816-8d53-4c9dcb11bb64"
+                                        },
+                                        {
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "That was dumb..\nYou get knocked \non your ass...",
+                                                    "Not sure how much \nof this I can \nhandle..."
+                                                ],
+                                                "avatarId": ""
+                                            },
+                                            "id": "38979219-8031-40b9-93f2-b772475ef016"
+                                        },
+                                        {
+                                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                                            "args": {
+                                                "customEventId": "00dbd708-8652-4110-bc05-6d20c974be7d"
+                                            },
+                                            "id": "b7aa7c86-b4d0-40d7-a0af-7ed72954a58d"
+                                        }
+                                    ],
+                                    "false": [
+                                        {
+                                            "command": "EVENT_IF_TRUE",
+                                            "args": {
+                                                "variable": "51",
+                                                "__collapseElse": false
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_TEXT",
+                                                        "args": {
+                                                            "text": [
+                                                                "You read the \nincantation...",
+                                                                "The monster is \ndefeated..."
+                                                            ],
+                                                            "avatarId": ""
+                                                        },
+                                                        "id": "6975ce24-a539-4c33-aef0-6b0c5f1df4a9"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_SWITCH_SCENE",
+                                                        "args": {
+                                                            "sceneId": "df5e5eaf-f4ed-4b03-a60a-e92e93b2aa22",
+                                                            "x": 0,
+                                                            "y": 0,
+                                                            "direction": "",
+                                                            "fadeSpeed": "2"
+                                                        },
+                                                        "id": "97219340-03d8-4e52-b255-bdf033c1e82e"
+                                                    }
+                                                ],
+                                                "false": [
+                                                    {
+                                                        "command": "EVENT_TEXT",
+                                                        "args": {
+                                                            "text": [
+                                                                "You read the text \nbut nothing \nhappens..."
+                                                            ],
+                                                            "avatarId": ""
+                                                        },
+                                                        "id": "c36cbdc0-6859-45d4-a2b2-02c5b1dc7689"
+                                                    }
+                                                ]
+                                            },
+                                            "id": "efd97b50-8b6c-469a-b196-00d2b1ddbd21"
+                                        }
+                                    ]
+                                },
+                                "id": "1c60b7d1-7c8c-4a0f-8431-7335bce98324"
+                            }
+                        ],
                         "false": [
                             {
                                 "command": "EVENT_TEXT",
@@ -24754,7 +24843,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 0,
-        "worldScrollY": 322,
+        "worldScrollY": 822,
         "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,
