@@ -1402,7 +1402,7 @@
                     "x": 8,
                     "y": 1,
                     "symbol": "trigger_114",
-                    "width": 3,
+                    "width": 5,
                     "height": 1,
                     "script": [
                         {
@@ -1422,10 +1422,10 @@
                 {
                     "name": "Tab4",
                     "id": "c510c6b9-87f7-4fa0-950e-eeb1dae58414",
-                    "x": 12,
+                    "x": 14,
                     "y": 1,
                     "symbol": "trigger_115",
-                    "width": 3,
+                    "width": 5,
                     "height": 1,
                     "script": [
                         {
@@ -1946,10 +1946,10 @@
                 {
                     "name": "Tab4",
                     "id": "22ffa383-7218-45d8-b8ab-1a3fb8679a90",
-                    "x": 12,
+                    "x": 14,
                     "y": 1,
                     "symbol": "trigger_127",
-                    "width": 3,
+                    "width": 5,
                     "height": 1,
                     "script": [
                         {
@@ -2399,7 +2399,7 @@
                     "x": 8,
                     "y": 1,
                     "symbol": "trigger_123",
-                    "width": 3,
+                    "width": 5,
                     "height": 1,
                     "script": [
                         {
@@ -2419,10 +2419,10 @@
                 {
                     "name": "Tab4",
                     "id": "817a90d1-0253-48a3-b169-722b7cca65d1",
-                    "x": 12,
+                    "x": 14,
                     "y": 1,
                     "symbol": "trigger_126",
-                    "width": 3,
+                    "width": 5,
                     "height": 1,
                     "script": [
                         {
@@ -11692,7 +11692,7 @@
                     "x": 8,
                     "y": 1,
                     "symbol": "trigger_124",
-                    "width": 3,
+                    "width": 5,
                     "height": 1,
                     "script": [
                         {
@@ -20056,7 +20056,7 @@
                     "x": 8,
                     "y": 1,
                     "symbol": "trigger_125",
-                    "width": 3,
+                    "width": 5,
                     "height": 1,
                     "script": [
                         {
@@ -26367,8 +26367,8 @@
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 373,
-        "worldScrollY": 368,
+        "worldScrollX": 343,
+        "worldScrollY": 359,
         "zoom": 150,
         "customColorsEnabled": false,
         "sgbEnabled": false,
