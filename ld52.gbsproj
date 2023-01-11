@@ -25560,7 +25560,7 @@
                 {
                     "command": "EVENT_SWITCH",
                     "args": {
-                        "variable": "6",
+                        "variable": "46",
                         "choices": 1,
                         "__collapseCase0": false,
                         "value0": 1,
@@ -26368,7 +26368,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 343,
-        "worldScrollY": 359,
+        "worldScrollY": 1659,
         "zoom": 150,
         "customColorsEnabled": false,
         "sgbEnabled": false,
