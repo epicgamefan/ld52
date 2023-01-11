@@ -8225,7 +8225,7 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Nothing happened..."
+                                                            "Nothing happened."
                                                         ],
                                                         "avatarId": "",
                                                         "__collapse": false
@@ -12886,7 +12886,8 @@
                                         "args": {
                                             "text": [
                                                 "Its stomach...",
-                                                "Weird wouldn't\nexpect that from\na giant face.",
+                                                "Weird.",
+                                                "Wouldn't expect\nthat from a giant\nface.",
                                                 "Take it?"
                                             ],
                                             "avatarId": ""
@@ -17366,10 +17367,10 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "That was a bad\nidea.",
-                            "Maybe not do that\nnext time.",
-                            "You died much too\nearly in your\nlife.",
-                            "At home your\nfamily awaits."
+                            "Your life has been\nterminated.",
+                            "Meanwhile, your\nfamily continues\nto wait.",
+                            "They will never\nlearn the events\nthat took place.",
+                            "It is sad that\nyour adventure\nmust end here!!"
                         ],
                         "avatarId": ""
                     },
@@ -23911,7 +23912,7 @@
                                 "command": "EVENT_TEXT",
                                 "args": {
                                     "text": [
-                                        "Nothing happens"
+                                        "Nothing happens."
                                     ],
                                     "avatarId": ""
                                 },
@@ -23963,7 +23964,8 @@
                                             "args": {
                                                 "text": [
                                                     "You put on the \nglasses.",
-                                                    "Wow I can see\nmuch better now."
+                                                    "Wow.",
+                                                    "I can see much\nbetter now."
                                                 ],
                                                 "avatarId": ""
                                             },
@@ -26367,7 +26369,7 @@
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 43,
+        "worldScrollX": 111,
         "worldScrollY": 0,
         "zoom": 150,
         "customColorsEnabled": false,
@@ -26397,9 +26399,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            202,
-            426,
-            327
+            227,
+            480,
+            368
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
