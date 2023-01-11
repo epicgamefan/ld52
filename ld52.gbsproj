@@ -551,7 +551,7 @@
                                 "option6": "",
                                 "option7": "",
                                 "option8": "",
-                                "cancelOnB": true,
+                                "cancelOnB": false,
                                 "layout": "dialogue",
                                 "cancelOnLastOption": true
                             },
@@ -2976,7 +2976,7 @@
                                             "option6": "",
                                             "option7": "",
                                             "option8": "",
-                                            "cancelOnB": true,
+                                            "cancelOnB": false,
                                             "layout": "dialogue",
                                             "cancelOnLastOption": true,
                                             "__collapse": false
@@ -5306,7 +5306,7 @@
                                             "option6": "",
                                             "option7": "",
                                             "option8": "",
-                                            "cancelOnB": true,
+                                            "cancelOnB": false,
                                             "layout": "dialogue",
                                             "cancelOnLastOption": true,
                                             "__collapse": false
@@ -7794,7 +7794,7 @@
                                             "option6": "",
                                             "option7": "",
                                             "option8": "",
-                                            "cancelOnB": true,
+                                            "cancelOnB": false,
                                             "layout": "dialogue",
                                             "cancelOnLastOption": true
                                         },
@@ -7904,7 +7904,7 @@
                                             "option6": "",
                                             "option7": "",
                                             "option8": "",
-                                            "cancelOnB": true,
+                                            "cancelOnB": false,
                                             "layout": "dialogue",
                                             "cancelOnLastOption": true
                                         },
@@ -8012,7 +8012,7 @@
                                             "option6": "",
                                             "option7": "",
                                             "option8": "",
-                                            "cancelOnB": true,
+                                            "cancelOnB": false,
                                             "layout": "dialogue",
                                             "cancelOnLastOption": true
                                         },
@@ -9886,7 +9886,7 @@
                                             "option6": "",
                                             "option7": "",
                                             "option8": "",
-                                            "cancelOnB": true,
+                                            "cancelOnB": false,
                                             "layout": "dialogue",
                                             "cancelOnLastOption": true
                                         },
@@ -9996,7 +9996,7 @@
                                             "option6": "",
                                             "option7": "",
                                             "option8": "",
-                                            "cancelOnB": true,
+                                            "cancelOnB": false,
                                             "layout": "dialogue",
                                             "cancelOnLastOption": true
                                         },
@@ -10104,7 +10104,7 @@
                                             "option6": "",
                                             "option7": "",
                                             "option8": "",
-                                            "cancelOnB": true,
+                                            "cancelOnB": false,
                                             "layout": "dialogue",
                                             "cancelOnLastOption": true
                                         },
@@ -12164,7 +12164,7 @@
                                             "option6": "",
                                             "option7": "",
                                             "option8": "",
-                                            "cancelOnB": true,
+                                            "cancelOnB": false,
                                             "layout": "dialogue",
                                             "cancelOnLastOption": true
                                         },
@@ -12273,7 +12273,7 @@
                                             "option6": "",
                                             "option7": "",
                                             "option8": "",
-                                            "cancelOnB": true,
+                                            "cancelOnB": false,
                                             "layout": "dialogue",
                                             "cancelOnLastOption": true
                                         },
@@ -12906,7 +12906,7 @@
                                             "option6": "",
                                             "option7": "",
                                             "option8": "",
-                                            "cancelOnB": true,
+                                            "cancelOnB": false,
                                             "layout": "dialogue",
                                             "cancelOnLastOption": true
                                         },
@@ -13015,7 +13015,7 @@
                                             "option6": "",
                                             "option7": "",
                                             "option8": "",
-                                            "cancelOnB": true,
+                                            "cancelOnB": false,
                                             "layout": "dialogue",
                                             "cancelOnLastOption": true
                                         },
@@ -13125,7 +13125,7 @@
                                             "option6": "",
                                             "option7": "",
                                             "option8": "",
-                                            "cancelOnB": true,
+                                            "cancelOnB": false,
                                             "layout": "dialogue",
                                             "cancelOnLastOption": true
                                         },
@@ -14378,7 +14378,7 @@
                                             "option6": "",
                                             "option7": "",
                                             "option8": "",
-                                            "cancelOnB": true,
+                                            "cancelOnB": false,
                                             "layout": "dialogue",
                                             "cancelOnLastOption": true
                                         },
@@ -14487,7 +14487,7 @@
                                             "option6": "",
                                             "option7": "",
                                             "option8": "",
-                                            "cancelOnB": true,
+                                            "cancelOnB": false,
                                             "layout": "dialogue",
                                             "cancelOnLastOption": true
                                         },
@@ -14596,7 +14596,7 @@
                                             "option6": "",
                                             "option7": "",
                                             "option8": "",
-                                            "cancelOnB": true,
+                                            "cancelOnB": false,
                                             "layout": "dialogue",
                                             "cancelOnLastOption": true
                                         },
@@ -15246,7 +15246,7 @@
                                                         "option6": "",
                                                         "option7": "",
                                                         "option8": "",
-                                                        "cancelOnB": true,
+                                                        "cancelOnB": false,
                                                         "layout": "dialogue",
                                                         "cancelOnLastOption": true
                                                     },
@@ -15391,7 +15391,7 @@
                                                         "option6": "",
                                                         "option7": "",
                                                         "option8": "",
-                                                        "cancelOnB": true,
+                                                        "cancelOnB": false,
                                                         "layout": "dialogue",
                                                         "cancelOnLastOption": true
                                                     },
@@ -16069,7 +16069,7 @@
                                                         "option6": "",
                                                         "option7": "",
                                                         "option8": "",
-                                                        "cancelOnB": true,
+                                                        "cancelOnB": false,
                                                         "layout": "dialogue",
                                                         "cancelOnLastOption": true
                                                     },
@@ -16214,7 +16214,7 @@
                                                         "option6": "",
                                                         "option7": "",
                                                         "option8": "",
-                                                        "cancelOnB": true,
+                                                        "cancelOnB": false,
                                                         "layout": "dialogue",
                                                         "cancelOnLastOption": true
                                                     },
@@ -19007,7 +19007,7 @@
                                             "option6": "",
                                             "option7": "",
                                             "option8": "",
-                                            "cancelOnB": true,
+                                            "cancelOnB": false,
                                             "layout": "dialogue",
                                             "cancelOnLastOption": true
                                         },
@@ -19116,7 +19116,7 @@
                                             "option6": "",
                                             "option7": "",
                                             "option8": "",
-                                            "cancelOnB": true,
+                                            "cancelOnB": false,
                                             "layout": "dialogue",
                                             "cancelOnLastOption": true
                                         },
@@ -19226,7 +19226,7 @@
                                             "option6": "",
                                             "option7": "",
                                             "option8": "",
-                                            "cancelOnB": true,
+                                            "cancelOnB": false,
                                             "layout": "dialogue",
                                             "cancelOnLastOption": true
                                         },
@@ -26367,8 +26367,8 @@
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 343,
-        "worldScrollY": 1659,
+        "worldScrollX": 43,
+        "worldScrollY": 0,
         "zoom": 150,
         "customColorsEnabled": false,
         "sgbEnabled": false,
