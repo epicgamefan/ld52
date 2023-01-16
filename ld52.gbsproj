@@ -26185,7 +26185,8 @@
                             "b"
                         ],
                         "override": true,
-                        "__scriptTabs": "press"
+                        "__scriptTabs": "press",
+                        "__comment": true
                     },
                     "children": {
                         "true": [
@@ -26239,7 +26240,8 @@
                             "b"
                         ],
                         "override": true,
-                        "__scriptTabs": "press"
+                        "__scriptTabs": "press",
+                        "__comment": true
                     },
                     "children": {
                         "true": [
@@ -26670,8 +26672,8 @@
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1,
-        "worldScrollY": 821,
+        "worldScrollX": 0,
+        "worldScrollY": 305,
         "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,

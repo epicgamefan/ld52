@@ -26167,8 +26167,8 @@
                                 "command": "EVENT_SWITCH_SCENE",
                                 "args": {
                                     "sceneId": "193a7499-7aa9-4e62-a244-20bf6c8a0a11",
-                                    "x": 0,
-                                    "y": 0,
+                                    "x": 8,
+                                    "y": 8,
                                     "direction": "",
                                     "fadeSpeed": "2"
                                 },
@@ -26670,8 +26670,8 @@
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 0,
-        "worldScrollY": 222,
+        "worldScrollX": 1,
+        "worldScrollY": 821,
         "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,
