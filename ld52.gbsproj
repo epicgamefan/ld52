@@ -26364,7 +26364,7 @@
         "startSceneId": "0901f318-60af-41c7-8056-811bfb874ee1",
         "startX": 0,
         "startY": 0,
-        "startMoveSpeed": 1,
+        "startMoveSpeed": 2,
         "startAnimSpeed": 127,
         "startDirection": "up",
         "showCollisions": true,
@@ -26399,9 +26399,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            227,
-            480,
-            368
+            202,
+            427,
+            327
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",

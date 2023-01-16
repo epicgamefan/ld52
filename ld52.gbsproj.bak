@@ -17367,10 +17367,10 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "That was a bad\nidea.",
-                            "Maybe not do that\nnext time.",
-                            "You died much too\nearly in your\nlife.",
-                            "At home your\nfamily awaits."
+                            "Your life has been\nterminated.",
+                            "Meanwhile, your\nfamily continues\nto wait.",
+                            "They will never\nlearn the events\nthat took place.",
+                            "It is sad that\nyour adventure\nmust end here!!"
                         ],
                         "avatarId": ""
                     },
