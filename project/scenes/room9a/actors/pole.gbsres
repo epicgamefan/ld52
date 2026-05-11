@@ -1,0 +1,177 @@
+{
+  "_resourceType": "actor",
+  "id": "f16f5bb7-d16e-4269-a086-86a79397e385",
+  "_index": 1,
+  "symbol": "actor_27",
+  "prefabId": "",
+  "name": "Pole",
+  "x": 2,
+  "y": 5,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "e93fe4b9-5b6c-4835-80c4-965ba91353e7",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "24",
+        "__collapseElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "24"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "A pole..."
+              ],
+              "avatarId": ""
+            },
+            "id": "5f4a25db-6caa-4b57-96ab-34cf9f92fd73"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "39",
+              "__collapseElse": false,
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "39"
+                },
+                "valueB": {
+                  "type": "false"
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Its too high\nfor me to reach..."
+                    ],
+                    "avatarId": "",
+                    "__collapse": false
+                  },
+                  "id": "de20b0bb-b740-43d7-b3f7-9dcf2451c2b7"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Take it?"
+                    ],
+                    "avatarId": "",
+                    "__collapse": false
+                  },
+                  "id": "21c72c91-fa38-439b-8c7a-b92091742454"
+                },
+                {
+                  "command": "EVENT_MENU",
+                  "args": {
+                    "variable": "24",
+                    "items": 2,
+                    "option1": "Yes",
+                    "option2": "No",
+                    "option3": "",
+                    "option4": "",
+                    "option5": "",
+                    "option6": "",
+                    "option7": "",
+                    "option8": "",
+                    "cancelOnB": false,
+                    "layout": "dialogue",
+                    "cancelOnLastOption": true
+                  },
+                  "id": "868ad55c-da49-401f-b161-00e5eca084f7"
+                }
+              ]
+            },
+            "id": "1123e9eb-84e9-412f-9e33-45a29c5a9265"
+          }
+        ],
+        "false": []
+      },
+      "id": "f30f23f1-aa97-4b62-800c-2ba53a09a412"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "24",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "24"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "54b429d3-ab7f-4dea-be26-99decca95e83"
+          }
+        ],
+        "false": []
+      },
+      "id": "8cdbc62b-20aa-43a1-868c-50d66da42627"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "24",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "24"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "07fe1a5d-c26e-4a32-92ab-a6562c1ec18b"
+          }
+        ],
+        "false": []
+      },
+      "id": "975ace7e-c01c-4425-bc00-8be2fda5defc"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

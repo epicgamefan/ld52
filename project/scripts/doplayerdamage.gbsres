@@ -1,0 +1,63 @@
+{
+  "_resourceType": "script",
+  "id": "00dbd708-8652-4110-bc05-6d20c974be7d",
+  "name": "DoPlayerDamage",
+  "symbol": "script_22",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "48",
+        "__collapse": true
+      },
+      "id": "65bb06c2-5dfa-4139-aecb-f5d54ce4d4ea"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "vectorX": "48",
+        "operator": "==",
+        "vectorY": "49",
+        "__collapseElse": true,
+        "__collapse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "48"
+          },
+          "valueB": {
+            "type": "variable",
+            "value": "49"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "dd51180c-773e-4139-b48d-d34204233893",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "994e638b-f140-490d-a17a-e29f410305d8"
+          }
+        ],
+        "false": []
+      },
+      "id": "b91e6af1-36ad-4bed-bfcc-a47720edee1e"
+    }
+  ]
+}

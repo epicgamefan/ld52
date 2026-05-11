@@ -1,0 +1,86 @@
+{
+  "_resourceType": "trigger",
+  "id": "e054eeb9-c0d4-4ff6-a451-04a8749bc65a",
+  "_index": 3,
+  "symbol": "trigger_3",
+  "prefabId": "",
+  "name": "Door",
+  "x": 10,
+  "y": 7,
+  "width": 6,
+  "height": 11,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "1",
+        "flag": 0,
+        "__collapseElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The key fit. The \ndoor unlocks\nand opens."
+              ],
+              "avatarId": "",
+              "__comment": true
+            },
+            "id": "841b5885-52cc-4239-b4f2-1abdd83ce1ac"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89",
+              "__collapse": false
+            },
+            "id": "8ee6b70b-cb5c-4f2f-ac94-7a232b343e8e"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "571f62e1-5faa-4fc1-b3db-59c3b2d42618",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "24bf0750-885c-417e-81ab-c439ab42a22f"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The door is\nlocked.",
+                "Only if I had\na key."
+              ],
+              "avatarId": ""
+            },
+            "id": "11c5d892-4979-479d-9760-9421dc666183"
+          }
+        ]
+      },
+      "id": "895bd671-6165-4f71-aa98-e185580a8c69"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89"
+      },
+      "id": "9bced5d6-0f92-4de8-804b-061ab0071b2b"
+    }
+  ],
+  "leaveScript": []
+}

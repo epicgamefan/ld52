@@ -1,0 +1,67 @@
+{
+  "_resourceType": "script",
+  "id": "981a8cf9-d5e0-4216-a543-0662c764a457",
+  "name": "Room1Dialog",
+  "symbol": "script_6",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "5",
+        "__collapseElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "5"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "While heading\nhome for the \nholidays,",
+                "your car broke \ndown.",
+                "You are in \nNowheresville, \nWest Virginia...",
+                "Deep in the \nmountains on a\nstormy night.",
+                "Your family will \nbe worried.  \n",
+                "You want to let \nthem know that \nyou're not hurt.",
+                "With no signal,\nyou are unable \nto call them.",
+                "After walking \nmiles in the \nsleet and rain,",
+                "you find yourself\nat an old desolate\nfacility.",
+                "The storm is \ngrowing worse.\n",
+                "No sense in \ntrying to\nhead back now.",
+                "Better off \nfinding a way to \nget inside.",
+                "Maybe you can \nwait the storm \nout overnight."
+              ],
+              "avatarId": "",
+              "__collapse": false
+            },
+            "id": "98d5bcc6-bea2-4113-931a-d2dbb3ab879a"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "5",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "f46e32c3-7f7d-4bd2-82de-fd0c8477639f"
+          }
+        ],
+        "false": []
+      },
+      "id": "876c030c-4656-42d3-9b90-afb079086fda"
+    }
+  ]
+}

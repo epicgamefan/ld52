@@ -1,0 +1,105 @@
+{
+  "_resourceType": "trigger",
+  "id": "7b0bd72e-36f4-4741-b41e-5f23741351da",
+  "_index": 3,
+  "symbol": "trigger_21",
+  "prefabId": "",
+  "name": "Door",
+  "x": 10,
+  "y": 7,
+  "width": 6,
+  "height": 11,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "vectorX": "1",
+        "operator": "==",
+        "vectorY": "13",
+        "__collapseElse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "1"
+          },
+          "valueB": {
+            "type": "variable",
+            "value": "13"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The key fit. The \ndoor unlocks\nand opens."
+              ],
+              "avatarId": "",
+              "__collapse": true
+            },
+            "id": "26d138f4-1473-478e-82e7-8b5906589b9d"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89",
+              "__collapse": true
+            },
+            "id": "91888479-58c2-458f-adcd-e43641502770"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "crash",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "e7a30124-8f89-48c1-9f64-9dc1552860de"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "9d8e896c-706f-4a34-afd9-b8a3d52ef326",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 11
+              },
+              "direction": "",
+              "fadeSpeed": "2",
+              "__collapse": true
+            },
+            "id": "a31cdc5a-9f70-429b-98fd-8547a7dc819b"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The door is\nlocked.",
+                "Only if I had\na key."
+              ],
+              "avatarId": "",
+              "__collapse": true
+            },
+            "id": "f2220273-d127-46ba-a921-abcf9462f57b"
+          }
+        ]
+      },
+      "id": "75ed29a2-9643-40cb-8ab0-04989dd152a0"
+    }
+  ],
+  "leaveScript": []
+}

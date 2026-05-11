@@ -1,0 +1,132 @@
+{
+  "_resourceType": "actor",
+  "id": "6683cf0c-7842-4229-bea0-080484e9a4ab",
+  "_index": 2,
+  "symbol": "actor_35",
+  "prefabId": "",
+  "name": "Fork",
+  "x": 13,
+  "y": 12,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "a9e4cc62-83c0-4174-8b3b-548af7843f30",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "26",
+        "__collapseElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "26"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "It's a fork...",
+                "Wonder where\nDemonface was\nhiding that..",
+                "Take it?"
+              ],
+              "avatarId": ""
+            },
+            "id": "8dde2fb7-2a4f-45a9-bffb-f6f6d54b748d"
+          },
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "26",
+              "items": 2,
+              "option1": "Yes",
+              "option2": "No",
+              "option3": "",
+              "option4": "",
+              "option5": "",
+              "option6": "",
+              "option7": "",
+              "option8": "",
+              "cancelOnB": false,
+              "layout": "dialogue",
+              "cancelOnLastOption": true
+            },
+            "id": "990b4ed1-ceb1-4780-86a3-a06ba1db7348"
+          }
+        ],
+        "false": []
+      },
+      "id": "1b8eac6f-e904-4d16-82b4-415c90baa201"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "26",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "26"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "c76e5e72-31b3-4490-8675-a6865a932ca2"
+          }
+        ],
+        "false": []
+      },
+      "id": "943ee190-146f-4152-807f-3f72a9540433"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "26",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "26"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "b3d147b6-efdd-4cfe-bc3c-8d19c0a4c65d"
+          }
+        ],
+        "false": []
+      },
+      "id": "a9151d9b-12a0-4b4a-9652-51c35823a847"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

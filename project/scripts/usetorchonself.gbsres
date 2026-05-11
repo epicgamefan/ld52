@@ -1,0 +1,38 @@
+{
+  "_resourceType": "script",
+  "id": "8c29d773-79de-4f35-88df-4f06000a25c3",
+  "name": "UseTorchOnSelf",
+  "symbol": "script_23",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You burst into\nflames..."
+        ],
+        "avatarId": ""
+      },
+      "id": "8a37cf47-b84a-4aec-aba7-3c1c18cce376"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "dd51180c-773e-4139-b48d-d34204233893",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "18a8a458-69f3-4484-a354-144876f4a354"
+    }
+  ]
+}

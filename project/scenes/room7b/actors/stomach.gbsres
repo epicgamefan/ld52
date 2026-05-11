@@ -1,0 +1,133 @@
+{
+  "_resourceType": "actor",
+  "id": "449db4f1-1153-4404-af43-960737d87e63",
+  "_index": 0,
+  "symbol": "actor_33",
+  "prefabId": "",
+  "name": "Stomach",
+  "x": 5,
+  "y": 12,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "9d122d33-ef4c-4531-b2e4-69956b8f7fe0",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "35",
+        "__collapseElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "35"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Its stomach...",
+                "Weird.",
+                "Wouldn't expect\nthat from a giant\nface.",
+                "Take it?"
+              ],
+              "avatarId": ""
+            },
+            "id": "c2fb197c-515e-4248-8a91-747d65083382"
+          },
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "35",
+              "items": 2,
+              "option1": "Yes",
+              "option2": "No",
+              "option3": "",
+              "option4": "",
+              "option5": "",
+              "option6": "",
+              "option7": "",
+              "option8": "",
+              "cancelOnB": false,
+              "layout": "dialogue",
+              "cancelOnLastOption": true
+            },
+            "id": "6942e6cf-8103-4b27-bec7-72d42afa0420"
+          }
+        ],
+        "false": []
+      },
+      "id": "38ca40ec-31f2-4ea3-b794-d6d41372e7fe"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "35",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "35"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "282dc733-a559-4c8f-895e-fac6c302edcb"
+          }
+        ],
+        "false": []
+      },
+      "id": "df45275a-bdcc-4755-8829-a75215b1cffa"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "35",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "35"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "412ed5c7-1cf0-413c-b609-3db8973ea67c"
+          }
+        ],
+        "false": []
+      },
+      "id": "90a59766-afbf-4002-8db8-022553aa4164"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

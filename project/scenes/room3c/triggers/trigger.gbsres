@@ -1,0 +1,84 @@
+{
+  "_resourceType": "trigger",
+  "id": "bad9bbc2-e372-4ebf-86c0-01b1494b5331",
+  "_index": 3,
+  "symbol": "trigger_102",
+  "prefabId": "",
+  "name": "",
+  "x": 6,
+  "y": 5,
+  "width": 8,
+  "height": 9,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "vectorX": "1",
+        "operator": "==",
+        "vectorY": "41",
+        "__collapseElse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "1"
+          },
+          "valueB": {
+            "type": "variable",
+            "value": "41"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The monster is \nstunned!"
+              ],
+              "avatarId": ""
+            },
+            "id": "6bd87389-1890-4e94-9ee6-f4fde48b43be"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "a21d8cde-72eb-4e0c-b2a3-7b6c402448b6",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 9
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "1cb6d67b-b222-4ba0-8e68-630c2903c730"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Nothing \nhappened...",
+                "Good thing the \nmonster is\nstunned.",
+                "That could have\nbeen bad for my\nhealth.",
+                "Only if I had a\nway to banish this\ndark evil."
+              ],
+              "avatarId": "",
+              "__collapse": false
+            },
+            "id": "1c0e0944-8d3d-47a1-838c-8980427a5174"
+          }
+        ]
+      },
+      "id": "ff08fa74-ca3e-4fe7-88d4-aee0a9f0225a"
+    }
+  ],
+  "leaveScript": []
+}

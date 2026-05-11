@@ -1,0 +1,18 @@
+{
+  "_resourceType": "script",
+  "id": "b8c8b3d8-4c61-4e53-9899-a709da0ebf7f",
+  "name": "PlayBGM",
+  "symbol": "script_25",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "af2d16e0-7e56-4406-ab0d-ff2b95e64986"
+      },
+      "id": "c870237e-b8b8-44da-acda-26e2b36deafc"
+    }
+  ]
+}

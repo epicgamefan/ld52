@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "6a08d084-d535-44d8-8749-672bcda89325",
+  "_index": 3,
+  "symbol": "trigger_52",
+  "prefabId": "",
+  "name": "Back",
+  "x": 9,
+  "y": 15,
+  "width": 2,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "93cb85d3-b55e-46d4-9c74-ac081657ce23",
+        "x": {
+          "type": "number",
+          "value": 7
+        },
+        "y": {
+          "type": "number",
+          "value": 6
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "4ee7c58d-00d6-4456-bd45-0403a8a98d9e"
+    }
+  ],
+  "leaveScript": []
+}

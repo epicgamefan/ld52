@@ -1,0 +1,90 @@
+{
+  "_resourceType": "trigger",
+  "id": "fbce7764-1cbe-4067-ada5-c0d09461df10",
+  "_index": 2,
+  "symbol": "trigger_2",
+  "prefabId": "",
+  "name": "Loose Stone",
+  "x": 5,
+  "y": 9,
+  "width": 1,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "vectorX": "1",
+        "operator": "==",
+        "vectorY": "12",
+        "__collapseElse": false,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "1"
+          },
+          "valueB": {
+            "type": "variable",
+            "value": "12"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89",
+              "__collapse": true
+            },
+            "id": "222475ca-0b7b-47e3-bb99-97abe1236bde"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "a4f22875-f493-4679-a7d9-3e9fd3b3d6ee",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2",
+              "__collapse": false
+            },
+            "id": "291d050e-5943-44e3-ae19-ea71f587f028"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The stone looks\nworn here.",
+                "Looks like \nsomething might \nbe behind it."
+              ],
+              "avatarId": "",
+              "__collapse": true
+            },
+            "id": "18d3a002-9ab2-4538-9917-3c57d2e0b0ba"
+          }
+        ]
+      },
+      "id": "3d267101-b910-415a-99ca-780067fcc120"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89",
+        "__collapse": true
+      },
+      "id": "a23266bb-1230-4150-b419-a51bcfdd59e7"
+    }
+  ],
+  "leaveScript": []
+}

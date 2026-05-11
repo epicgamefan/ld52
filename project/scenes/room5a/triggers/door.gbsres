@@ -1,0 +1,140 @@
+{
+  "_resourceType": "trigger",
+  "id": "9958d9ee-c424-4e20-98b0-a2b4ff0ca7c0",
+  "_index": 3,
+  "symbol": "trigger_60",
+  "prefabId": "",
+  "name": "Door",
+  "x": 10,
+  "y": 7,
+  "width": 1,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "vectorX": "1",
+        "operator": "==",
+        "vectorY": "22",
+        "__collapseElse": false,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "1"
+          },
+          "valueB": {
+            "type": "variable",
+            "value": "22"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Door is locked..."
+              ],
+              "avatarId": "",
+              "__collapse": false
+            },
+            "id": "1e832f66-1648-4ef3-959e-43bb1adc11d8"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "vectorX": "1",
+              "operator": "==",
+              "vectorY": "15",
+              "__collapseElse": false,
+              "__collapse": false,
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "1"
+                },
+                "valueB": {
+                  "type": "variable",
+                  "value": "15"
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89",
+                    "__collapse": true
+                  },
+                  "id": "9f0e3d2a-a0bb-49d9-97a2-02b61a0bacc4"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "crash",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "d1211a01-55f7-4ebf-a266-8a8bbaf7557a"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "fa52e18a-1502-4aa7-886b-fbdfd8cac097",
+                    "x": {
+                      "type": "number",
+                      "value": 10
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 7
+                    },
+                    "direction": "",
+                    "fadeSpeed": 1,
+                    "__collapse": false
+                  },
+                  "id": "b0291436-4a8c-483a-b0b1-97c801450b5a"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Nothing happened."
+                    ],
+                    "avatarId": "",
+                    "__collapse": false
+                  },
+                  "id": "8ddfebdc-d232-4580-881a-4d2c113629dd"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89"
+                  },
+                  "id": "35be4910-7f16-4f76-a228-fef486cae3b4"
+                }
+              ]
+            },
+            "id": "f61b0e32-579c-44f9-925e-d119ffebc193"
+          }
+        ]
+      },
+      "id": "c264e9b3-feff-4079-ab5f-18ec81930710"
+    }
+  ],
+  "leaveScript": []
+}

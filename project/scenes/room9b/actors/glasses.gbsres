@@ -1,0 +1,177 @@
+{
+  "_resourceType": "actor",
+  "id": "bb0e33da-c192-4833-841d-69bb4dc0dd6d",
+  "_index": 0,
+  "symbol": "actor_28",
+  "prefabId": "",
+  "name": "Glasses",
+  "x": 5,
+  "y": 5,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "8f7cd2d0-45cc-4496-9817-13051e02fc55",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "23",
+        "__collapseElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "23"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "A pair of glasses."
+              ],
+              "avatarId": ""
+            },
+            "id": "888ca260-d17d-448d-a104-705912b089df"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "39",
+              "__collapseElse": false,
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "39"
+                },
+                "valueB": {
+                  "type": "false"
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "It's too high\nfor me to reach..."
+                    ],
+                    "avatarId": "",
+                    "__collapse": false
+                  },
+                  "id": "57033bb5-fdf3-4335-ba42-c165fc71a053"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Take it?"
+                    ],
+                    "avatarId": "",
+                    "__collapse": false
+                  },
+                  "id": "dc8f0f76-8203-4c8a-b4c6-c1d69a6775d6"
+                },
+                {
+                  "command": "EVENT_MENU",
+                  "args": {
+                    "variable": "23",
+                    "items": 2,
+                    "option1": "Yes",
+                    "option2": "No",
+                    "option3": "",
+                    "option4": "",
+                    "option5": "",
+                    "option6": "",
+                    "option7": "",
+                    "option8": "",
+                    "cancelOnB": false,
+                    "layout": "dialogue",
+                    "cancelOnLastOption": true
+                  },
+                  "id": "9fc3d546-98f9-427b-9f4a-ea286c3d69e7"
+                }
+              ]
+            },
+            "id": "734d5705-fb7c-4a9d-b3bd-a1c11c627cc0"
+          }
+        ],
+        "false": []
+      },
+      "id": "a2819151-8163-4c55-9d59-cabd749a83d8"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "23",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "23"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "75a4b365-239e-4601-94ae-91df74cc7c7a"
+          }
+        ],
+        "false": []
+      },
+      "id": "0239a62d-60d4-4858-8e47-3a9d815b6a29"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "23",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "23"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "d39af1f1-da87-41dd-9a77-5488c5bc042f"
+          }
+        ],
+        "false": []
+      },
+      "id": "84a56ad3-3eb5-469b-aedc-62607a6d41d2"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

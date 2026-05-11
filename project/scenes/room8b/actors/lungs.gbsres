@@ -1,0 +1,131 @@
+{
+  "_resourceType": "actor",
+  "id": "771daad2-3402-431b-acc6-e45571afc9d7",
+  "_index": 1,
+  "symbol": "actor_31",
+  "prefabId": "",
+  "name": "Lungs",
+  "x": 9,
+  "y": 11,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "3a2cfc07-ed5c-4968-9c11-34953aee4085",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "33",
+        "__collapseElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "33"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Gross... \nIt's Skullhead's \nlungs.",
+                "Take them?"
+              ],
+              "avatarId": ""
+            },
+            "id": "1ad92d85-ffc2-41e6-8aa1-6a6fbe66611b"
+          },
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "33",
+              "items": 2,
+              "option1": "Yes",
+              "option2": "No",
+              "option3": "",
+              "option4": "",
+              "option5": "",
+              "option6": "",
+              "option7": "",
+              "option8": "",
+              "cancelOnB": false,
+              "layout": "dialogue",
+              "cancelOnLastOption": true
+            },
+            "id": "7a1add1e-865c-4d09-95a2-e2e7df7e05f9"
+          }
+        ],
+        "false": []
+      },
+      "id": "a3c34f59-aa62-4131-b4a3-88477bc9ad64"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "33",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "33"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "8a355bda-2cac-402c-8cc9-79773e3a04a4"
+          }
+        ],
+        "false": []
+      },
+      "id": "7ad40b2b-2087-4d90-8dea-42d96f1e721f"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "33",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "33"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "d76066a4-0d08-418c-aad5-23b3327a08d6"
+          }
+        ],
+        "false": []
+      },
+      "id": "1363ac9e-4ad7-409b-a022-cfc0c0cf4ccb"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

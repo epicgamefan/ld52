@@ -1,0 +1,95 @@
+{
+  "_resourceType": "trigger",
+  "id": "b6909da0-43cf-44f2-a2d8-723b6662ebbb",
+  "_index": 3,
+  "symbol": "trigger_108",
+  "prefabId": "",
+  "name": "",
+  "x": 6,
+  "y": 5,
+  "width": 8,
+  "height": 10,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "vectorX": "1",
+        "operator": "==",
+        "vectorY": "41",
+        "__collapseElse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "1"
+          },
+          "valueB": {
+            "type": "variable",
+            "value": "41"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The monster is \nstunned!"
+              ],
+              "avatarId": ""
+            },
+            "id": "f2c7ce91-3578-42b2-9ac4-fe1ab597fb41"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89"
+            },
+            "id": "ef57dbfc-fb87-48d3-ab62-51fe32535abf"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "a21d8cde-72eb-4e0c-b2a3-7b6c402448b6",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 9
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "225fb1bf-0cae-479f-a18c-b4dc06f420bd"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "That was dumb..\nYou get knocked \nonto the ground.",
+                "Not sure how much \nof this I can \nhandle..."
+              ],
+              "avatarId": ""
+            },
+            "id": "0975679d-f174-4334-b629-e658e8125a27"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "00dbd708-8652-4110-bc05-6d20c974be7d"
+            },
+            "id": "42e10edb-ca56-4842-bee3-5586014cf400"
+          }
+        ]
+      },
+      "id": "fbc88b40-36c3-4189-840d-93b1a26f1eb2"
+    }
+  ],
+  "leaveScript": []
+}

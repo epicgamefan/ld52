@@ -1,0 +1,131 @@
+{
+  "_resourceType": "actor",
+  "id": "5d54b7af-088b-4efb-bf48-022b908d9812",
+  "_index": 0,
+  "symbol": "actor_30",
+  "prefabId": "",
+  "name": "Heart",
+  "x": 6,
+  "y": 10,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "d3337a82-7440-4f0f-af09-1ad8bc728f24",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "37",
+        "__collapseElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "37"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Gross... \nIt's Skullhead's \nheart.",
+                "Take it?"
+              ],
+              "avatarId": ""
+            },
+            "id": "84d37575-db2b-465f-ad37-580375cf993d"
+          },
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "37",
+              "items": 2,
+              "option1": "Yes",
+              "option2": "No",
+              "option3": "",
+              "option4": "",
+              "option5": "",
+              "option6": "",
+              "option7": "",
+              "option8": "",
+              "cancelOnB": false,
+              "layout": "dialogue",
+              "cancelOnLastOption": true
+            },
+            "id": "705cd7e4-56b4-4521-82b7-a1e55f052270"
+          }
+        ],
+        "false": []
+      },
+      "id": "9456f24c-e779-49e8-b7c8-e0c1ada5d8ae"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "37",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "37"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "d73e7267-c26b-4902-bd73-83542a376121"
+          }
+        ],
+        "false": []
+      },
+      "id": "13f7d822-776f-4e62-9636-e88c540581de"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "37",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "37"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "a3018d01-722e-42df-96bf-d4486f25868e"
+          }
+        ],
+        "false": []
+      },
+      "id": "5dad15b8-8a85-4766-88a1-171a1a0e0dfc"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,131 @@
+{
+  "_resourceType": "actor",
+  "id": "3625c2d4-5fe5-4338-87c3-9ed49733a9e1",
+  "_index": 1,
+  "symbol": "actor_34",
+  "prefabId": "",
+  "name": "Eyes",
+  "x": 9,
+  "y": 12,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "8a19c7b4-a096-4201-a64b-b49435ce5816",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "27",
+        "__collapseElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "27"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Eye Balls!",
+                "Take them?"
+              ],
+              "avatarId": ""
+            },
+            "id": "8dac5c02-1f3e-4f84-8ae1-f9d1318cce73"
+          },
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "27",
+              "items": 2,
+              "option1": "Yes",
+              "option2": "No",
+              "option3": "",
+              "option4": "",
+              "option5": "",
+              "option6": "",
+              "option7": "",
+              "option8": "",
+              "cancelOnB": false,
+              "layout": "dialogue",
+              "cancelOnLastOption": true
+            },
+            "id": "92e37b02-bf4a-4d8b-a289-f5c744a4c266"
+          }
+        ],
+        "false": []
+      },
+      "id": "8d72770e-488a-4097-8234-f52c79bde640"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "27",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "27"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "c2bd22bf-d367-4744-b1f5-7dc60ca7902e"
+          }
+        ],
+        "false": []
+      },
+      "id": "3e43cebe-0f78-4d16-befc-52a6ee773e6f"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "27",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "27"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "1013c3c9-0d7f-4547-960f-db69783a685a"
+          }
+        ],
+        "false": []
+      },
+      "id": "21ee86b3-7bc6-46c4-9008-d5b717f6a8b9"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

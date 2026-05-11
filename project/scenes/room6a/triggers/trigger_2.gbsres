@@ -1,0 +1,158 @@
+{
+  "_resourceType": "trigger",
+  "id": "379580ee-0a1c-4120-94fc-53a16d5700ef",
+  "_index": 3,
+  "symbol": "trigger_89",
+  "prefabId": "",
+  "name": "",
+  "x": 5,
+  "y": 7,
+  "width": 10,
+  "height": 6,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "vectorX": "1",
+        "operator": "==",
+        "vectorY": "22",
+        "__collapseElse": false,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "1"
+          },
+          "valueB": {
+            "type": "variable",
+            "value": "22"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "A real life\nGolem...."
+              ],
+              "avatarId": "",
+              "__collapse": false
+            },
+            "id": "056be98f-3864-48c6-ac2b-59fb89cdd0f5"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "vectorX": "1",
+              "operator": "==",
+              "vectorY": "20",
+              "__collapseElse": false,
+              "__collapse": false,
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "1"
+                },
+                "valueB": {
+                  "type": "variable",
+                  "value": "20"
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Golem crumbles!"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "e08d277b-9037-4d87-aa4f-123a64f98482"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89",
+                    "__collapse": true
+                  },
+                  "id": "c4147b4c-e7da-4fed-a6d2-60833f56e032"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "crash",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "ce5175c0-1d27-486f-aebb-9026f0a6479d"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "dafef241-04c0-4c36-9a78-d066cabde082",
+                    "x": {
+                      "type": "number",
+                      "value": 9
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 11
+                    },
+                    "direction": "",
+                    "fadeSpeed": 1,
+                    "__collapse": false
+                  },
+                  "id": "5be50a24-b3c9-4027-957b-2d32a95a664f"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Nothing seemed \nto happen..."
+                    ],
+                    "avatarId": "",
+                    "__collapse": false
+                  },
+                  "id": "0a87e597-23fa-467d-a736-2b440cadbd32"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89"
+                  },
+                  "id": "b777bcd6-c87c-4d96-ab31-ae4e5dfb274a"
+                }
+              ]
+            },
+            "id": "9cf1026a-b83f-4929-8871-6f3481e6c222"
+          }
+        ]
+      },
+      "id": "9823f442-258e-444d-80da-20a09fba1de9"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89",
+        "__collapse": true
+      },
+      "id": "39140159-e82e-456d-9a79-30897d2f251a"
+    }
+  ],
+  "leaveScript": []
+}

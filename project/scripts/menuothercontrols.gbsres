@@ -1,0 +1,56 @@
+{
+  "_resourceType": "script",
+  "id": "beb2580e-88e0-4e58-aeda-0ec7ae9ce449",
+  "name": "MenuOtherControls",
+  "symbol": "script_27",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "599bc594-efaf-4e65-b7b8-7278935c8f07"
+            },
+            "id": "8235bf60-8b65-494a-acb2-80dcf0b0896c"
+          }
+        ]
+      },
+      "id": "9ba61e09-c967-48d0-b6a6-4a390e67ec66"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__comment": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89"
+            },
+            "id": "a8e0d137-c3d3-4272-bcc6-439bf1c6a9fb"
+          }
+        ]
+      },
+      "id": "7c2328f3-b278-4d3b-a5ed-ce68207cfb07"
+    }
+  ]
+}

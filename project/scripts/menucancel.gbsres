@@ -1,0 +1,41 @@
+{
+  "_resourceType": "script",
+  "id": "6690ed07-8f4a-44ea-89bf-d4647d352f44",
+  "name": "MenuCancel",
+  "symbol": "script_5",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "af2d16e0-7e56-4406-ab0d-ff2b95e64986",
+        "__comment": true
+      },
+      "id": "4571d8d8-248d-4b45-a4f4-7e595054e4d4"
+    },
+    {
+      "command": "EVENT_PLAYER_SET_SPRITE",
+      "args": {
+        "spriteSheetId": "773989d5-00d1-4871-9662-98189265c08b",
+        "persist": true
+      },
+      "id": "d1bd4787-f4d6-438f-8bc2-3a0c79b334b6"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89"
+      },
+      "id": "d4b31257-dc79-4029-9eef-d330601f3b86"
+    },
+    {
+      "command": "EVENT_SCENE_POP_STATE",
+      "args": {
+        "fadeSpeed": 3
+      },
+      "id": "887e75a2-cbb5-4557-8274-5a284feb0911"
+    }
+  ]
+}

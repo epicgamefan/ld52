@@ -1,0 +1,23 @@
+{
+  "_resourceType": "trigger",
+  "id": "01a3757d-7d7f-48b1-9f0f-a2e7bd132c72",
+  "_index": 2,
+  "symbol": "trigger_10",
+  "prefabId": "",
+  "name": "Ok",
+  "x": 10,
+  "y": 15,
+  "width": 3,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "599bc594-efaf-4e65-b7b8-7278935c8f07"
+      },
+      "id": "e5f305df-980f-412f-ae5c-7f6d2fd1f904"
+    }
+  ],
+  "leaveScript": []
+}

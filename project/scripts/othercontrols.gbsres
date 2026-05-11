@@ -1,0 +1,66 @@
+{
+  "_resourceType": "script",
+  "id": "e5dadfc6-01c7-4ee8-a32d-1c7967b16e55",
+  "name": "OtherControls",
+  "symbol": "script_26",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "193a7499-7aa9-4e62-a244-20bf6c8a0a11",
+              "x": {
+                "type": "number",
+                "value": 8
+              },
+              "y": {
+                "type": "number",
+                "value": 8
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "3f001c81-12af-4218-9c91-d27b89e92a51"
+          }
+        ]
+      },
+      "id": "26c79174-1574-4a62-9336-8911a85e95aa"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__comment": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89"
+            },
+            "id": "5f3cc1f6-8ee1-4c0e-a9cc-6dbb5b6b0264"
+          }
+        ]
+      },
+      "id": "8bde3adb-3cb7-44f6-9633-e6027f167fea"
+    }
+  ]
+}

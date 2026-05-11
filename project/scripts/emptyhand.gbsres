@@ -1,0 +1,30 @@
+{
+  "_resourceType": "script",
+  "id": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89",
+  "name": "EmptyHand",
+  "symbol": "script_8",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "variable",
+          "value": "22"
+        }
+      },
+      "id": "f0a17bf9-1d99-4cd1-aeeb-9066a313a565"
+    },
+    {
+      "command": "EVENT_PLAYER_SET_SPRITE",
+      "args": {
+        "spriteSheetId": "773989d5-00d1-4871-9662-98189265c08b",
+        "persist": true
+      },
+      "id": "59663c3a-e957-435d-bf0b-a320f5a71698"
+    }
+  ]
+}

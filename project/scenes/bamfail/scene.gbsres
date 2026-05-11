@@ -1,0 +1,58 @@
+{
+  "_resourceType": "scene",
+  "id": "571f62e1-5faa-4fc1-b3db-59c3b2d42618",
+  "_index": 8,
+  "type": "TOPDOWN",
+  "name": "BamFail",
+  "symbol": "scene_10",
+  "x": 1029.9999999999998,
+  "y": 325.0000000000002,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "e8b834ac-bff2-47e6-9b14-10efb83174fc",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "286b614e-dd50-4433-9626-42554b4f68d2"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "crash",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "526d9412-7439-4d44-8117-e135cff6e324"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "ed045ea1-6c84-410d-8871-411a77b4fac8"
+    },
+    {
+      "command": "EVENT_SCENE_POP_STATE",
+      "args": {
+        "fadeSpeed": "2"
+      },
+      "id": "8ecce37c-fbc9-4477-b7f1-dd1a0431055a"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

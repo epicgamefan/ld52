@@ -1,0 +1,87 @@
+{
+  "_resourceType": "script",
+  "id": "96dfaabd-ba02-406b-8d6d-3d724cdd604a",
+  "name": "BurnableFloorMatt",
+  "symbol": "script_9",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "vectorX": "1",
+        "operator": "==",
+        "vectorY": "14",
+        "__collapseElse": false,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "1"
+          },
+          "valueB": {
+            "type": "variable",
+            "value": "14"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The mat catches\non fire and\nquickly burns up."
+              ],
+              "avatarId": ""
+            },
+            "id": "20cc3228-745b-4c72-b139-80a991319868"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89",
+              "__collapse": true
+            },
+            "id": "6688234a-ea6c-41f2-810b-3dd2a0a5cafe"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "ba0644ae-1c91-493c-93f6-ad34d08e1483",
+              "x": {
+                "type": "number",
+                "value": 7
+              },
+              "y": {
+                "type": "number",
+                "value": 7
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "29560b5f-50c4-47f5-b6f5-ebeb15491925"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Someone glued a \nmat to the floor.",
+                "It's made from \ncheap material.",
+                "The material looks\nvery flammable."
+              ],
+              "avatarId": "",
+              "__collapse": false
+            },
+            "id": "cef6eeb0-11af-4a77-a64a-9afdd58bff8a"
+          }
+        ]
+      },
+      "id": "4016d1d7-8df8-480a-9f16-5675f9005e36"
+    }
+  ]
+}

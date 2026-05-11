@@ -1,0 +1,23 @@
+{
+  "_resourceType": "trigger",
+  "id": "0aa9ff0d-b705-42d8-9901-9b11bce0b678",
+  "_index": 2,
+  "symbol": "trigger_13",
+  "prefabId": "",
+  "name": "Cancel",
+  "x": 14,
+  "y": 15,
+  "width": 5,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "6690ed07-8f4a-44ea-89bf-d4647d352f44"
+      },
+      "id": "b8d348f2-6c5b-4f0a-9445-1f6eee6e14d5"
+    }
+  ],
+  "leaveScript": []
+}

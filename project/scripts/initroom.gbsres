@@ -1,0 +1,57 @@
+{
+  "_resourceType": "script",
+  "id": "97192b4e-8a22-4619-b2e9-d455c381d53f",
+  "name": "InitRoom",
+  "symbol": "script_3",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_SCENE_RESET_STATE",
+      "args": {},
+      "id": "c4d2a632-b40a-4025-bc80-027afc9ced1a"
+    },
+    {
+      "command": "EVENT_SCENE_PUSH_STATE",
+      "args": {},
+      "id": "0a48a43e-8dea-4b7a-9cc0-6d99c472cf92"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "5a1baaae-ac02-437e-bf7d-ef12e862a5bf"
+      },
+      "id": "85696f26-d748-496f-bb0a-68f0f654df02"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "3cb793a1-6e6f-457a-bd2f-bb30ee87b1d1"
+      },
+      "id": "046fd20e-c774-4dc2-bbf2-0f61e1f21792"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "50",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "b68eb08b-091a-40b8-b96c-7c3476459cf1"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "51",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "5792bc0f-0e45-46cc-998e-d320a54d0716"
+    }
+  ]
+}

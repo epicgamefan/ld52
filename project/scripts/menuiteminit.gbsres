@@ -1,0 +1,63 @@
+{
+  "_resourceType": "script",
+  "id": "883f00b5-4b47-4cc5-b838-eb243eaba050",
+  "name": "MenuItemInit",
+  "symbol": "script_2",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Variable A",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "V0",
+        "operator": "==",
+        "comparator": 1,
+        "__collapseElse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "V0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "0"
+            },
+            "id": "87ebca43-2e1d-4816-bf34-0173c88fe1c9"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "0"
+            },
+            "id": "dd70a72d-a4ae-41e4-9713-4ea671540fff"
+          }
+        ]
+      },
+      "id": "9d78d843-0400-4364-a852-2c3036c863d7"
+    }
+  ]
+}

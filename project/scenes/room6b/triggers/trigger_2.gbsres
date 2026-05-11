@@ -1,0 +1,28 @@
+{
+  "_resourceType": "trigger",
+  "id": "e4c9b4b9-1500-4508-86ca-394227590e7e",
+  "_index": 3,
+  "symbol": "trigger_106",
+  "prefabId": "",
+  "name": "",
+  "x": 9,
+  "y": 8,
+  "width": 2,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Only by combining \nthe 3 artifacts\nin our hold...",
+          "can we hope to \nsedate the \nmonster,",
+          "if only temporary."
+        ],
+        "avatarId": ""
+      },
+      "id": "6c8b595b-59da-4202-82b0-32fc95a9f7ff"
+    }
+  ],
+  "leaveScript": []
+}

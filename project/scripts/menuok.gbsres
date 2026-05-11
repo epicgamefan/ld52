@@ -1,0 +1,26 @@
+{
+  "_resourceType": "script",
+  "id": "599bc594-efaf-4e65-b7b8-7278935c8f07",
+  "name": "MenuOk",
+  "symbol": "script_4",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "af2d16e0-7e56-4406-ab0d-ff2b95e64986",
+        "__comment": true
+      },
+      "id": "e9d7f7f7-9324-4eb8-ba96-8f244053d3f6"
+    },
+    {
+      "command": "EVENT_SCENE_POP_STATE",
+      "args": {
+        "fadeSpeed": 3
+      },
+      "id": "65b83878-3e48-4378-a34e-a401ec06d0ba"
+    }
+  ]
+}

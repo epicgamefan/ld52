@@ -1,0 +1,71 @@
+{
+  "_resourceType": "scene",
+  "id": "fa52e18a-1502-4aa7-886b-fbdfd8cac097",
+  "_index": 18,
+  "type": "POINTNCLICK",
+  "name": "Room5b",
+  "symbol": "scene_19",
+  "x": 386,
+  "y": 1159,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "8032ba72-aa24-4cb6-9e2e-022ea554fef0",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 3,
+  "parallax": [
+    {
+      "height": 3,
+      "speed": 1
+    },
+    {
+      "height": 0,
+      "speed": 0
+    }
+  ],
+  "playerSpriteSheetId": "773989d5-00d1-4871-9662-98189265c08b",
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "af2d16e0-7e56-4406-ab0d-ff2b95e64986"
+      },
+      "id": "bd804752-fdf0-46e2-a748-0526dda95d80"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "97192b4e-8a22-4619-b2e9-d455c381d53f",
+        "$variable[V0]$": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "55352e46-c76d-4ca2-851c-4937a3e5f82f"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "11",
+        "value": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": false
+      },
+      "id": "4d540b83-a6b1-442e-be70-1b0234cd4dd7"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "e5dadfc6-01c7-4ee8-a32d-1c7967b16e55"
+      },
+      "id": "a4b12670-0ec5-478a-a21c-48819a36a8b6"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

@@ -1,0 +1,70 @@
+{
+  "_resourceType": "script",
+  "id": "269b546c-ba90-4233-8357-04601d5431aa",
+  "name": "CheckAndBuildStaff",
+  "symbol": "script_17",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "40",
+        "flag": 0,
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "40",
+              "flag": 1,
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF_FLAGS_COMPARE",
+                  "args": {
+                    "variable": "40",
+                    "flag": 2,
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SWITCH_SCENE",
+                        "args": {
+                          "sceneId": "a214af42-f9ea-4d0d-b683-85b7bf235c3b",
+                          "x": {
+                            "type": "number",
+                            "value": 6
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 8
+                          },
+                          "direction": "",
+                          "fadeSpeed": "2"
+                        },
+                        "id": "4cb00aaa-719b-4a0c-bd14-8c9c7306e3db"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "3bf5ece7-65e9-48a0-8620-66ba8f51d891"
+                }
+              ],
+              "false": []
+            },
+            "id": "58232532-fc48-4a92-be32-685a3e4c9b0f"
+          }
+        ],
+        "false": []
+      },
+      "id": "512a8ef5-d729-4c3b-b2ba-8d17c72384d1"
+    }
+  ]
+}

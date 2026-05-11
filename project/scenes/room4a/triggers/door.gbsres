@@ -1,0 +1,141 @@
+{
+  "_resourceType": "trigger",
+  "id": "d0d1475a-9071-4ec6-8600-bbb6e4749724",
+  "_index": 4,
+  "symbol": "trigger_48",
+  "prefabId": "",
+  "name": "Door",
+  "x": 10,
+  "y": 7,
+  "width": 1,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "vectorX": "1",
+        "operator": "==",
+        "vectorY": "22",
+        "__collapseElse": false,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "1"
+          },
+          "valueB": {
+            "type": "variable",
+            "value": "22"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Door is locked..."
+              ],
+              "avatarId": "",
+              "__collapse": false
+            },
+            "id": "d1981d40-82a2-4f48-9ae5-aad0ba7a82b3"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "vectorX": "1",
+              "operator": "==",
+              "vectorY": "15",
+              "__collapseElse": false,
+              "__collapse": false,
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "1"
+                },
+                "valueB": {
+                  "type": "variable",
+                  "value": "15"
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89",
+                    "__collapse": true
+                  },
+                  "id": "ea255e3b-29e0-4220-947b-424d7011a3a4"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "crash",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "d583b612-8585-4f83-b740-1eeccb04c5ea"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "6b064cd0-0c1e-4bc5-a94f-3f22d35d8587",
+                    "x": {
+                      "type": "number",
+                      "value": 7
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 8
+                    },
+                    "direction": "",
+                    "fadeSpeed": 1,
+                    "__collapse": true
+                  },
+                  "id": "860cee24-aab3-418d-b241-e46bfff21378"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Nothing happened."
+                    ],
+                    "avatarId": "",
+                    "__collapse": false
+                  },
+                  "id": "d87a04f1-b629-421f-a799-110dc37bc075"
+                }
+              ]
+            },
+            "id": "11c5a957-194f-4d68-a71e-1d4af09fffa6"
+          }
+        ]
+      },
+      "id": "5776a03f-9324-451b-bf74-2d4928e84cf1"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89",
+        "__collapse": true
+      },
+      "id": "5f8130dd-73ba-4c1c-98fa-8f3c6e691b0c"
+    }
+  ],
+  "leaveScript": []
+}

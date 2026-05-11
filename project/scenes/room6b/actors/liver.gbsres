@@ -1,0 +1,131 @@
+{
+  "_resourceType": "actor",
+  "id": "343fbeda-9226-422d-934b-79e20c8633ba",
+  "_index": 1,
+  "symbol": "actor_38",
+  "prefabId": "",
+  "name": "Liver",
+  "x": 12,
+  "y": 11,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "a0d31978-7e11-455d-b363-cb88fafcdbe9",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "31",
+        "__collapseElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "31"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "A liver...",
+                "Take it?"
+              ],
+              "avatarId": ""
+            },
+            "id": "20a9ea38-0a85-4588-babc-f00d35f3d65c"
+          },
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "31",
+              "items": 2,
+              "option1": "Yes",
+              "option2": "No",
+              "option3": "",
+              "option4": "",
+              "option5": "",
+              "option6": "",
+              "option7": "",
+              "option8": "",
+              "cancelOnB": false,
+              "layout": "dialogue",
+              "cancelOnLastOption": true
+            },
+            "id": "d5ad33e1-132f-4fa0-b5f9-af7ceddb7f46"
+          }
+        ],
+        "false": []
+      },
+      "id": "c8ab9f2e-b5af-45fb-a140-6bd86fdec945"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "31",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "31"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "38c5aafe-e643-49cc-bde4-cdbcb994bf4a"
+          }
+        ],
+        "false": []
+      },
+      "id": "88ee78ef-9413-43d1-9485-911937c9abbe"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "31",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "31"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "2cf6f1af-1552-4ded-8c01-7a685e2d03c9"
+          }
+        ],
+        "false": []
+      },
+      "id": "275a4e16-6a35-41ec-977b-2e26563cc6ef"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

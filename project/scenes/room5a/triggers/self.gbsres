@@ -1,0 +1,23 @@
+{
+  "_resourceType": "trigger",
+  "id": "e6ff7920-71e3-4135-8c0b-99ff49309a98",
+  "_index": 1,
+  "symbol": "trigger_45",
+  "prefabId": "",
+  "name": "Self",
+  "x": 9,
+  "y": 1,
+  "width": 4,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "b4f78f19-e155-4eaa-ac6f-d4bad3f09aa9"
+      },
+      "id": "6758c479-f2af-4521-b3fd-e6cd20441873"
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,46 @@
+{
+  "_resourceType": "trigger",
+  "id": "cbe6dd14-466f-4f01-b6ec-a4f95ae19340",
+  "_index": 3,
+  "symbol": "trigger_95",
+  "prefabId": "",
+  "name": "Door",
+  "x": 10,
+  "y": 7,
+  "width": 1,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "crash",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "9c0e573d-cf5b-4ba4-b70c-a2d2c7eda3af"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "7826cad4-4d0a-4d28-8250-f8a4956e907a",
+        "x": {
+          "type": "number",
+          "value": 10
+        },
+        "y": {
+          "type": "number",
+          "value": 8
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "8ee3e66d-b673-4283-ba42-659b5de3f3a0"
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,38 @@
+{
+  "_resourceType": "scene",
+  "id": "9af3803e-f5a0-427f-a3fb-2ad8da5a2a8a",
+  "_index": 5,
+  "type": "POINTNCLICK",
+  "name": "Menu2",
+  "symbol": "scene_7",
+  "x": 290,
+  "y": 319,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "434b3ae2-788e-41da-a5bf-6464ab9e92ce",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "773989d5-00d1-4871-9662-98189265c08b",
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "5a1baaae-ac02-437e-bf7d-ef12e862a5bf"
+      },
+      "id": "d7b2b44c-a276-4d67-802c-2278bef8e911"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "beb2580e-88e0-4e58-aeda-0ec7ae9ce449"
+      },
+      "id": "e9b0101d-08ba-4330-a455-edaa2abbeaef"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

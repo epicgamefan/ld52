@@ -1,0 +1,131 @@
+{
+  "_resourceType": "actor",
+  "id": "172d7fdb-fc1c-4034-890a-6b5a4ad496b5",
+  "_index": 0,
+  "symbol": "actor_37",
+  "prefabId": "",
+  "name": "Kidneys",
+  "x": 6,
+  "y": 11,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "781dcb19-1bd2-4260-a891-0c43b9bb951f",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "29",
+        "__collapseElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "29"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Kidneys...",
+                "Take them?"
+              ],
+              "avatarId": ""
+            },
+            "id": "684a5e67-4bd1-488d-9cd1-7d9703f477dd"
+          },
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "29",
+              "items": 2,
+              "option1": "Yes",
+              "option2": "No",
+              "option3": "",
+              "option4": "",
+              "option5": "",
+              "option6": "",
+              "option7": "",
+              "option8": "",
+              "cancelOnB": false,
+              "layout": "dialogue",
+              "cancelOnLastOption": true
+            },
+            "id": "cd842402-41cb-4829-9f46-09f0909f7558"
+          }
+        ],
+        "false": []
+      },
+      "id": "e7ceeb1d-9187-44a4-a3c4-4875cbd0b1db"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "29",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "29"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "2c2b289a-7d8d-4c0e-8694-444d96d8633a"
+          }
+        ],
+        "false": []
+      },
+      "id": "4c3e0183-bc2a-40e4-9120-945e1cc36362"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "29",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "29"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "c906a0a4-e67a-44d6-962a-415891974018"
+          }
+        ],
+        "false": []
+      },
+      "id": "083a7692-6e71-477f-9e4e-3b361d059e05"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

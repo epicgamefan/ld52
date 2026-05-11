@@ -1,0 +1,132 @@
+{
+  "_resourceType": "actor",
+  "id": "735ab333-e751-4242-ba32-b4d1062b7b96",
+  "_index": 1,
+  "symbol": "actor_14",
+  "prefabId": "",
+  "name": "Incantation",
+  "x": 2,
+  "y": 8,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "12e2ea8a-7541-4eab-aa1f-18d83bb33f71",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "10",
+        "__collapseElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "10"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "A scroll... \nThe writing is \ntoo small to read.",
+                "I need to\nget my eyes\nchecked.",
+                "Take it?"
+              ],
+              "avatarId": ""
+            },
+            "id": "8dabf186-48cc-400d-a91d-bd1a79516789"
+          },
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "10",
+              "items": 2,
+              "option1": "Yes",
+              "option2": "No",
+              "option3": "",
+              "option4": "",
+              "option5": "",
+              "option6": "",
+              "option7": "",
+              "option8": "",
+              "cancelOnB": false,
+              "layout": "dialogue",
+              "cancelOnLastOption": true
+            },
+            "id": "ba47dd3f-cfee-49e9-91ca-86b0c36d9e0a"
+          }
+        ],
+        "false": []
+      },
+      "id": "77b2460c-4485-43b8-9076-a534c695237f"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "10",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "10"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "ae7ffd27-3ef5-41ec-aff4-d5eede405287"
+          }
+        ],
+        "false": []
+      },
+      "id": "eacdc655-6855-42b6-9263-7dbd58c700d4"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "10",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "10"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "e288d469-8d4e-4235-85b1-ac68eba8a166"
+          }
+        ],
+        "false": []
+      },
+      "id": "720f7880-f8cb-4739-93a7-e95a1b0f2733"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

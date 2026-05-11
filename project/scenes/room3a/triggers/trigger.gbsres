@@ -1,0 +1,26 @@
+{
+  "_resourceType": "trigger",
+  "id": "e81fae81-0527-47ed-bd12-3db86e34c14a",
+  "_index": 3,
+  "symbol": "trigger_56",
+  "prefabId": "",
+  "name": "",
+  "x": 1,
+  "y": 4,
+  "width": 3,
+  "height": 5,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Feed me...\nviscera."
+        ],
+        "avatarId": ""
+      },
+      "id": "0015fdd2-30f9-4d2a-a1e5-7e4e9d2d4021"
+    }
+  ],
+  "leaveScript": []
+}

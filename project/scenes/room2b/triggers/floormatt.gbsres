@@ -1,0 +1,23 @@
+{
+  "_resourceType": "trigger",
+  "id": "726ad571-6114-43f6-b6d4-5cb6c0073644",
+  "_index": 2,
+  "symbol": "trigger_28",
+  "prefabId": "",
+  "name": "FloorMatt",
+  "x": 8,
+  "y": 11,
+  "width": 5,
+  "height": 3,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "96dfaabd-ba02-406b-8d6d-3d724cdd604a"
+      },
+      "id": "f82fea27-9373-4c97-b2bc-ed28d5ffdb30"
+    }
+  ],
+  "leaveScript": []
+}

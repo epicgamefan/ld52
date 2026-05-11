@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "d6776593-1ed5-4e9b-8904-a86e41ad29d2",
+  "_index": 0,
+  "symbol": "trigger_25",
+  "prefabId": "",
+  "name": "Pocket",
+  "x": 14,
+  "y": 1,
+  "width": 5,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "193a7499-7aa9-4e62-a244-20bf6c8a0a11",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 8
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "de2b461c-6235-4bc6-952d-c42d5da60bb1"
+    }
+  ],
+  "leaveScript": []
+}

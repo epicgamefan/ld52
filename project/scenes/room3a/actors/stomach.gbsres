@@ -1,0 +1,57 @@
+{
+  "_resourceType": "actor",
+  "id": "7b4dea5c-ec75-4419-8bc1-8f52ad41616a",
+  "_index": 4,
+  "symbol": "actor_43",
+  "prefabId": "",
+  "name": "Stomach",
+  "x": 13,
+  "y": 13,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "9d122d33-ef4c-4531-b2e4-69956b8f7fe0",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "43",
+        "flag": 4,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "6313f511-8b2e-4049-9e37-1b24773cf9bb"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "73299a18-d790-4f50-ace8-7c272f8dc9b3"
+          }
+        ]
+      },
+      "id": "efdf86a5-41cc-4017-9bf8-0d6c8d6a0415"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

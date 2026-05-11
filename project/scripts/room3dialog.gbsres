@@ -1,0 +1,56 @@
+{
+  "_resourceType": "script",
+  "id": "4d4a2671-c8c6-4fe8-bb98-5e9d280871dc",
+  "name": "Room3Dialog",
+  "symbol": "script_11",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "7",
+        "__collapseElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "7"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Hmm...",
+                "This is no \nordinary facility."
+              ],
+              "avatarId": "",
+              "__collapse": false
+            },
+            "id": "42f09773-170e-4007-83ea-fab994685538"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "7",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "98d88608-2509-4a03-8318-e8a31cffb7d7"
+          }
+        ],
+        "false": []
+      },
+      "id": "451bed41-56fe-42d9-a898-9a0de6f4dae4"
+    }
+  ]
+}

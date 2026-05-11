@@ -1,0 +1,49 @@
+{
+  "_resourceType": "script",
+  "id": "3cb793a1-6e6f-457a-bd2f-bb30ee87b1d1",
+  "name": "CheckAndEndFloating",
+  "symbol": "script_16",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "39",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "39"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "39",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "a5998974-6712-44cb-8099-dfea7a4742f6"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The potion wore\noff..."
+              ],
+              "avatarId": "",
+              "__comment": true
+            },
+            "id": "e3df61d9-db88-4fee-93a9-aa18ee02243f"
+          }
+        ],
+        "false": []
+      },
+      "id": "7fa33557-af33-4e74-b5b6-70003b8abc51"
+    }
+  ]
+}

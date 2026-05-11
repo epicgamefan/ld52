@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "e8b834ac-bff2-47e6-9b14-10efb83174fc",
+  "name": "Bam",
+  "symbol": "bg_bam",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "Bam.png",
+  "tileColors": "",
+  "autoColor": false
+}

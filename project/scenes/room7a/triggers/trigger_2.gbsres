@@ -1,0 +1,160 @@
+{
+  "_resourceType": "trigger",
+  "id": "6b54d909-1e0e-46d3-97de-cdf7fe924bf3",
+  "_index": 3,
+  "symbol": "trigger_88",
+  "prefabId": "",
+  "name": "",
+  "x": 6,
+  "y": 5,
+  "width": 8,
+  "height": 6,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "vectorX": "1",
+        "operator": "==",
+        "vectorY": "22",
+        "__collapseElse": false,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "1"
+          },
+          "valueB": {
+            "type": "variable",
+            "value": "22"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "A giant face \nwith demon \nhorns....",
+                "It's so ugly... \n",
+                "I will call it\nDemonface."
+              ],
+              "avatarId": "",
+              "__collapse": false
+            },
+            "id": "2b8c47bb-d829-486b-b879-6abc2a0c3165"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "vectorX": "1",
+              "operator": "==",
+              "vectorY": "14",
+              "__collapseElse": false,
+              "__collapse": false,
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "1"
+                },
+                "valueB": {
+                  "type": "variable",
+                  "value": "14"
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Demonface catches\non fire."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "4b14b549-93b1-431a-8687-50005d11dbb7"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89",
+                    "__collapse": true
+                  },
+                  "id": "9952d097-157d-4479-92f2-5056130c9a44"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "crash",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "887ba381-c056-4cc7-b383-b53054c6472b"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "6da98833-f0d9-47c4-a069-64da4536e9aa",
+                    "x": {
+                      "type": "number",
+                      "value": 9
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 10
+                    },
+                    "direction": "",
+                    "fadeSpeed": 1,
+                    "__collapse": false
+                  },
+                  "id": "8e75c23d-7d28-436a-a2bd-7ab4c6052c14"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Nothing seemed \nto happen..."
+                    ],
+                    "avatarId": "",
+                    "__collapse": false
+                  },
+                  "id": "47cb3a03-e4d0-49c1-96cd-3373375f50d4"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89"
+                  },
+                  "id": "31936fac-703c-42f0-bfc7-ed4b98812895"
+                }
+              ]
+            },
+            "id": "990dcaba-d3f1-4193-80aa-6134d73e8438"
+          }
+        ]
+      },
+      "id": "5d10e083-f245-44fb-ad2c-09145c5aff5d"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89",
+        "__collapse": true
+      },
+      "id": "dc8e916f-5c38-4f6c-a370-058f3ad59b3b"
+    }
+  ],
+  "leaveScript": []
+}

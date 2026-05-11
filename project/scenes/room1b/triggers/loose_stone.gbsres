@@ -1,0 +1,99 @@
+{
+  "_resourceType": "trigger",
+  "id": "d6df5408-9a59-4a61-b213-3b3823f31653",
+  "_index": 2,
+  "symbol": "trigger_20",
+  "prefabId": "",
+  "name": "Loose Stone",
+  "x": 5,
+  "y": 9,
+  "width": 2,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "2",
+        "__collapseElse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "2"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "You thoroughly\nprobe the hole. ",
+                "A key is found.\nDo you take it?"
+              ],
+              "avatarId": "",
+              "__collapse": true
+            },
+            "id": "fda0a164-1933-4257-aefb-b6282d4717bd"
+          },
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "2",
+              "items": 2,
+              "option1": "Yes",
+              "option2": "No",
+              "option3": "",
+              "option4": "",
+              "option5": "",
+              "option6": "",
+              "option7": "",
+              "option8": "",
+              "cancelOnB": false,
+              "layout": "dialogue",
+              "cancelOnLastOption": true,
+              "__collapse": false
+            },
+            "id": "6c0ccaa0-b1b7-4a6e-94c7-ce2b0210bc6b"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "2",
+              "__collapseElse": true,
+              "condition": {
+                "type": "variable",
+                "value": "2"
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Key added to\npocket."
+                    ],
+                    "avatarId": "",
+                    "__collapse": false
+                  },
+                  "id": "af45da45-1238-4841-8aeb-87410a0f5900"
+                }
+              ],
+              "false": []
+            },
+            "id": "21bfb42c-78a5-4a97-844a-7a73108cb7b8"
+          }
+        ],
+        "false": []
+      },
+      "id": "c0ce7e78-12e2-4fa5-ae4f-a4b87ddc3eba"
+    }
+  ],
+  "leaveScript": []
+}

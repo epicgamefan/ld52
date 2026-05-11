@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "5248c19a-0ca2-4402-8bb5-59e67cc024f6",
+  "_index": 2,
+  "symbol": "trigger_46",
+  "prefabId": "",
+  "name": "Up",
+  "x": 1,
+  "y": 2,
+  "width": 2,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "3329f48d-1deb-40cc-84aa-a52313a576af",
+        "x": {
+          "type": "number",
+          "value": 10
+        },
+        "y": {
+          "type": "number",
+          "value": 8
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "f8e40f03-2156-4b7d-8d23-016534d3c00f"
+    }
+  ],
+  "leaveScript": []
+}

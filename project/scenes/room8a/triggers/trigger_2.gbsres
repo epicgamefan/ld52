@@ -1,0 +1,138 @@
+{
+  "_resourceType": "trigger",
+  "id": "26ff0dc2-e99e-4f2c-ae4c-a66d21570e6b",
+  "_index": 3,
+  "symbol": "trigger_87",
+  "prefabId": "",
+  "name": "",
+  "x": 7,
+  "y": 4,
+  "width": 5,
+  "height": 7,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "vectorX": "1",
+        "operator": "==",
+        "vectorY": "22",
+        "__collapseElse": false,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "1"
+          },
+          "valueB": {
+            "type": "variable",
+            "value": "22"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "A monster is \nstanding guard.",
+                "It has a head \nthat looks like\na skull. ",
+                "I will call it\nSkullhead.",
+                "I see something\nshiny behind\nit..."
+              ],
+              "avatarId": "",
+              "__collapse": false
+            },
+            "id": "76c11eb7-98b6-42ce-b421-782f65e6da29"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "vectorX": "1",
+              "operator": "==",
+              "vectorY": "12",
+              "__collapseElse": false,
+              "__collapse": false,
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "1"
+                },
+                "valueB": {
+                  "type": "variable",
+                  "value": "12"
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89",
+                    "__collapse": true
+                  },
+                  "id": "7ff03db0-52b7-4d1f-806a-090955d260f3"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "8406cbb5-c375-4d06-adec-358d4308632a",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "direction": "",
+                    "fadeSpeed": 1,
+                    "__collapse": false
+                  },
+                  "id": "2d482421-b6e2-4414-be40-c9664d77bad0"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Nothing seemed \nto happen..."
+                    ],
+                    "avatarId": "",
+                    "__collapse": false
+                  },
+                  "id": "3addbde8-a5ca-4bd8-9e9f-39767172ab48"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89"
+                  },
+                  "id": "8751adcf-7e58-4d40-a43e-a752028cfbd1"
+                }
+              ]
+            },
+            "id": "c8e643dc-f303-4b14-ad6d-5a05c867aabd"
+          }
+        ]
+      },
+      "id": "edab2321-bbea-4c13-8a88-cdc16732d04f"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "4dee1f40-04b9-4212-b0f3-8f3f780f3b89",
+        "__collapse": true
+      },
+      "id": "b2345985-4c15-4887-9b47-05067f49a17c"
+    }
+  ],
+  "leaveScript": []
+}
