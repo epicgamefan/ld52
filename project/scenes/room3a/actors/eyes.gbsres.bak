@@ -1,0 +1,57 @@
+{
+  "_resourceType": "actor",
+  "id": "ea1e72cf-a7d7-463f-8c9e-b7d7b4efb711",
+  "_index": 0,
+  "symbol": "actor_39",
+  "prefabId": "",
+  "name": "Eyes",
+  "x": 1,
+  "y": 13,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "8a19c7b4-a096-4201-a64b-b49435ce5816",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "43",
+        "flag": 0,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "2ab757e9-5bb4-4816-8f45-127b95e39bcf"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "504c33ce-88f2-486d-98f5-2203854cd6bb"
+          }
+        ]
+      },
+      "id": "b50419eb-44a8-4d6b-a033-10cc16f08c5c"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

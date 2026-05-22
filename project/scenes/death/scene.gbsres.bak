@@ -1,0 +1,104 @@
+{
+  "_resourceType": "scene",
+  "id": "dd51180c-773e-4139-b48d-d34204233893",
+  "_index": 29,
+  "type": "POINTNCLICK",
+  "name": "Death",
+  "symbol": "scene_30",
+  "x": 622,
+  "y": 91,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "1dd4a545-adce-4b81-b9be-861fba7cd8b4",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 3,
+  "parallax": [
+    {
+      "height": 3,
+      "speed": 1
+    },
+    {
+      "height": 0,
+      "speed": 0
+    }
+  ],
+  "playerSpriteSheetId": "773989d5-00d1-4871-9662-98189265c08b",
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "eec00af2-f415-4f37-a4f7-ba58a4b6f8f1"
+      },
+      "id": "4dbc568c-dc55-4d3b-bd24-345c76eadf18"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "fcd031af-488a-47cf-b9fc-3e025abb117a"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "97192b4e-8a22-4619-b2e9-d455c381d53f",
+        "$variable[V0]$": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "969c083c-1946-4160-9207-76fb8ed16a65"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Your life has been\nterminated.",
+          "Meanwhile, your\nfamily continues\nto wait.",
+          "They will never\nlearn the events\nthat took place.",
+          "It is sad that\nyour adventure\nmust end here!!"
+        ],
+        "avatarId": ""
+      },
+      "id": "442ced9e-9f52-498f-97e6-7500aad1dd70"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "5ca46525-ff77-4841-a624-b778c77a8872"
+    },
+    {
+      "command": "EVENT_RESET_VARIABLES",
+      "args": {
+        "__collapse": false
+      },
+      "id": "471f9ca9-7738-477f-ba01-870f59682271"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "0901f318-60af-41c7-8056-811bfb874ee1",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "43d95837-7016-4e5c-a01d-3d5757610fc8"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

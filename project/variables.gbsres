@@ -261,5 +261,6 @@
       "name": "InStunnedRoom",
       "symbol": "var_instunnedroom"
     }
-  ]
+  ],
+  "constants": []
 }

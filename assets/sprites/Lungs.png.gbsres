@@ -1,0 +1,129 @@
+{
+  "_resourceType": "sprite",
+  "id": "3a2cfc07-ed5c-4968-9c11-34953aee4085",
+  "name": "Lungs",
+  "symbol": "sprite_lungs",
+  "states": [
+    {
+      "id": "66d55f15-e9b5-453f-bf91-5730fa1a1929",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "873d073b-5de2-480f-80de-dfe6bdd957bc",
+          "frames": [
+            {
+              "id": "0ba5fa6f-14c2-4de9-8c8e-7d29a586293a",
+              "tiles": [
+                {
+                  "id": "7ed0113a-2a20-4e88-bfde-2cfdff274be2",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "0465a940-a2d0-4c26-a8a5-b9d4ab81d95d",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "213a07aa-e0af-437a-8e28-744d8399185e",
+          "frames": [
+            {
+              "id": "caa9cfe1-002f-4f82-b5ae-08a06fbd2756",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "1f896deb-00fd-4912-9e2f-09c562ca6e17",
+          "frames": [
+            {
+              "id": "2409051f-8ca6-4651-b329-81f11feb06bb",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "1cda606a-a698-4424-a716-ccdff4f49178",
+          "frames": [
+            {
+              "id": "82efb9e3-d956-4cdd-8f96-afd368b1bcbb",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "27b9feae-0177-4596-8899-b3e4b0ec1da0",
+          "frames": [
+            {
+              "id": "657fcec7-c26a-4c5f-924c-1ba621b6b00a",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "94e27fd6-b7fc-4705-969f-34bde010ad52",
+          "frames": [
+            {
+              "id": "b9a5ab10-c23d-420b-9470-d389d756027c",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "a5d14de4-5bfe-4c4e-80fd-3b5aa12a984b",
+          "frames": [
+            {
+              "id": "ec7049ff-b6bc-40b5-ad41-aa31ad60146a",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "7a63fc06-5133-474c-8b17-d43b3a345785",
+          "frames": [
+            {
+              "id": "2b96111c-2ca3-4f06-826b-ced772836912",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 2,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15,
+  "filename": "Lungs.png",
+  "width": 16,
+  "height": 16,
+  "checksum": "b59d58190e759092fd55363a84f82d8aa1fd6ad0"
+}

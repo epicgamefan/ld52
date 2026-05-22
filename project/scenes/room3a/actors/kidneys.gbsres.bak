@@ -1,0 +1,57 @@
+{
+  "_resourceType": "actor",
+  "id": "1186896c-7d89-4a76-a9a5-f8026fe8c0c5",
+  "_index": 1,
+  "symbol": "actor_40",
+  "prefabId": "",
+  "name": "Kidneys",
+  "x": 4,
+  "y": 13,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "781dcb19-1bd2-4260-a891-0c43b9bb951f",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "43",
+        "flag": 1,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "97a779c5-f1a2-4e8f-9b64-c27b85a80656"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "007cce36-1842-4aac-8529-8d9f65701d57"
+          }
+        ]
+      },
+      "id": "67e721ad-81ad-4b12-bb04-62f3dfb74bea"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

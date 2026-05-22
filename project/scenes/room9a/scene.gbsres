@@ -11,6 +11,7 @@
   "height": 18,
   "backgroundId": "272b280f-30a0-4461-a92c-bc6c25abe288",
   "tilesetId": "",
+  "colorModeOverride": "none",
   "paletteIds": [],
   "spritePaletteIds": [],
   "autoFadeSpeed": null,

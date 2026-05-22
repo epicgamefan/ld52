@@ -1,0 +1,131 @@
+{
+  "_resourceType": "actor",
+  "id": "74da9ab2-d6c1-4f48-b66f-94b0e48efad0",
+  "_index": 2,
+  "symbol": "actor_32",
+  "prefabId": "",
+  "name": "Talisman",
+  "x": 12,
+  "y": 10,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "2e138ead-c08c-4d2d-961c-ad77a6057804",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "25",
+        "__collapseElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "25"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "This is what\nSkullhead was\nguarding...",
+                "A talisman...\nTake it?"
+              ],
+              "avatarId": ""
+            },
+            "id": "c9230792-10cd-4b98-80e2-b70e0b118b9d"
+          },
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "25",
+              "items": 2,
+              "option1": "Yes",
+              "option2": "No",
+              "option3": "",
+              "option4": "",
+              "option5": "",
+              "option6": "",
+              "option7": "",
+              "option8": "",
+              "cancelOnB": false,
+              "layout": "dialogue",
+              "cancelOnLastOption": true
+            },
+            "id": "d8490668-0aba-4007-90dc-c4bad9769b4e"
+          }
+        ],
+        "false": []
+      },
+      "id": "4a693aca-46b9-437d-a219-3ff36b1dc1f3"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "25",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "25"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "67f51ca0-9e01-44fa-ab92-dd5c74b63ccf"
+          }
+        ],
+        "false": []
+      },
+      "id": "a8f3d492-7604-4379-85b8-485fae12d939"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "25",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "25"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "3b7b699c-00c4-4a55-bfd1-6aa9965337a9"
+          }
+        ],
+        "false": []
+      },
+      "id": "b4ba3109-76e8-4a9d-a036-2d0c140ebed9"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

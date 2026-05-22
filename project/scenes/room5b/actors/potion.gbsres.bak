@@ -1,0 +1,130 @@
+{
+  "_resourceType": "actor",
+  "id": "6a9432ed-32e5-43b3-b2ab-5e4e93dd59b5",
+  "_index": 0,
+  "symbol": "actor_16",
+  "prefabId": "",
+  "name": "Potion",
+  "x": 4,
+  "y": 7,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "05d95012-b26f-4b27-b817-8b6c0a029670",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "9",
+        "__collapseElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "9"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "A potion...\nTake it?"
+              ],
+              "avatarId": ""
+            },
+            "id": "dbeefbda-87bd-49e2-afbe-97e176fb12b4"
+          },
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "9",
+              "items": 2,
+              "option1": "Yes",
+              "option2": "No",
+              "option3": "",
+              "option4": "",
+              "option5": "",
+              "option6": "",
+              "option7": "",
+              "option8": "",
+              "cancelOnB": false,
+              "layout": "dialogue",
+              "cancelOnLastOption": true
+            },
+            "id": "aa089f13-56ac-4037-a0df-7b67b7b58746"
+          }
+        ],
+        "false": []
+      },
+      "id": "f300eb84-e91a-4cc7-bbce-e2854949225b"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "9",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "9"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "d3683975-b670-4fc9-bb28-93e59175a330"
+          }
+        ],
+        "false": []
+      },
+      "id": "b12030b2-25aa-4efd-ad03-f002c6d3b9d2"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "9",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "9"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "6225154f-24d6-4eb4-bc20-982c4d4c6965"
+          }
+        ],
+        "false": []
+      },
+      "id": "5c720466-6b54-41e1-8f2b-d3eeb050d304"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

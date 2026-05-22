@@ -1,0 +1,129 @@
+{
+  "_resourceType": "sprite",
+  "id": "d3337a82-7440-4f0f-af09-1ad8bc728f24",
+  "name": "heart",
+  "symbol": "sprite_heart",
+  "states": [
+    {
+      "id": "7b024761-88a0-4c51-9172-fc8e324d4f8c",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "ed7af176-a3fe-4b65-b8b8-62bcf33e2f10",
+          "frames": [
+            {
+              "id": "6df50a96-2b77-4e5b-95ce-01cfa22b97ce",
+              "tiles": [
+                {
+                  "id": "23c967af-3db3-4be8-8a65-6c55e8db6272",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "22eee005-6ac6-44a8-afee-c3d2c58e4ff1",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7dae7601-e304-446e-9bea-54b6b6c570a6",
+          "frames": [
+            {
+              "id": "fa50ca74-8e6d-402c-893e-cc7785f0778d",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "feecb90b-461a-4ebc-b96d-84b9dea393ce",
+          "frames": [
+            {
+              "id": "3e17e2ba-dd93-45ef-aab9-bb9897a820a0",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "05a703f2-9479-49f9-bb69-a24fb21e2466",
+          "frames": [
+            {
+              "id": "a943db76-08b4-480b-b2d6-f22ca102b163",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "d9a425f8-8c35-4575-92a1-86453d010f55",
+          "frames": [
+            {
+              "id": "58ea522e-0905-4978-a814-d33598776863",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "a851d94b-49da-4cc2-aac7-b98e6b18f271",
+          "frames": [
+            {
+              "id": "8d7424e6-3e66-4a60-88f2-d00fa7b01e6b",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "451bd9a0-e8f9-41da-ab0c-d5475296b47c",
+          "frames": [
+            {
+              "id": "4c36fd7f-651e-47e2-a7f7-68b236d938c2",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "2c7bf627-88ee-4302-9e25-8fa784156014",
+          "frames": [
+            {
+              "id": "77e25132-2ef5-4d44-9065-ebd3b791420e",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 2,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15,
+  "filename": "heart.png",
+  "width": 16,
+  "height": 16,
+  "checksum": "e18146316098a681e36b314579555b99d556f321"
+}

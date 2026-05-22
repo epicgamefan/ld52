@@ -1,0 +1,129 @@
+{
+  "_resourceType": "sprite",
+  "id": "781dcb19-1bd2-4260-a891-0c43b9bb951f",
+  "name": "Kidneys",
+  "symbol": "sprite_kidneys",
+  "states": [
+    {
+      "id": "f8f25178-85ae-43b1-a818-5edf578369c2",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "800a1200-4b55-4ac4-a3f8-7b98947e6ba4",
+          "frames": [
+            {
+              "id": "b2f141a9-6dfe-4174-af4d-6f4132ab7d9e",
+              "tiles": [
+                {
+                  "id": "ec353864-ee9e-44c7-b525-5e6a3c12b80a",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "ac0ede39-3739-4bb9-8ae3-32c70fed6b1b",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "60a81c5b-d7fd-47a3-a49d-e6efc757697e",
+          "frames": [
+            {
+              "id": "56bad413-20cf-4ffe-964d-610d9802c3df",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "51d8f213-8203-4f58-bcea-bb458a65e96f",
+          "frames": [
+            {
+              "id": "77e6e058-491b-4c40-82c7-52f5c86c2761",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "69f3eed7-7b11-4880-84b4-1bdcd66caa57",
+          "frames": [
+            {
+              "id": "c26b3c36-978a-4eb4-86db-ada53ce2b467",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "cbe28d2b-a96f-47ef-8b8e-609fa8e93298",
+          "frames": [
+            {
+              "id": "11324241-9fc0-4bf4-865a-ac2290bf5dbf",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "41aa2bb4-7705-48b9-b2ad-c3f596a873af",
+          "frames": [
+            {
+              "id": "d1b1e090-8b10-42cf-9d89-fc8ddc0310c9",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "0357b119-1b31-40d4-b621-ef6315e6f9a8",
+          "frames": [
+            {
+              "id": "1e6d1a42-8cdf-4518-b27a-eae207ff13c9",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "05544b4f-e912-46ee-90c0-80450a10b2a0",
+          "frames": [
+            {
+              "id": "70d7041f-5e0d-40e7-8b18-2bab00274139",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 1,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15,
+  "filename": "Kidneys.png",
+  "width": 16,
+  "height": 16,
+  "checksum": "10777fe0e75879c16c9aa6d9ee29cf371aeebcd2"
+}

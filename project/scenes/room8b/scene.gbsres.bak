@@ -1,0 +1,81 @@
+{
+  "_resourceType": "scene",
+  "id": "bf336952-7948-4d7e-b849-109044c004f8",
+  "_index": 24,
+  "type": "POINTNCLICK",
+  "name": "Room8b",
+  "symbol": "scene_25",
+  "x": 1007,
+  "y": 1345,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "071e0444-ef11-41aa-9752-c4d1d452925d",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 3,
+  "parallax": [
+    {
+      "height": 3,
+      "speed": 1
+    },
+    {
+      "height": 0,
+      "speed": 0
+    }
+  ],
+  "playerSpriteSheetId": "773989d5-00d1-4871-9662-98189265c08b",
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "227010c0-7657-4a8e-9b49-e2d4539bce28"
+      },
+      "id": "df08376c-7c99-4325-a9c2-356bf41c3db5"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "97192b4e-8a22-4619-b2e9-d455c381d53f",
+        "$variable[V0]$": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "7ef22794-798d-413c-a436-ce191c3ff7cc"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "46",
+        "value": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": false
+      },
+      "id": "04584a7e-93e2-493f-9023-f01a235c9e77"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Skullhead has been\ndefeated."
+        ],
+        "avatarId": ""
+      },
+      "id": "1c116c69-0283-4db6-8bbc-4ec522821c86"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "e5dadfc6-01c7-4ee8-a32d-1c7967b16e55"
+      },
+      "id": "93159303-1d11-42bf-9f1a-83f0a35afb9b"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

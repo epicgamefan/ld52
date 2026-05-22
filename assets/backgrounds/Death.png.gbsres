@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "1dd4a545-adce-4b81-b9be-861fba7cd8b4",
+  "name": "Death",
+  "symbol": "bg_death",
+  "tileColors": "",
+  "filename": "Death.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

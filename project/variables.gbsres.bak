@@ -1,0 +1,265 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "0",
+      "name": "itemMallet",
+      "symbol": "var_itemmallet"
+    },
+    {
+      "id": "1",
+      "name": "itemInHand",
+      "symbol": "var_iteminhand"
+    },
+    {
+      "id": "2",
+      "name": "itemKey1",
+      "symbol": "var_itemkey1"
+    },
+    {
+      "id": "3",
+      "name": "itemTorch",
+      "symbol": "var_itemtorch"
+    },
+    {
+      "id": "4",
+      "name": "itemKey2",
+      "symbol": "var_itemkey2"
+    },
+    {
+      "id": "5",
+      "name": "room1Dialog",
+      "symbol": "var_room1dialog"
+    },
+    {
+      "id": "6",
+      "name": "room2State",
+      "symbol": "var_room2state"
+    },
+    {
+      "id": "7",
+      "name": "room3Dialog",
+      "symbol": "var_room3dialog"
+    },
+    {
+      "id": "8",
+      "name": "room4State",
+      "symbol": "var_room4state"
+    },
+    {
+      "id": "9",
+      "name": "itemPotion",
+      "symbol": "var_itempotion"
+    },
+    {
+      "id": "10",
+      "name": "itemIncantation",
+      "symbol": "var_itemincantation"
+    },
+    {
+      "id": "11",
+      "name": "room5State",
+      "symbol": "var_room5state"
+    },
+    {
+      "id": "12",
+      "name": "enumItemMallet",
+      "symbol": "var_enumitemmallet"
+    },
+    {
+      "id": "13",
+      "name": "enumItemKey1",
+      "symbol": "var_enumitemkey1"
+    },
+    {
+      "id": "14",
+      "name": "enumItemTorch",
+      "symbol": "var_enumitemtorch"
+    },
+    {
+      "id": "15",
+      "name": "enumItemKey2",
+      "symbol": "var_enumitemkey2"
+    },
+    {
+      "id": "16",
+      "name": "enumItemIncantation",
+      "symbol": "var_enumitemincantation"
+    },
+    {
+      "id": "17",
+      "name": "enumItemPotion",
+      "symbol": "var_enumitempotion"
+    },
+    {
+      "id": "18",
+      "name": "enumItemGlasses",
+      "symbol": "var_enumitemglasses"
+    },
+    {
+      "id": "19",
+      "name": "enumItemPole",
+      "symbol": "var_enumitempole"
+    },
+    {
+      "id": "20",
+      "name": "enumItemTalisman",
+      "symbol": "var_enumitemtalisman"
+    },
+    {
+      "id": "21",
+      "name": "enumItemFork",
+      "symbol": "var_enumitemfork"
+    },
+    {
+      "id": "22",
+      "name": "enumItemHand",
+      "symbol": "var_enumitemhand"
+    },
+    {
+      "id": "23",
+      "name": "itemGlasses",
+      "symbol": "var_itemglasses"
+    },
+    {
+      "id": "24",
+      "name": "itemPole",
+      "symbol": "var_itempole"
+    },
+    {
+      "id": "25",
+      "name": "itemTalisman",
+      "symbol": "var_itemtalisman"
+    },
+    {
+      "id": "26",
+      "name": "itemFork",
+      "symbol": "var_itemfork"
+    },
+    {
+      "id": "27",
+      "name": "itemEyes",
+      "symbol": "var_itemeyes"
+    },
+    {
+      "id": "28",
+      "name": "enumItemEyes",
+      "symbol": "var_enumitemeyes"
+    },
+    {
+      "id": "29",
+      "name": "itemKidneys",
+      "symbol": "var_itemkidneys"
+    },
+    {
+      "id": "30",
+      "name": "enumItemKidneys",
+      "symbol": "var_enumitemkidneys"
+    },
+    {
+      "id": "31",
+      "name": "itemLiver",
+      "symbol": "var_itemliver"
+    },
+    {
+      "id": "32",
+      "name": "enumItemLiver",
+      "symbol": "var_enumitemliver"
+    },
+    {
+      "id": "33",
+      "name": "itemLungs",
+      "symbol": "var_itemlungs"
+    },
+    {
+      "id": "34",
+      "name": "enumItemLungs",
+      "symbol": "var_enumitemlungs"
+    },
+    {
+      "id": "35",
+      "name": "itemStomach",
+      "symbol": "var_itemstomach"
+    },
+    {
+      "id": "36",
+      "name": "enumItemStomach",
+      "symbol": "var_enumitemstomach"
+    },
+    {
+      "id": "37",
+      "name": "itemHeart",
+      "symbol": "var_itemheart"
+    },
+    {
+      "id": "38",
+      "name": "enumItemHeart",
+      "symbol": "var_enumitemheart"
+    },
+    {
+      "id": "39",
+      "name": "selfFloating",
+      "symbol": "var_selffloating"
+    },
+    {
+      "id": "40",
+      "name": "craftStunningStaff",
+      "symbol": "var_craftstunningstaff"
+    },
+    {
+      "id": "41",
+      "name": "enumItemWand",
+      "symbol": "var_enumitemwand"
+    },
+    {
+      "id": "42",
+      "name": "selfGlasses",
+      "symbol": "var_selfglasses"
+    },
+    {
+      "id": "43",
+      "name": "organFlags",
+      "symbol": "var_organflags"
+    },
+    {
+      "id": "44",
+      "name": "room6State",
+      "symbol": "var_room6state"
+    },
+    {
+      "id": "45",
+      "name": "room7State",
+      "symbol": "var_room7state"
+    },
+    {
+      "id": "46",
+      "name": "room8State",
+      "symbol": "var_room8state"
+    },
+    {
+      "id": "47",
+      "name": "room9State",
+      "symbol": "var_room9state"
+    },
+    {
+      "id": "48",
+      "name": "damage",
+      "symbol": "var_damage"
+    },
+    {
+      "id": "49",
+      "name": "deathDamage",
+      "symbol": "var_deathdamage"
+    },
+    {
+      "id": "50",
+      "name": "InMadRoom",
+      "symbol": "var_inmadroom"
+    },
+    {
+      "id": "51",
+      "name": "InStunnedRoom",
+      "symbol": "var_instunnedroom"
+    }
+  ]
+}

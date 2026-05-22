@@ -1,0 +1,94 @@
+{
+  "_resourceType": "scene",
+  "id": "df5e5eaf-f4ed-4b03-a60a-e92e93b2aa22",
+  "_index": 33,
+  "type": "POINTNCLICK",
+  "name": "Room3d",
+  "symbol": "scene_34",
+  "x": 638,
+  "y": 949,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "b1410894-6b0c-4996-bb62-4b150a93794b",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 3,
+  "parallax": [
+    {
+      "height": 3,
+      "speed": 1
+    },
+    {
+      "height": 0,
+      "speed": 0
+    }
+  ],
+  "playerSpriteSheetId": "773989d5-00d1-4871-9662-98189265c08b",
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "227010c0-7657-4a8e-9b49-e2d4539bce28"
+      },
+      "id": "e86de24f-24cf-4684-92ff-e85686b8f094"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "3a66884d-735b-440c-bc9e-0231f441802f"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "97192b4e-8a22-4619-b2e9-d455c381d53f",
+        "$variable[V0]$": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "8a7e2b25-b2f4-42b7-9a8e-950922544ed0"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "IT DIES...."
+        ],
+        "avatarId": ""
+      },
+      "id": "0c964907-6b7a-44e3-9ab9-0d72dfce679b"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "de2a64ba-1d61-44e6-bf21-9ebd79091d5a"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "503a3cc3-943a-4726-ab82-ed1dd7080e3f",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "77e283b7-c9fb-4cda-8379-23601867a9f3"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

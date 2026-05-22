@@ -11,6 +11,7 @@
   "height": 18,
   "backgroundId": "1dd4a545-adce-4b81-b9be-861fba7cd8b4",
   "tilesetId": "",
+  "colorModeOverride": "none",
   "paletteIds": [],
   "spritePaletteIds": [],
   "autoFadeSpeed": 3,
@@ -67,8 +68,14 @@
     {
       "command": "EVENT_WAIT",
       "args": {
-        "time": 2,
-        "frames": 30
+        "time": {
+          "type": "number",
+          "value": 2
+        },
+        "frames": {
+          "type": "number",
+          "value": 30
+        }
       },
       "id": "5ca46525-ff77-4841-a624-b778c77a8872"
     },

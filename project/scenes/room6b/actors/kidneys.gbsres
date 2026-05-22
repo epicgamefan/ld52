@@ -5,6 +5,7 @@
   "symbol": "actor_37",
   "prefabId": "",
   "name": "Kidneys",
+  "coordinateType": "tiles",
   "x": 6,
   "y": 11,
   "frame": 0,
@@ -17,6 +18,7 @@
   "isPinned": false,
   "persistent": false,
   "collisionGroup": "",
+  "collisionExtraFlags": [],
   "prefabScriptOverrides": {},
   "script": [
     {

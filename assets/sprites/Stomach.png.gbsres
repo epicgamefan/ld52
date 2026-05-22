@@ -1,0 +1,129 @@
+{
+  "_resourceType": "sprite",
+  "id": "9d122d33-ef4c-4531-b2e4-69956b8f7fe0",
+  "name": "Stomach",
+  "symbol": "sprite_stomach",
+  "states": [
+    {
+      "id": "c214f397-fa8c-45ce-8f89-9c259785cc6f",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "b53829f8-97f6-494a-855b-fe8a32e567d5",
+          "frames": [
+            {
+              "id": "8450f725-6a49-4ca1-8049-647c12383bcb",
+              "tiles": [
+                {
+                  "id": "f3c751b9-0738-444e-ae74-0ec4766bb0e3",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "27eba558-729a-4806-a693-198a97eecbaf",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f90317ba-e459-471c-912e-8ad94b8b82bc",
+          "frames": [
+            {
+              "id": "b5166432-c715-4bec-b839-f9a2bc2150db",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "07497852-70e3-483b-beb1-cbd68684e365",
+          "frames": [
+            {
+              "id": "69c2e780-b623-4228-bb66-fe733b16d7c0",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "3731fbee-1c7f-44d0-8704-2f8aff7daa03",
+          "frames": [
+            {
+              "id": "5aeaba4b-030a-4e44-bd73-853694376df8",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "18c100b1-aa95-4a97-8c25-cc4fac606934",
+          "frames": [
+            {
+              "id": "d1ce05ae-f0d7-4abb-b41f-a2f88fc0407f",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "912b40cf-7d92-40e3-a48f-284a0a6ec2d3",
+          "frames": [
+            {
+              "id": "0d21bfc1-e551-455f-ba40-f47afb01b043",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "2ba51051-2f0c-4433-9e68-fbc504914182",
+          "frames": [
+            {
+              "id": "84bc32fd-2324-4529-97b3-fe4a16ba7210",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "5902d84b-ae48-4ec8-bf5d-217c041cf537",
+          "frames": [
+            {
+              "id": "ca2370bc-d927-4efa-a3d3-ec45664da03f",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 2,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15,
+  "filename": "Stomach.png",
+  "width": 16,
+  "height": 16,
+  "checksum": "1ba69c51941d613129a15a698eb642ee5fb39e1e"
+}

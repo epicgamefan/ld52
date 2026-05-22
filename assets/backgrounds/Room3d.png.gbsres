@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "b1410894-6b0c-4996-bb62-4b150a93794b",
+  "name": "Room3d",
+  "symbol": "bg_room3d",
+  "tileColors": "",
+  "filename": "Room3d.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

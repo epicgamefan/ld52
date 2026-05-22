@@ -33,11 +33,11 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "You thoroughly\nprobe the hole. ",
+                "You examine the\ncrumbled stone. ",
                 "A key is found.\nDo you take it?"
               ],
               "avatarId": "",
-              "__collapse": true
+              "__collapse": false
             },
             "id": "fda0a164-1933-4257-aefb-b6282d4717bd"
           },

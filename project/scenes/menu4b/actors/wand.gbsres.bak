@@ -1,0 +1,47 @@
+{
+  "_resourceType": "actor",
+  "id": "49cc9b29-b2c1-49f8-be4f-a224da3bb6d1",
+  "_index": 0,
+  "symbol": "actor_51",
+  "prefabId": "",
+  "name": "Wand",
+  "x": 9,
+  "y": 10,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "7e883f05-07a9-4641-92ac-1f4a2899f439",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_PLAYER_SET_SPRITE",
+      "args": {
+        "spriteSheetId": "7e883f05-07a9-4641-92ac-1f4a2899f439",
+        "persist": true
+      },
+      "id": "1c333e48-4c62-4dd5-8fb8-0446deeaa3a9"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "variable",
+          "value": "41"
+        }
+      },
+      "id": "6c3bfe06-e639-486c-9ca3-3a508c4571ff"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

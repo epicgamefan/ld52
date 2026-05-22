@@ -1,0 +1,9 @@
+{
+  "_resourceType": "music",
+  "id": "825687b1-bd89-4a5e-b09b-ce2bedeed6be",
+  "name": "song_menu",
+  "symbol": "song_song_menu",
+  "settings": {},
+  "filename": "song_menu.uge",
+  "type": "uge"
+}

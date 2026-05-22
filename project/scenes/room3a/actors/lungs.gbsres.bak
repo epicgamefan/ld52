@@ -1,0 +1,57 @@
+{
+  "_resourceType": "actor",
+  "id": "eaefe0b5-858d-4d78-8b35-2af700ef2e0a",
+  "_index": 3,
+  "symbol": "actor_42",
+  "prefabId": "",
+  "name": "Lungs",
+  "x": 10,
+  "y": 13,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "3a2cfc07-ed5c-4968-9c11-34953aee4085",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "43",
+        "flag": 3,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "3c1cc7f5-48c6-4e93-b98e-4f18120181bc"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "0915d3ec-0a2c-4bf5-910e-cba517ca435d"
+          }
+        ]
+      },
+      "id": "8023afd1-ee26-47fa-a4d8-374d04159834"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

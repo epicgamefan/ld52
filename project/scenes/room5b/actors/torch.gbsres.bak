@@ -1,0 +1,130 @@
+{
+  "_resourceType": "actor",
+  "id": "c073b2da-426a-465c-ab64-b82e189ba48c",
+  "_index": 2,
+  "symbol": "actor_18",
+  "prefabId": "",
+  "name": "Torch",
+  "x": 15,
+  "y": 6,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "b949159a-44fc-4591-ae8a-520840e0984f",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "3",
+        "__collapseElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "3"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "A torch...\nTake it?"
+              ],
+              "avatarId": ""
+            },
+            "id": "235dc77a-6237-42de-be6e-32244213776e"
+          },
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "3",
+              "items": 2,
+              "option1": "Yes",
+              "option2": "No",
+              "option3": "",
+              "option4": "",
+              "option5": "",
+              "option6": "",
+              "option7": "",
+              "option8": "",
+              "cancelOnB": false,
+              "layout": "dialogue",
+              "cancelOnLastOption": true
+            },
+            "id": "97ae3617-7ecc-485b-b14f-dd2a043abc5a"
+          }
+        ],
+        "false": []
+      },
+      "id": "37940e9e-2e8e-4910-8650-9f8c2ef5de4b"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "3",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "3"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "321f7300-e5f3-40ca-8233-c8fd6fc86073"
+          }
+        ],
+        "false": []
+      },
+      "id": "73c2dc3e-1b96-4737-b687-a5eab8b02774"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "3",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "3"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "ed3c0b2d-446a-4554-9e8c-b4281624c450"
+          }
+        ],
+        "false": []
+      },
+      "id": "e49b2b23-55fd-4fc8-b5ef-e035b8c8148a"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

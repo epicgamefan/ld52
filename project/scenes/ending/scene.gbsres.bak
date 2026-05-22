@@ -1,0 +1,125 @@
+{
+  "_resourceType": "scene",
+  "id": "503a3cc3-943a-4726-ab82-ed1dd7080e3f",
+  "_index": 28,
+  "type": "POINTNCLICK",
+  "name": "Ending",
+  "symbol": "scene_29",
+  "x": 811,
+  "y": 93,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "cca2cb0d-5abc-42a7-af09-cda22babc882",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 3,
+  "parallax": [
+    {
+      "height": 3,
+      "speed": 1
+    },
+    {
+      "height": 0,
+      "speed": 0
+    }
+  ],
+  "playerSpriteSheetId": "773989d5-00d1-4871-9662-98189265c08b",
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "fc127025-8f7f-4a1f-9e5a-aa0ec6202a46"
+      },
+      "id": "5289628b-5b52-4991-b5bf-b34c51859210"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "844f1643-36eb-4d51-afc5-2737c1ed206f"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "97192b4e-8a22-4619-b2e9-d455c381d53f",
+        "$variable[V0]$": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "3a47953c-a330-4bb3-9d9e-2674429ae64d"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You won...",
+          "The storm\ndissipates.",
+          "You notice that\nyou have a signal\nagain.",
+          "You look through\nyour text\nmessages.",
+          "You have thirteen\nmissed text\nmessages.",
+          "You begin to read\nthem aloud.",
+          "Mom: Dear, where\nare you?",
+          "Mom: Are you\nhaving car\ntrouble?",
+          "Mom: We have your\nfavorite tonight:\nPot Roast",
+          "Dad: Son, where\nare you?",
+          "Dad: We've been\nwaiting all night.",
+          "Dad: We are\nstarting to get\nreally worried.",
+          "Dad: It's been\nanother hour and\nwe still haven't",
+          "heard from you.",
+          "Dad: We've called\nthe police and we\nasked them to get",
+          "a search crew.",
+          "Dad: If you ever\nget this message,",
+          "please call us\nimmediately.",
+          "Stephen: Hey Josh,\nare you there?",
+          "Stephen: Your\nparents texted me.",
+          "Stephen: They're\nworried sick about\nyou.",
+          "Stephen: Call me\nwhen you see this.",
+          "You put your cell\nphone down and you\nsmile.",
+          "No one is ever\ngoing to believe\nthe story that you",
+          "have to tell..."
+        ],
+        "avatarId": ""
+      },
+      "id": "f29f15d4-139e-48bc-934f-fd353c497f63"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "933d8447-3d25-4e49-9a80-6fcc41f9bac1"
+    },
+    {
+      "command": "EVENT_RESET_VARIABLES",
+      "args": {
+        "__collapse": false
+      },
+      "id": "ce6ed8c0-9f80-430d-add5-e26f54c6ec47"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "0901f318-60af-41c7-8056-811bfb874ee1",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "d4af7bbe-01c3-4aff-b373-4f5985d96dc3"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

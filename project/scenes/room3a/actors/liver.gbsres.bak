@@ -1,0 +1,57 @@
+{
+  "_resourceType": "actor",
+  "id": "9a0fde63-35a9-46cb-9d2c-29b7dfcd8e36",
+  "_index": 2,
+  "symbol": "actor_41",
+  "prefabId": "",
+  "name": "Liver",
+  "x": 7,
+  "y": 13,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "a0d31978-7e11-455d-b363-cb88fafcdbe9",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "43",
+        "flag": 2,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "6af6c081-c8d4-4010-9170-dfeb49fae22d"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "f474694c-d7ae-4398-94dc-582396bae594"
+          }
+        ]
+      },
+      "id": "6582a5c6-9c92-47c9-aa50-e6987d7a7a90"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

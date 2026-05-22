@@ -1,0 +1,91 @@
+{
+  "_resourceType": "actor",
+  "id": "df7a6b02-840d-4406-a8e2-bb028ea2d0ac",
+  "_index": 0,
+  "symbol": "actor_0",
+  "prefabId": "",
+  "name": "Mallet",
+  "x": 17,
+  "y": 13,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "c762234f-e106-4715-8256-ac59eb404c72",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "A Mallet! \nDo you take it?"
+        ],
+        "avatarId": ""
+      },
+      "id": "dd2b6ca5-e92c-46e1-8dba-df9d556b5cc0"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "0",
+        "items": 2,
+        "option1": "Yes",
+        "option2": "No",
+        "option3": "",
+        "option4": "",
+        "option5": "",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": false,
+        "layout": "dialogue",
+        "cancelOnLastOption": true
+      },
+      "id": "c6c0ad5b-47ba-4968-aa70-30df90ff7b17"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "0",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "0"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "47763856-ef55-4d7b-b920-e1e34c02ac32"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Mallet added to \npocket."
+              ],
+              "avatarId": ""
+            },
+            "id": "27b1c1fe-a8aa-4b54-92fc-0054b69ac057"
+          }
+        ],
+        "false": []
+      },
+      "id": "338d0842-e52f-493f-9ab8-bbeffa411389"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

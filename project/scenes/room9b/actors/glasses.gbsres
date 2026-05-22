@@ -5,6 +5,7 @@
   "symbol": "actor_28",
   "prefabId": "",
   "name": "Glasses",
+  "coordinateType": "tiles",
   "x": 5,
   "y": 5,
   "frame": 0,
@@ -17,6 +18,7 @@
   "isPinned": false,
   "persistent": false,
   "collisionGroup": "",
+  "collisionExtraFlags": [],
   "prefabScriptOverrides": {},
   "script": [
     {

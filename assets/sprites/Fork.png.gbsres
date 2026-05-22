@@ -1,0 +1,129 @@
+{
+  "_resourceType": "sprite",
+  "id": "a9e4cc62-83c0-4174-8b3b-548af7843f30",
+  "name": "Fork",
+  "symbol": "sprite_fork",
+  "states": [
+    {
+      "id": "bef30cc8-70d8-4453-82f3-a8840f6faa98",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "1f131f8b-bac1-4add-9b86-1ad573fe1855",
+          "frames": [
+            {
+              "id": "1c68588f-1885-4d4a-b194-1f42bea93621",
+              "tiles": [
+                {
+                  "id": "da913a36-03b3-482e-84bd-15ee3b1181a1",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "abff25bb-8c77-43df-b0ab-07e4ffbe4540",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5083a32f-6f6a-43b7-9c5a-a6a4e88ff440",
+          "frames": [
+            {
+              "id": "5be41a35-59d5-4659-bb10-29eeba91e6af",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "f4b11b48-0401-406f-a71e-c8c52bfbcbca",
+          "frames": [
+            {
+              "id": "a91349f6-fc87-475c-9539-32f45208625a",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "be199b9c-9f85-46a7-81cf-050ad8136e7b",
+          "frames": [
+            {
+              "id": "3327d02b-be08-4419-9595-4b4c6e20e8d0",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "423586ef-cdc7-4f14-8d4d-3d68f4d4a2ed",
+          "frames": [
+            {
+              "id": "203c257b-d958-4b8c-a29c-628ad2a3db1f",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "37a00c3d-0a06-4bdb-8786-a06f679c482b",
+          "frames": [
+            {
+              "id": "faa914a5-fe65-40ab-b592-c5dc6517d4e6",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "d84233de-9504-4de5-a397-149af0258451",
+          "frames": [
+            {
+              "id": "995f6c2a-2ae6-4e01-bee0-7353567fad79",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "dbeefeb7-44cb-4063-bfd1-f71d264c1e04",
+          "frames": [
+            {
+              "id": "1e839255-76b2-4a7e-8dd7-fefb0b2daa9a",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 1,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15,
+  "filename": "Fork.png",
+  "width": 16,
+  "height": 16,
+  "checksum": "279310c18e59af089ec33d583024a0c6ff26ddfb"
+}

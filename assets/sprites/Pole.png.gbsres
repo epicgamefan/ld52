@@ -1,0 +1,129 @@
+{
+  "_resourceType": "sprite",
+  "id": "ad6fd03f-cfa3-4fcc-b592-6f9f8198f3c6",
+  "name": "Pole",
+  "symbol": "sprite_pole",
+  "states": [
+    {
+      "id": "080b5a8f-982b-434a-9efc-591b9fd9c545",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "b85242e5-8cc5-49bb-89bd-91f4ec153aad",
+          "frames": [
+            {
+              "id": "ae59d3a2-0195-48ac-8f81-df9d91217b65",
+              "tiles": [
+                {
+                  "id": "77731db5-03a7-4151-ac4f-b34e1501def4",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "d07152a0-c3b8-43a3-9659-7891c1650cce",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "862b87b9-6845-48ed-aefa-6d88b1819693",
+          "frames": [
+            {
+              "id": "bb27934f-a26c-49d4-b05c-0b256e93d921",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "a14da9bd-3c4f-4b58-a119-b5c4bd9f4ca6",
+          "frames": [
+            {
+              "id": "9a8171f2-b82f-478b-8dd7-9fa33ba6ee7f",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "f89975e0-d4aa-429d-85a6-d61956ac709b",
+          "frames": [
+            {
+              "id": "13c1039f-0b86-4ce4-b3ab-ec237d2d8634",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "f90dcc5e-4ddd-486f-adf2-2e061adcd814",
+          "frames": [
+            {
+              "id": "6c8d4fad-56d9-4e1c-b614-06e431c0bc82",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "eec934b2-0ed7-43de-9486-1a84d1315d27",
+          "frames": [
+            {
+              "id": "83ed424c-434c-4a43-b86b-2300a31ac89b",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "424e7ee4-b37e-4dee-97f9-0e7171fb54b3",
+          "frames": [
+            {
+              "id": "3d3c374d-d743-418c-ad24-4cad696c9bee",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "ff42e3cd-a634-45f9-bbb2-7f9e85ec3180",
+          "frames": [
+            {
+              "id": "f4d4a0d7-8157-4fd5-8542-cabb9d91fbca",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 1,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15,
+  "filename": "Pole.png",
+  "width": 16,
+  "height": 16,
+  "checksum": "b18d79f9172884c5c78d03e998ee51c84e304e3a"
+}
